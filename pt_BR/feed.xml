@@ -3,8 +3,19 @@
     <channel>
         <title>Blinktrade</title>
         <description>Blinktrade demonstration exchange</description>
-        <link>https://pinhopro.github.io/pt_BR/</link>
-        <atom:link href="https://pinhopro.github.io/pt_BR/feed.xml" rel="self" type="application/rss+xml" />
+        <link>https://testnet.blinktrade.com/pt_BR/</link>
+        <atom:link href="https://testnet.blinktrade.com/pt_BR/feed.xml" rel="self" type="application/rss+xml" />
+
         
+        <item>
+            <title>Bem vindo a Blinktrade!</title>
+            <description>&lt;p&gt;Uma exchange de bitcoins de código abert. Inicie a sua exchange de bitcoins hoje.&lt;/p&gt;
+</description>
+            <pubDate>Tue, 04 Nov 2014 19:00:00 -0500</pubDate>
+            <link>https://testnet.blinktrade.com/pt_BR/blog/bem-vindo-a-blinktrade/</link>
+            <guid isPermaLink="true">https://testnet.blinktrade.com/pt_BR/blog/bem-vindo-a-blinktrade/</guid>
+        </item>
+        
+
     </channel>
 </rss>

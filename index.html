@@ -14,19 +14,19 @@
 
     <meta property="og:title" content="Blinktrade demo exchange &mdash; Blinktrade">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://pinhopro.github.io">
+    <meta property="og:url" content="https://testnet.blinktrade.com">
     <meta property="og:image" content="/assets/themes/default/img/social_network_share.png">
     <meta property="og:description" content="Blinktrade demonstration exchange">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="https://pinhopro.github.io/assets/themes/default/img/favicon.png">
+    <link rel="shortcut icon" href="https://testnet.blinktrade.com/assets/themes/default/img/favicon.png">
 
     <!-- Feed -->
-    <link rel="alternate" type="application/rss+xml" href="https://pinhopro.github.io/feed.xml">
+    <link rel="alternate" type="application/rss+xml" href="https://testnet.blinktrade.com/feed.xml">
 
     <meta charset="utf-8">
 
-    <link rel="canonical" href="https://pinhopro.github.io"/>
+    <link rel="canonical" href="https://testnet.blinktrade.com"/>
     <script type="text/javascript" src="//apis.google.com/js/plusone.js"></script>
 
     <!--Bootstrap-->
@@ -36,9 +36,9 @@
     
     <link href="/assets/themes/default/css/Dialog.css" rel="stylesheet">
     <link href="/assets/themes/default/css/fuelux.css" rel="stylesheet">
-    <link href="/assets/themes/default/css/style.css" rel="stylesheet">
     <link href="/assets/themes/default/css/default.uni-form.css" rel="stylesheet">
-    <script src="/assets/js/bitex_app_blink_trade.compiled.en_US.default.js?v=0.4" type="text/javascript"></script>
+    <link href="/assets/themes/default/css/style.css?v=0.5" rel="stylesheet">
+    <script src="/assets/js/bitex_app_blink_trade.compiled.en_US.default.js?v=0.5" type="text/javascript"></script>
     
   </head>
   <body class=" ws-not-connected bitex-not-logged active-view-start ">
@@ -57,18 +57,43 @@
           </a>
           
 
-          
           <ul class="nav navbar-nav pull-right">
+            
+            <li><a href="" data-switch-view="faq">FAQ</a></li>
             <li class="bitex-display-if-logged"><a href="" data-switch-view="offerbook">Trading</a></li>
             <li><a href="" data-switch-view="market">Market</a></li>
             <li class="bitex-hide-if-logged"><a href="" data-switch-view="signin">Sigin</a></li>
             <li class="bitex-hide-if-logged"><a href="" data-switch-view="signup">Signup</a></li>
+            
+
+            <li class="dropdown">
+              <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">EN_US <b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+              
+                
+              
+                
+                  
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/es">ES</a></li>
+                  
+                
+              
+                
+                  
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/pt_BR">PT_BR</a></li>
+                  
+                
+              
+              </ul>
+            </li>
+
+            
             <li>
               <button id="id_button_connect_ws" class="bitex-hide-if-ws-connected btn-link"
                       style="padding: 6px 15px 10px;">Connect <i class="icon-white icon-repeat"></i></button>
             </li>
+            
           </ul>
-          
         </div>
       </div>
     </div>
@@ -83,7 +108,7 @@
 <!-- div.container -->
 <div class="container">
   <!-- landing page-->
-  <div id="start" class="page  row-fluid bitex-view">
+  <div id="start" class="page  row-fluid bitex-view bitex-view-admin">
     <header class="jumbotron">
       <img src="/assets/themes/default/img/blink_demo_landing_page_logo.png" style="">
       <p class="lead bitex-view-title bitex-view-title">See our open source Bitcoin exchange in action</p>
@@ -610,6 +635,7 @@
       <div class="container">
         <p>
           
+          <a href="" data-switch-view="admin">admin</a> |
           Latency: <span class="bitex-model" data-model-key="latency">0</span> ms |
           
           <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
