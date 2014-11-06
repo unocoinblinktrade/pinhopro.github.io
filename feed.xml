@@ -7,53 +7,6 @@
         <atom:link href="https://testnet.blinktrade.com/feed.xml" rel="self" type="application/rss+xml" />
 
         
-        <item>
-            <title>Welcome to Blinktrade!</title>
-            <description>&lt;p&gt;An open source bitcoin exchange. Start your own bitcoin exchange today.&lt;/p&gt;
-</description>
-            <pubDate>Tue, 04 Nov 2014 19:00:00 -0500</pubDate>
-            <link>https://testnet.blinktrade.com/blog/welcome-to-blinktrade/</link>
-            <guid isPermaLink="true">https://testnet.blinktrade.com/blog/welcome-to-blinktrade/</guid>
-        </item>
-        
-        <item>
-            <title>How do I open my own Bitcoin Exchange?</title>
-            <description>&lt;p&gt;You just need to go to &lt;a href=&quot;http://blinktrade.com/#started&quot;&gt;blinktrade&lt;/a&gt; and click on  “Apply to be a partner” section and fill out the form.&lt;/p&gt;
-</description>
-            <pubDate>Fri, 31 Oct 2014 20:05:00 -0400</pubDate>
-            <link>https://testnet.blinktrade.com/blog/faq-how-do-i-open-my-own-bitcoin-exchange/</link>
-            <guid isPermaLink="true">https://testnet.blinktrade.com/blog/faq-how-do-i-open-my-own-bitcoin-exchange/</guid>
-        </item>
-        
-        <item>
-            <title>How does a bitcoin exchange works?</title>
-            <description>&lt;p&gt;SurBitcoin allow buyers deposit Venezuelans Bolivares and sellers deposit Bitcoins. SurBitcoin then allows buyers transact with sellers.&lt;/p&gt;
-
-</description>
-            <pubDate>Fri, 31 Oct 2014 20:03:00 -0400</pubDate>
-            <link>https://testnet.blinktrade.com/blog/faq-how-does-a-bitcoin-exchange-works/</link>
-            <guid isPermaLink="true">https://testnet.blinktrade.com/blog/faq-how-does-a-bitcoin-exchange-works/</guid>
-        </item>
-        
-        <item>
-            <title>What is a Bitcoin Exchange?</title>
-            <description>&lt;p&gt;It is just a marketplace, where people interested in buying bitcoins find sellers interested in selling their bitcoins and vice-versa.&lt;/p&gt;
-</description>
-            <pubDate>Fri, 31 Oct 2014 20:02:00 -0400</pubDate>
-            <link>https://testnet.blinktrade.com/blog/faq-what-is-a-bitcoin-exchange/</link>
-            <guid isPermaLink="true">https://testnet.blinktrade.com/blog/faq-what-is-a-bitcoin-exchange/</guid>
-        </item>
-        
-        <item>
-            <title>What is Bitcoin?</title>
-            <description>&lt;p&gt;Bitcoin is a open source P2P digital network created in 2009 by pseudonymous author Satoshi Nakamoto. The protocol allows the user to send, store and receive value at a significant low cost and in a short matter of time. Bitcoin avoids the need for central authorities and issuers.&lt;/p&gt;
-
-</description>
-            <pubDate>Fri, 31 Oct 2014 20:01:00 -0400</pubDate>
-            <link>https://testnet.blinktrade.com/blog/faq-what-is-bitcoin/</link>
-            <guid isPermaLink="true">https://testnet.blinktrade.com/blog/faq-what-is-bitcoin/</guid>
-        </item>
-        
 
     </channel>
 </rss>
