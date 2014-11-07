@@ -34,9 +34,9 @@
   
   <link href="/assets/themes/default/css/Dialog.css" rel="stylesheet">
   <link href="/assets/themes/default/css/fuelux.css" rel="stylesheet">
-  <link href="/assets/themes/default/css/style.css?v=ac78dc1" rel="stylesheet">
-  <link href="/assets/themes/ander/css/blinktrade.css?v=ac78dc1" rel="stylesheet">
-  <script data-cfasync="false" src="/assets/js/bitex_app_blink_trade.compiled.en_US.ander.js?v=ac78dc1" type="text/javascript"></script>
+  <link href="/assets/themes/default/css/style.css?v=59a53b3" rel="stylesheet">
+  <link href="/assets/themes/ander/css/blinktrade.css?v=59a53b3" rel="stylesheet">
+  <script data-cfasync="false" src="/assets/js/bitex_app_blink_trade.compiled.en_US.ander.js?v=59a53b3" type="text/javascript"></script>
   
 </head>
 <body class=" ws-not-connected bitex-not-logged active-view-start ">
@@ -202,9 +202,9 @@
 <!-- .wrapper -->
 <div class="wrapper">
   <!-- #start -->
-  <div id="start">
+  <div id="start"  class="bitex-view">
     <!-- .main -->
-    <div class="main">
+    <div class="main bitex-view-content">
       <!-- .home -->
       <div class="home">
         <!-- .home__img -->
@@ -213,7 +213,7 @@
 
         <!-- .home__title -->
         <h1 class="home__title">
-          The first decentralized bitcoin exchange
+          See our open source Bitcoin exchange in action
         </h1>
         <!-- /.home__title -->
 
@@ -247,7 +247,7 @@
 
           <!-- .layout__item -->
           <div class="layout__item one-whole lap--two-tenths desk--two-tenths">
-            <button type="button" id="id_landing_signin" class="btn btn--positive btn--full">Login</button>
+            <button type="button" id="id_landing_signin" class="btn btn--positive btn--full">login</button>
           </div>
           <!-- /.layout__item -->
         </div>
@@ -547,14 +547,14 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
   <div id="signin" class="page bitex-view">
     <!-- .page__head -->
     <header class="page__head">
-      <h1 class="page__title bitex-view-title">Login</h1>
+      <h1 class="page__title bitex-view-title">Sigin</h1>
     </header>
     <!-- /.page__head -->
 
     <!-- .page__body -->
     <div class="page__body bitex-view-content">
       <p>
-        Don't have an account? <a href="signup" data-switch-view="signup">Register</a>
+        Don't have an account? <a href="signup" data-switch-view="signup">Singup</a>
       </p>
 
       <form accept-charset="UTF-8" action="" method="post">
@@ -564,7 +564,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
         <input id="id_password"  placeholder="" name="password" type="password">
 
         <p>
-          <a href="forgot_password" data-switch-view="forgot_password">Forgot your password?</a>
+          <a href="forgot_password" data-switch-view="forgot_password">Forgot your password??</a>
         </p>
         <input id="id_btn_login"  class="btn btn-primary" name="commit" type="submit" value="Login">
       </form>
@@ -583,9 +583,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
 
     <!-- .page__body -->
     <div class="page__body">
-      <p>Already registered? <a href="signin" data-switch-view="signin" >Login</a>.</p>
-
-      <p>Are you looking to be a broker in your state/country ?<a href="broker_application" data-switch-view="broker_application" >Broker application</a>.</p>
+      <p>Already registered? <a href="#" data-switch-view="signin">Login</a>.</p>
 
       <div class="bitex-view-content">
         <form accept-charset="UTF-8" class="form-horizontal" id="new_user" method="post">
@@ -593,7 +591,6 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
             <label class="control-label">Username</label>
             <div class="controls">
               <input id="id_signup_username" name="Username" size="30" type="text" placeholder="">
-              <p class="help-block">Your username will be public available to everybody.</p>
             </div>
           </div>
 
@@ -633,7 +630,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
             </div>
           </div>
 
-          <div class="control-group" style="">
+          <div class="control-group" style="display: none;">
             <label class="control-label">Broker</label>
             <div class="controls">
               <select id="id_signup_broker" name="broker"></select>
@@ -647,11 +644,10 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
           </div>
 
           <div class="control-group">
-            <label class="control-label">Terms of service</label>
+            <label class="control-label">Terms of service  </label>
             <div class="controls">
               <label class="checkbox">
-                <input id="user_agreed_tos" name="" type="checkbox" checked>
-                I agree with <a href="tos" data-switch-view="tos">terms terms of service</a>.
+                <input id="user_agreed_tos" name="" type="checkbox" checked>I agree with terms of service
               </label>
             </div>
           </div>
@@ -659,7 +655,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
 
         <div class="control-group">
           <div class="controls">
-            <button id="id_btn_signup" class="btn btn-primary">Register</button>
+            <button id="id_btn_signup" class="btn btn-primary">Signup</button>
           </div>
         </div>
       </div>
@@ -667,66 +663,6 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
     </div>
   </div>
   <!-- /#signup -->
-
-  <!-- #ranking -->
-  <div id="ranking" class="page bitex-view">
-    <!-- .page__head -->
-    <header class="page__head">
-      <h1 class="page__title beta bitex-view-title">Best Bitcoin Traders</h1>
-    </header>
-    <!-- /.page__head -->
-
-    <!-- .page__body -->
-    <div class="page__body bitex-view-content">
-    </div>
-    <!-- /.page__body -->
-  </div>
-  <!-- /#ranking -->
-
-  <!-- #broker_application -->
-  <div id="broker_application" class="page bitex-view">
-    <!-- .page__head -->
-    <header class="page__head">
-      <h1 class="page__title beta bitex-view-title">Broker Application Form</h1>
-    </header>
-    <!-- /.page__head -->
-
-    <!-- .page__body -->
-    <div class="page__body bitex-view-content">
-      <iframe id="JotFormIFrame2"
-              onload="window.parent.scrollTo(0,0)"
-              allowtransparency="true"
-              src="https://secure.jotform.us/form/41205503470139"
-              frameborder="0"
-              style="width:100%; height:1253px; border:none;"
-              scrolling="no"></iframe>
-      <script type="text/javascript">
-        window.handleIFrameMessage = function(e) {
-          var args = e.data.split(":");
-          var iframe = document.getElementById("JotFormIFrame2");
-          if (!iframe)
-            return;
-          switch (args[0]) {
-            case "scrollIntoView":
-              iframe.scrollIntoView();
-              break;
-            case "setHeight":
-              if (args[1] > 0 ) {
-                iframe.style.height = args[1] + "px";
-              }
-              break;
-          }
-        };
-
-        if (window.addEventListener) {
-          window.addEventListener("message", handleIFrameMessage, false);
-        } else if (window.attachEvent) {
-          window.attachEvent("onmessage", handleIFrameMessage);
-        }</script>
-    </div>
-    <!-- /.page__body -->
-  </div>
-  <!-- /#broker_application -->
 
   <!-- #forgot_password -->
   <div id="forgot_password" class="page row bitex-view">
@@ -740,7 +676,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
     <div class="page__body bitex-view-content">
       <form accept-charset="UTF-8" action="" method="post">
         <div class="clearfix">
-          <label for="id_forgot_password_email">e-mail</label>
+          <label for="id_forgot_password_email">Email</label>
           <div class="input"><input autocapitalize="off" autocorrect="off" id="id_forgot_password_email" name="email" type="text" placeholder=""></div>
         </div>
         <div class="actions">
@@ -818,9 +754,8 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
                       </a>
                     </li>
                     <li>
-                      <a href="" class="bitex-support-link" target="_blank" >
-                        <i class="icon-envelope"></i> Suggestions & Support
-                      </a>
+                      <a href="" data-switch-view="faq">
+                        <i data-switch-view="faq" class="icon-question"></i> Suggestions & Support</a>
                     </li>
                   </ul>
                 </div>
@@ -868,7 +803,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
           <div id="profile" class="bitex-view">
             <!-- .page__head -->
             <header class="page__head section-title">
-              <h1 class="page__title beta bitex-view-title">Profile</h1>
+              <h1 class="page__title beta bitex-view-title">My Profile</h1>
             </header>
             <!-- /.page__head -->
 
@@ -903,7 +838,9 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
                     <div class="control-group">
                       <label class="control-label">Authentication code</label>
                       <div class="controls">
-                        <input id="id_second_step_verification" type="text" class="input-block-level" pattern="\d+" title="Código gerado pelo Google Authenticatior" placeholder="Ex. 555555" required>
+                        <input id="id_second_step_verification" type="text" class="input-block-level"
+                               pattern="\d+" title="Code generated by Google Authenticatior"
+                               placeholder="Ex. 555555" required>
                       </div>
                     </div>
                   </div>
@@ -971,7 +908,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
           <div id="customers" class="bitex-view">
             <!-- .page__head -->
             <header class="page__head section-title">
-              <h3 class="page__title beta bitex-view-title">Customers</h3>
+              <h3 class="page__title beta bitex-view-title">My customers</h3>
             </header>
             <!-- /.page__head -->
 
@@ -984,7 +921,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
           <!-- /#customers -->
 
           <!-- #deposit_requests -->
-          <div id="deposit_requests">
+          <div id="deposit_requests" class="bitex-view">
             <!-- .page__head -->
             <header class="page__head section-title">
               <h3 class="page__title beta bitex-view-title">Deposit requests</h3>
@@ -1001,7 +938,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
 
 
           <!-- #withdraw_requests -->
-          <div id="withdraw_requests">
+          <div id="withdraw_requests" class="bitex-view">
             <!-- .page__head -->
             <header class="page__head section-title">
               <h3 class="page__title beta bitex-view-title">Withdrawals requests</h3>
@@ -1018,10 +955,10 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
 
 
           <!-- #deposit -->
-          <div id="deposit">
+          <div id="deposit" class="bitex-view">
             <!-- .page__head -->
             <header class="page__head section-title">
-              <h3 class="page__title beta bitex-view-title">Deposits</h3>
+              <h3 class="page__title beta bitex-view-title">My Deposits</h3>
             </header>
             <!-- /.page__head -->
 
@@ -1036,10 +973,10 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
           <!-- /#deposit -->
 
           <!-- #withdraw -->
-          <div id="withdraw">
+          <div id="withdraw" class="bitex-view">
             <!-- .page__head -->
             <header class="page__head section-title">
-              <h3 class="page__title beta bitex-view-title">Withdrawals</h3>
+              <h3 class="page__title beta bitex-view-title">My Withdrawals</h3>
             </header>
             <!-- /.page__head -->
 
@@ -1207,7 +1144,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
       <p>
         
         Latency: <span class="bitex-model" data-model-key="latency">0</span> ms |
-        Version: ac78dc1 |
+        Version: 59a53b3 |
         
         <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
         | <a href="https://github.com/blinktrade/" target="_blank">Proudly 100% open source <span class="bitex-model" data-model-key="JSVersion"></span></a>

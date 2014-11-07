@@ -34,9 +34,9 @@
   
   <link href="/assets/themes/default/css/Dialog.css" rel="stylesheet">
   <link href="/assets/themes/default/css/fuelux.css" rel="stylesheet">
-  <link href="/assets/themes/default/css/style.css?v=ac78dc1" rel="stylesheet">
-  <link href="/assets/themes/ander/css/blinktrade.css?v=ac78dc1" rel="stylesheet">
-  <script data-cfasync="false" src="/assets/js/bitex_app_blink_trade.compiled.pt_BR.ander.js?v=ac78dc1" type="text/javascript"></script>
+  <link href="/assets/themes/default/css/style.css?v=59a53b3" rel="stylesheet">
+  <link href="/assets/themes/ander/css/blinktrade.css?v=59a53b3" rel="stylesheet">
+  <script data-cfasync="false" src="/assets/js/bitex_app_blink_trade.compiled.pt_BR.ander.js?v=59a53b3" type="text/javascript"></script>
   
 </head>
 <body class=" ws-not-connected bitex-not-logged active-view-start ">
@@ -202,9 +202,9 @@
 <!-- .wrapper -->
 <div class="wrapper">
   <!-- #start -->
-  <div id="start">
+  <div id="start"  class="bitex-view">
     <!-- .main -->
-    <div class="main">
+    <div class="main bitex-view-content">
       <!-- .home -->
       <div class="home">
         <!-- .home__img -->
@@ -213,7 +213,7 @@
 
         <!-- .home__title -->
         <h1 class="home__title">
-          The first decentralized bitcoin exchange
+          Veja a nossa exchange open source em ação
         </h1>
         <!-- /.home__title -->
 
@@ -229,14 +229,14 @@
             <div class="layout layout--quarter">
               <!-- .layout__item -->
               <div class="layout__item one-whole lap--six-tenths desk--six-tenths">
-                <label for="id_landing_username" class="home-form__label">Username:</label>
+                <label for="id_landing_username" class="home-form__label">Nome de usuário:</label>
                 <input class="home-form__input input input--large input--full" id="id_landing_username" type="text" size="30">
               </div>
               <!-- /.layout__item -->
 
               <!-- .layout__item -->
               <div class="layout__item one-whole lap--four-tenths desk--four-tenths">
-                <label for="id_landing_password" class="home-form__label">Password:</label>
+                <label for="id_landing_password" class="home-form__label">Senha:</label>
                 <input class="home-form__input input input--large input--full" id="id_landing_password" type="password" size="30">
               </div>
               <!-- /.layout__item -->
@@ -247,7 +247,7 @@
 
           <!-- .layout__item -->
           <div class="layout__item one-whole lap--two-tenths desk--two-tenths">
-            <button type="button" id="id_landing_signin" class="btn btn--positive btn--full">Login</button>
+            <button type="button" id="id_landing_signin" class="btn btn--positive btn--full">Entrar</button>
           </div>
           <!-- /.layout__item -->
         </div>
@@ -291,7 +291,7 @@
     <div class="page">
       <!-- .page__head -->
       <header class="page__head">
-        <h2 class="page__title beta bitex-view-title">Market</h2>
+        <h2 class="page__title beta bitex-view-title">Mercado</h2>
       </header>
       <!-- /.page__head -->
 
@@ -315,19 +315,19 @@
     <!-- .page__body -->
     <div class="page__body bitex-view-content">
       <p>
-        Don't have an account? <a href="signup" data-switch-view="signup">Register</a>
+        Não possui uma conta? <a href="signup" data-switch-view="signup">Registre-se</a>
       </p>
 
       <form accept-charset="UTF-8" action="" method="post">
-        <label for="id_username">Username</label>
+        <label for="id_username">Nome de usuário</label>
         <input autocapitalize="off" autocorrect="off" id="id_username" name="username" type="text" placeholder="">
-        <label for="id_password">Password</label>
+        <label for="id_password">Senha</label>
         <input id="id_password"  placeholder="" name="password" type="password">
 
         <p>
-          <a href="forgot_password" data-switch-view="forgot_password">Forgot your password?</a>
+          <a href="forgot_password" data-switch-view="forgot_password">Esqueceu a sua senha??</a>
         </p>
-        <input id="id_btn_login"  class="btn btn-primary" name="commit" type="submit" value="Login">
+        <input id="id_btn_login"  class="btn btn-primary" name="commit" type="submit" value="Entrar">
       </form>
     </div>
     <!-- /.page__body -->
@@ -338,64 +338,61 @@
   <div id="signup" class="page  row-fluid bitex-view">
     <!-- .page__head -->
     <header class="page__head">
-      <h1 class="page__title beta bitex-view-title">Signup</h1>
+      <h1 class="page__title beta bitex-view-title">Registrar</h1>
     </header>
     <!-- /.page__head -->
 
     <!-- .page__body -->
     <div class="page__body">
-      <p>Already registered? <a href="signin" data-switch-view="signin" >Login</a>.</p>
-
-      <p>Are you looking to be a broker in your state/country ?<a href="broker_application" data-switch-view="broker_application" >Broker application</a>.</p>
+      <p>Já possui registro? <a href="#" data-switch-view="signin">Entrar</a>.</p>
 
       <div class="bitex-view-content">
         <form accept-charset="UTF-8" class="form-horizontal" id="new_user" method="post">
           <div class="control-group">
-            <label class="control-label">Username</label>
+            <label class="control-label">Nome de usuário</label>
             <div class="controls">
               <input id="id_signup_username" name="Username" size="30" type="text" placeholder="">
-              <p class="help-block">Your username will be public available to everybody.</p>
             </div>
           </div>
 
           <div class="control-group">
-            <label class="control-label">Email address</label>
+            <label class="control-label">Email</label>
             <div class="controls">
-              <input id="id_signup_email" name="Email" size="30" type="text" placeholder="eg.: joe@doe.com">
+              <input id="id_signup_email" name="Email" size="30" type="text" placeholder="ex.: jose@email.com">
             </div>
           </div>
 
           <div class="control-group">
-            <label class="control-label">Password</label>
+            <label class="control-label">Senha</label>
             <div class="controls">
               <input id="id_signup_password" name="Password" size="30" type="password">
-              <p class="help-block">At least 8 characters</p>
+              <p class="help-block">Pelo menos 8 letras</p>
             </div>
           </div>
 
           <div class="control-group">
-            <label class="control-label">Confirm your password</label>
+            <label class="control-label">Confirme a sua senha</label>
             <div class="controls">
               <input id="id_signup_password2" name="Password2" size="30" type="password">
             </div>
           </div>
 
           <div class="control-group" style="">
-            <label class="control-label">Country</label>
+            <label class="control-label">País</label>
             <div class="controls">
               <select id="id_signup_country" name="country"></select>
             </div>
           </div>
 
           <div id="id_signup_state_group" class="control-group" style="display: none">
-            <label class="control-label">State or Province</label>
+            <label class="control-label">Estado ou Província</label>
             <div class="controls">
               <select id="id_signup_state" name="state"></select>
             </div>
           </div>
 
-          <div class="control-group" style="">
-            <label class="control-label">Broker</label>
+          <div class="control-group" style="display: none;">
+            <label class="control-label">Corretor</label>
             <div class="controls">
               <select id="id_signup_broker" name="broker"></select>
             </div>
@@ -408,11 +405,10 @@
           </div>
 
           <div class="control-group">
-            <label class="control-label">Terms of service</label>
+            <label class="control-label">Termos de serviço  </label>
             <div class="controls">
               <label class="checkbox">
-                <input id="user_agreed_tos" name="" type="checkbox" checked>
-                I agree with <a href="tos" data-switch-view="tos">terms terms of service</a>.
+                <input id="user_agreed_tos" name="" type="checkbox" checked>Estou de acordo com os termos de serviço
               </label>
             </div>
           </div>
@@ -420,7 +416,7 @@
 
         <div class="control-group">
           <div class="controls">
-            <button id="id_btn_signup" class="btn btn-primary">Register</button>
+            <button id="id_btn_signup" class="btn btn-primary">Registrar</button>
           </div>
         </div>
       </div>
@@ -429,71 +425,11 @@
   </div>
   <!-- /#signup -->
 
-  <!-- #ranking -->
-  <div id="ranking" class="page bitex-view">
-    <!-- .page__head -->
-    <header class="page__head">
-      <h1 class="page__title beta bitex-view-title">Best Bitcoin Traders</h1>
-    </header>
-    <!-- /.page__head -->
-
-    <!-- .page__body -->
-    <div class="page__body bitex-view-content">
-    </div>
-    <!-- /.page__body -->
-  </div>
-  <!-- /#ranking -->
-
-  <!-- #broker_application -->
-  <div id="broker_application" class="page bitex-view">
-    <!-- .page__head -->
-    <header class="page__head">
-      <h1 class="page__title beta bitex-view-title">Broker Application Form</h1>
-    </header>
-    <!-- /.page__head -->
-
-    <!-- .page__body -->
-    <div class="page__body bitex-view-content">
-      <iframe id="JotFormIFrame2"
-              onload="window.parent.scrollTo(0,0)"
-              allowtransparency="true"
-              src="https://secure.jotform.us/form/41205503470139"
-              frameborder="0"
-              style="width:100%; height:1253px; border:none;"
-              scrolling="no"></iframe>
-      <script type="text/javascript">
-        window.handleIFrameMessage = function(e) {
-          var args = e.data.split(":");
-          var iframe = document.getElementById("JotFormIFrame2");
-          if (!iframe)
-            return;
-          switch (args[0]) {
-            case "scrollIntoView":
-              iframe.scrollIntoView();
-              break;
-            case "setHeight":
-              if (args[1] > 0 ) {
-                iframe.style.height = args[1] + "px";
-              }
-              break;
-          }
-        };
-
-        if (window.addEventListener) {
-          window.addEventListener("message", handleIFrameMessage, false);
-        } else if (window.attachEvent) {
-          window.attachEvent("onmessage", handleIFrameMessage);
-        }</script>
-    </div>
-    <!-- /.page__body -->
-  </div>
-  <!-- /#broker_application -->
-
   <!-- #forgot_password -->
   <div id="forgot_password" class="page row bitex-view">
     <!-- .page__head -->
     <header class="page__head">
-      <h1 class="page__title beta bitex-view-title">Password recovery</h1>
+      <h1 class="page__title beta bitex-view-title">Recuperação da senha</h1>
     </header>
     <!-- /.page__head -->
 
@@ -501,11 +437,11 @@
     <div class="page__body bitex-view-content">
       <form accept-charset="UTF-8" action="" method="post">
         <div class="clearfix">
-          <label for="id_forgot_password_email">e-mail</label>
+          <label for="id_forgot_password_email">Email</label>
           <div class="input"><input autocapitalize="off" autocorrect="off" id="id_forgot_password_email" name="email" type="text" placeholder=""></div>
         </div>
         <div class="actions">
-          <input id="id_btn_forgot_password"  class="btn btn-primary" name="commit" type="submit" value="Recover password">
+          <input id="id_btn_forgot_password"  class="btn btn-primary" name="commit" type="submit" value="Recuperar senha">
         </div>
       </form>
     </div>
@@ -542,7 +478,7 @@
 
             <div id="account_balance">
               <form class="form-inline">
-                <label class="control-label" for="id_instrument_1">Market:</label>
+                <label class="control-label" for="id_instrument_1">Mercado:</label>
                 <select id="id_instrument_1">
                   <option></option>
                 </select>
@@ -575,13 +511,12 @@
                   <ul>
                     <li id="verification_menu_id">
                       <a href="verification" data-switch-view="verification">
-                        <i class="icon-check"></i> Verify your account
+                        <i class="icon-check"></i> Verificar a sua conta
                       </a>
                     </li>
                     <li>
-                      <a href="" class="bitex-support-link" target="_blank" >
-                        <i class="icon-envelope"></i> Suggestions & Support
-                      </a>
+                      <a href="" data-switch-view="faq">
+                        <i data-switch-view="faq" class="icon-question"></i> Suporte e Sugestões</a>
                     </li>
                   </ul>
                 </div>
@@ -599,7 +534,7 @@
           <div id="offerbook" class="bitex-view">
             <!-- .page__head -->
             <header class="page__head section-title">
-              <h3 class="page__title beta bitex-view-title">Order Book</h3>
+              <h3 class="page__title beta bitex-view-title">Livro de ofertas</h3>
             </header>
             <!-- /.page__head -->
 
@@ -629,7 +564,7 @@
           <div id="profile" class="bitex-view">
             <!-- .page__head -->
             <header class="page__head section-title">
-              <h1 class="page__title beta bitex-view-title">Profile</h1>
+              <h1 class="page__title beta bitex-view-title">Meu Perfil</h1>
             </header>
             <!-- /.page__head -->
 
@@ -649,7 +584,7 @@
                   <div id="id_enable_two_factor_div" class="form-horizontal ">
 
                     <div class="control-group">
-                      <label class="control-label">Key</label>
+                      <label class="control-label">Chave</label>
                       <div class="controls">
                         <span id='secret' class="bitex-model" data-model-key="TwoFactorSecret"></span>
                       </div>
@@ -662,14 +597,16 @@
                     </div>
 
                     <div class="control-group">
-                      <label class="control-label">Authentication code</label>
+                      <label class="control-label">Código de Autenticação</label>
                       <div class="controls">
-                        <input id="id_second_step_verification" type="text" class="input-block-level" pattern="\d+" title="Código gerado pelo Google Authenticatior" placeholder="Ex. 555555" required>
+                        <input id="id_second_step_verification" type="text" class="input-block-level"
+                               pattern="\d+" title="Código gerado pelo Google Authenticator"
+                               placeholder="Ex. 555555" required>
                       </div>
                     </div>
                   </div>
-                  <button id="id_btn_enable_two_factor" class="btn btn-primary">Enable</button>
-                  <button id="id_btn_disable_two_factor" class="btn btn-danger">Disable</button>
+                  <button id="id_btn_enable_two_factor" class="btn btn-primary">Habilitar</button>
+                  <button id="id_btn_disable_two_factor" class="btn btn-danger">Desabilitar</button>
                 </div>
               </div>
             </div>
@@ -696,7 +633,7 @@
           <div id="trading" class="bitex-view">
             <!-- .page__head -->
             <header class="page__head section-title">
-              <h1 class="page__title beta bitex-view-title">Buy or Sell</h1>
+              <h1 class="page__title beta bitex-view-title">Comprar ou Vender</h1>
             </header>
             <!-- /.page__head -->
 
@@ -713,7 +650,7 @@
           <div id="ledger" class="bitex-view">
             <!-- .page__head -->
             <header class="page__head section-title">
-              <h3 class="page__title beta bitex-view-title">Ledger</h3>
+              <h3 class="page__title beta bitex-view-title">Livro contábil</h3>
             </header>
             <!-- /.page__head -->
 
@@ -732,7 +669,7 @@
           <div id="customers" class="bitex-view">
             <!-- .page__head -->
             <header class="page__head section-title">
-              <h3 class="page__title beta bitex-view-title">Customers</h3>
+              <h3 class="page__title beta bitex-view-title">Meus clientes</h3>
             </header>
             <!-- /.page__head -->
 
@@ -745,10 +682,10 @@
           <!-- /#customers -->
 
           <!-- #deposit_requests -->
-          <div id="deposit_requests">
+          <div id="deposit_requests" class="bitex-view">
             <!-- .page__head -->
             <header class="page__head section-title">
-              <h3 class="page__title beta bitex-view-title">Deposit requests</h3>
+              <h3 class="page__title beta bitex-view-title">Pedidos de depósitos</h3>
             </header>
             <!-- /.page__head -->
 
@@ -762,10 +699,10 @@
 
 
           <!-- #withdraw_requests -->
-          <div id="withdraw_requests">
+          <div id="withdraw_requests" class="bitex-view">
             <!-- .page__head -->
             <header class="page__head section-title">
-              <h3 class="page__title beta bitex-view-title">Withdrawals requests</h3>
+              <h3 class="page__title beta bitex-view-title">Pedidos de saques</h3>
             </header>
             <!-- /.page__head -->
 
@@ -779,10 +716,10 @@
 
 
           <!-- #deposit -->
-          <div id="deposit">
+          <div id="deposit" class="bitex-view">
             <!-- .page__head -->
             <header class="page__head section-title">
-              <h3 class="page__title beta bitex-view-title">Deposits</h3>
+              <h3 class="page__title beta bitex-view-title">Depósitos</h3>
             </header>
             <!-- /.page__head -->
 
@@ -797,10 +734,10 @@
           <!-- /#deposit -->
 
           <!-- #withdraw -->
-          <div id="withdraw">
+          <div id="withdraw" class="bitex-view">
             <!-- .page__head -->
             <header class="page__head section-title">
-              <h3 class="page__title beta bitex-view-title">Withdrawals</h3>
+              <h3 class="page__title beta bitex-view-title">Saques</h3>
             </header>
             <!-- /.page__head -->
 
@@ -818,7 +755,7 @@
           <div id="account_overview" class="bitex-view">
             <!-- .page__head -->
             <header class="page__head section-title">
-              <h3 class="page__title beta bitex-view-title">Account overview</h3>
+              <h3 class="page__title beta bitex-view-title">Detalhe da conta</h3>
             </header>
             <!-- /.page__head -->
 
@@ -834,7 +771,7 @@
 
                     <div id="account_overview_fees_balances_id"></div>
 
-                    <button id="id_btn_user_fees" class="btn btn-primary">Set user fees</button>
+                    <button id="id_btn_user_fees" class="btn btn-primary">Definir taxas personalizadas</button>
 
                   </div>
                 </div>
@@ -849,7 +786,7 @@
           <div id="set_new_password" class="bitex-view">
             <!-- .page__head -->
             <header class="page__head section-title">
-              <h3 class="page__title beta bitex-view-title">Set new password</h3>
+              <h3 class="page__title beta bitex-view-title">Definir nova senha</h3>
             </header>
             <!-- /.page__head -->
 
@@ -858,31 +795,31 @@
               <form accept-charset="UTF-8" class="form-horizontal" id="redefine_new_password_form" method="post">
 
                 <div class="control-group">
-                  <label class="control-label">Security code</label>
+                  <label class="control-label">Código de segurança</label>
                   <div class="controls">
                     <input id="id_set_new_password_token" name="Email" size="30" type="text" placeholder="">
-                    <p class="help-block">We just sent a security code to your email.</p>
+                    <p class="help-block">Nós acabamos de enviar um código de segurança para o seu email.</p>
                   </div>
 
                 </div>
 
                 <div class="control-group">
-                  <label class="control-label">New password</label>
+                  <label class="control-label">Nova senha</label>
                   <div class="controls">
                     <input id="id_set_new_password_password" name="Password" size="30" type="password">
-                    <p class="help-block">At least 8 characters</p>
+                    <p class="help-block">Pelo menos 8 letras</p>
                   </div>
                 </div>
 
                 <div class="control-group">
-                  <label class="control-label">Confirm your password</label>
+                  <label class="control-label">Confirme a sua senha</label>
                   <div class="controls">
                     <input id="id_set_new_password_password2" name="Password2" size="30" type="password">
                   </div>
                 </div>
 
                 <div class="actions">
-                  <input id="id_btn_set_new_password"  class="btn btn-primary" name="commit" type="submit" value="Reset password">
+                  <input id="id_btn_set_new_password"  class="btn btn-primary" name="commit" type="submit" value="Redefinir senha">
                 </div>
               </form>
             </div>
@@ -894,7 +831,7 @@
           <div id="settings" class="bitex-view">
             <!-- .page__head -->
             <header class="page__head section-title">
-              <h3 class="page__title beta bitex-view-title">Settings</h3>
+              <h3 class="page__title beta bitex-view-title">Configurações</h3>
             </header>
             <!-- /.page__head -->
 
@@ -909,7 +846,7 @@
           <div id="verification" class="bitex-view">
             <!-- .page__head -->
             <header class="page__head section-title">
-              <h3 class="page__title beta bitex-view-title">Verify your account</h3>
+              <h3 class="page__title beta bitex-view-title">Verificar a sua conta</h3>
             </header>
             <!-- /.page__head -->
 
@@ -968,7 +905,7 @@
       <p>
         
         Latency: <span class="bitex-model" data-model-key="latency">0</span> ms |
-        Version: ac78dc1 |
+        Version: 59a53b3 |
         
         <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
         | <a href="https://github.com/blinktrade/" target="_blank">Proudly 100% open source <span class="bitex-model" data-model-key="JSVersion"></span></a>
