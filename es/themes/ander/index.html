@@ -34,9 +34,9 @@
   
   <link href="/assets/themes/default/css/Dialog.css" rel="stylesheet">
   <link href="/assets/themes/default/css/fuelux.css" rel="stylesheet">
-  <link href="/assets/themes/default/css/style.css?v=59a53b3" rel="stylesheet">
-  <link href="/assets/themes/ander/css/blinktrade.css?v=59a53b3" rel="stylesheet">
-  <script data-cfasync="false" src="/assets/js/bitex_app_blink_trade.compiled.es.ander.js?v=59a53b3" type="text/javascript"></script>
+  <link href="/assets/themes/default/css/style.css?v=6614df5" rel="stylesheet">
+  <link href="/assets/themes/ander/css/blinktrade.css?v=6614df5" rel="stylesheet">
+  <script data-cfasync="false" src="/assets/js/bitex_app_blink_trade.compiled.es.ander.js?v=6614df5" type="text/javascript"></script>
   
 </head>
 <body class=" ws-not-connected bitex-not-logged active-view-start ">
@@ -74,54 +74,45 @@
                 <li class="bitex-display-if-logged">
                   <!--li-->
                   <span>
-                      <i class="icon-user"></i> My
+
+                      <i class="icon-user"></i> <span class="bitex-model bitex-view-title" data-model-key="DisplayName">
                   </span>
 
                   <!-- .head-dropdown -->
                   <ul class="head-dropdown">
                     <li>
                       <a href="#profile" title="Profile" data-switch-view="profile">
-                        Profile
+                        Mi perfil
                       </a>
                     </li>
                     <li>
                       <a href="#my_broker" title="Broker info" data-switch-view="my_broker">
-                        Broker info
+                        Sobre el exchange
                       </a>
                     </li>
-                    <li>
+                    <li class="bitex-display-if-broker">
                       <a href="#customers" title="Customers" data-switch-view="customers">
-                        Customers
+                        Mis clientes
+                      </a>
+                    </li>
+                    <li class="bitex-display-if-broker">
+                      <a href="deposit_requests" title="Deposit" data-switch-view="deposit_requests">
+                        Depósitos ( clientes )
+                      </a>
+                    </li>
+                    <li class="bitex-display-if-broker">
+                      <a href="withdraw_requests" title="Withdraw" data-switch-view="withdraw_requests">
+                        Retiros ( clientes )
                       </a>
                     </li>
                     <li>
                       <a href="#deposit" title="Deposit" data-switch-view="deposit">
-                        Deposit
+                        Depósitos
                       </a>
                     </li>
                     <li>
                       <a href="#withdraw" title="Withdrawals" data-switch-view="withdraw">
-                        Withdrawals
-                      </a>
-                    </li>
-                  </ul>
-                  <!-- /.head-dropdown -->
-                </li>
-                <li class="bitex-display-if-logged">
-                                        <span>
-                                            <i class="icon-edit"></i> Requests
-                                        </span>
-
-                  <!-- .head-dropdown -->
-                  <ul class="head-dropdown">
-                    <li>
-                      <a href="deposit_requests" title="Deposit" data-switch-view="deposit_requests">
-                        Deposit
-                      </a>
-                    </li>
-                    <li>
-                      <a href="withdraw_requests" title="Withdraw" data-switch-view="withdraw_requests">
-                        Withdraw
+                        Retiros
                       </a>
                     </li>
                   </ul>
@@ -129,32 +120,27 @@
                 </li>
                 <li class="bitex-display-if-logged">
                   <a href="#offerbook" data-switch-view="offerbook">
-                    <i class="icon-book"></i> Order book
+                    <i class="icon-book"></i> Libro de órdenes
                   </a>
                 </li>
                 <li class="bitex-display-if-logged">
                   <a href="#trading" title="Buy or Sell" data-switch-view="trading">
-                    <i class="icon-random"></i> Buy or Sell
+                    <i class="icon-random"></i> Comprar o Vender
                   </a>
                 </li>
                 <li class="bitex-display-if-logged">
                   <a href="#ledger" title="Ledger" data-switch-view="ledger">
-                    <i class="icon-list"></i> Ledger
+                    <i class="icon-list"></i> Livro de cuentas
                   </a>
                 </li>
                 <li>
                   <a data-switch-view="market" href="#market" title="Market">
-                    <i class="icon-bar-chart"></i> Market
-                  </a>
-                </li>
-                <li class="bitex-hide-if-logged">
-                  <a data-switch-view="ranking" href="#ranking" title="Ranking">
-                    <i class="icon-star"></i> Ranking
+                    <i class="icon-bar-chart"></i> Mercado
                   </a>
                 </li>
                 <li class="bitex-hide-if-logged">
                   <a data-switch-view="signup" href="#signup" title="Signup">
-                    <i class="icon-signin"></i> Signup
+                    <i class="icon-signin"></i> Registrarse
                   </a>
                 </li>
               </ul>
@@ -166,7 +152,7 @@
               <ul class="head__nav-right">
                 <li class="bitex-hide-if-logged">
                   <a data-switch-view="signin" href="#signin" title="Login">
-                    <i class="icon-power-off"></i> Login
+                    <i class="icon-power-off"></i> Ingressar
                   </a>
                   <button id="id_button_connect_ws" class="btn bitex-hide-if-ws-connected btn-link">
                     Connect <i class="icon-white icon-repeat"></i>
@@ -174,7 +160,7 @@
                 </li>
                 <li class="bitex-display-if-logged">
                   <a href="javascript:location.reload()">
-                    <i class="icon-power-off"></i> Logout
+                    <i class="icon-power-off"></i> Salir
                   </a>
                 </li>
               </ul>
@@ -202,7 +188,7 @@
 <!-- .wrapper -->
 <div class="wrapper">
   <!-- #start -->
-  <div id="start"  class="bitex-view">
+  <div id="start"  class="bitex-view bitex-view-admin">
     <!-- .main -->
     <div class="main bitex-view-content">
       <!-- .home -->
@@ -1334,8 +1320,9 @@ También podrá revisar su historial de depósitos y retiros median</p>
     <div class="wrapper">
       <p>
         
+        <a href="" data-switch-view="admin">admin</a> |
         Latency: <span class="bitex-model" data-model-key="latency">0</span> ms |
-        Version: 59a53b3 |
+        Version: 6614df5 |
         
         <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
         | <a href="https://github.com/blinktrade/" target="_blank">Proudly 100% open source <span class="bitex-model" data-model-key="JSVersion"></span></a>

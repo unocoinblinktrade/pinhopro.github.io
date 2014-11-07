@@ -34,9 +34,9 @@
   
   <link href="/assets/themes/default/css/Dialog.css" rel="stylesheet">
   <link href="/assets/themes/default/css/fuelux.css" rel="stylesheet">
-  <link href="/assets/themes/default/css/style.css?v=59a53b3" rel="stylesheet">
-  <link href="/assets/themes/ander/css/blinktrade.css?v=59a53b3" rel="stylesheet">
-  <script data-cfasync="false" src="/assets/js/bitex_app_blink_trade.compiled.en_US.ander.js?v=59a53b3" type="text/javascript"></script>
+  <link href="/assets/themes/default/css/style.css?v=6614df5" rel="stylesheet">
+  <link href="/assets/themes/ander/css/blinktrade.css?v=6614df5" rel="stylesheet">
+  <script data-cfasync="false" src="/assets/js/bitex_app_blink_trade.compiled.en_US.ander.js?v=6614df5" type="text/javascript"></script>
   
 </head>
 <body class=" ws-not-connected bitex-not-logged active-view-start ">
@@ -74,54 +74,45 @@
                 <li class="bitex-display-if-logged">
                   <!--li-->
                   <span>
-                      <i class="icon-user"></i> My
+
+                      <i class="icon-user"></i> <span class="bitex-model bitex-view-title" data-model-key="DisplayName">
                   </span>
 
                   <!-- .head-dropdown -->
                   <ul class="head-dropdown">
                     <li>
                       <a href="#profile" title="Profile" data-switch-view="profile">
-                        Profile
+                        My Profile
                       </a>
                     </li>
                     <li>
                       <a href="#my_broker" title="Broker info" data-switch-view="my_broker">
-                        Broker info
+                        About the exchange
                       </a>
                     </li>
-                    <li>
+                    <li class="bitex-display-if-broker">
                       <a href="#customers" title="Customers" data-switch-view="customers">
-                        Customers
+                        My customers
+                      </a>
+                    </li>
+                    <li class="bitex-display-if-broker">
+                      <a href="deposit_requests" title="Deposit" data-switch-view="deposit_requests">
+                        Deposit requests
+                      </a>
+                    </li>
+                    <li class="bitex-display-if-broker">
+                      <a href="withdraw_requests" title="Withdraw" data-switch-view="withdraw_requests">
+                        Withdraw requests
                       </a>
                     </li>
                     <li>
                       <a href="#deposit" title="Deposit" data-switch-view="deposit">
-                        Deposit
+                        My Deposits
                       </a>
                     </li>
                     <li>
                       <a href="#withdraw" title="Withdrawals" data-switch-view="withdraw">
-                        Withdrawals
-                      </a>
-                    </li>
-                  </ul>
-                  <!-- /.head-dropdown -->
-                </li>
-                <li class="bitex-display-if-logged">
-                                        <span>
-                                            <i class="icon-edit"></i> Requests
-                                        </span>
-
-                  <!-- .head-dropdown -->
-                  <ul class="head-dropdown">
-                    <li>
-                      <a href="deposit_requests" title="Deposit" data-switch-view="deposit_requests">
-                        Deposit
-                      </a>
-                    </li>
-                    <li>
-                      <a href="withdraw_requests" title="Withdraw" data-switch-view="withdraw_requests">
-                        Withdraw
+                        My Withdrawals
                       </a>
                     </li>
                   </ul>
@@ -148,11 +139,6 @@
                   </a>
                 </li>
                 <li class="bitex-hide-if-logged">
-                  <a data-switch-view="ranking" href="#ranking" title="Ranking">
-                    <i class="icon-star"></i> Ranking
-                  </a>
-                </li>
-                <li class="bitex-hide-if-logged">
                   <a data-switch-view="signup" href="#signup" title="Signup">
                     <i class="icon-signin"></i> Signup
                   </a>
@@ -166,7 +152,7 @@
               <ul class="head__nav-right">
                 <li class="bitex-hide-if-logged">
                   <a data-switch-view="signin" href="#signin" title="Login">
-                    <i class="icon-power-off"></i> Login
+                    <i class="icon-power-off"></i> Sigin
                   </a>
                   <button id="id_button_connect_ws" class="btn bitex-hide-if-ws-connected btn-link">
                     Connect <i class="icon-white icon-repeat"></i>
@@ -202,7 +188,7 @@
 <!-- .wrapper -->
 <div class="wrapper">
   <!-- #start -->
-  <div id="start"  class="bitex-view">
+  <div id="start"  class="bitex-view bitex-view-admin">
     <!-- .main -->
     <div class="main bitex-view-content">
       <!-- .home -->
@@ -1143,8 +1129,9 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
     <div class="wrapper">
       <p>
         
+        <a href="" data-switch-view="admin">admin</a> |
         Latency: <span class="bitex-model" data-model-key="latency">0</span> ms |
-        Version: 59a53b3 |
+        Version: 6614df5 |
         
         <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
         | <a href="https://github.com/blinktrade/" target="_blank">Proudly 100% open source <span class="bitex-model" data-model-key="JSVersion"></span></a>
