@@ -3,8 +3,10 @@
     <channel>
         <title>Blinktrade</title>
         <description>Blinktrade demonstration exchange</description>
-        <link>https://pinhopro.github.io/</link>
-        <atom:link href="https://pinhopro.github.io/feed.xml" rel="self" type="application/rss+xml" />
+        <link>//localhost:4000/</link>
+        <atom:link href="//localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+
         
+
     </channel>
 </rss>
