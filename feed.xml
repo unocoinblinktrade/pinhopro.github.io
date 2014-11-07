@@ -8,7 +8,6 @@
 
         
         <item>
-<<<<<<< HEAD
             <title>Faq Can I Keep Track Of All My Past Activity On The Platform</title>
             <description>&lt;hr /&gt;
 &lt;p&gt;layout: post
@@ -111,80 +110,6 @@ categories: en_US blog&lt;/p&gt;
             <pubDate>Thu, 06 Nov 2014 19:17:00 -0500</pubDate>
             <link>https://testnet.blinktrade.com/blog/faq-how-long-does-a-FIAT-deposit-confirmation-take/</link>
             <guid isPermaLink="true">https://testnet.blinktrade.com/blog/faq-how-long-does-a-FIAT-deposit-confirmation-take/</guid>
-=======
-            <title>Welcome to Blinktrade!</title>
-            <description>&lt;p&gt;An open source bitcoin exchange. Start your own bitcoin exchange today.&lt;/p&gt;
-</description>
-            <pubDate>Tue, 04 Nov 2014 19:00:00 -0500</pubDate>
-            <link>https://testnet.blinktrade.com/blog/welcome-to-blinktrade/</link>
-            <guid isPermaLink="true">https://testnet.blinktrade.com/blog/welcome-to-blinktrade/</guid>
-        </item>
-        
-        <item>
-            <title>How do I open my own Bitcoin Exchange?</title>
-            <description>&lt;p&gt;You just need to go to &lt;a href=&quot;http://blinktrade.com/#started&quot;&gt;blinktrade&lt;/a&gt; and click on  “Apply to be a partner” section and fill out the form.&lt;/p&gt;
-</description>
-            <pubDate>Fri, 31 Oct 2014 20:06:00 -0400</pubDate>
-            <link>https://testnet.blinktrade.com/blog/faq-how-do-i-open-my-own-bitcoin-exchange/</link>
-            <guid isPermaLink="true">https://testnet.blinktrade.com/blog/faq-how-do-i-open-my-own-bitcoin-exchange/</guid>
-        </item>
-        
-        <item>
-            <title>What is the relationship between the exchange and Blinktrade? </title>
-            <description>&lt;p&gt;Blinktrade is the technology provider.&lt;/p&gt;
-
-&lt;p&gt;The exchange operator hire the service of blinktrade.&lt;/p&gt;
-
-&lt;p&gt;Blinktrade only provides IT services for the exchange operator.&lt;/p&gt;
-
-&lt;p&gt;The exchange operator is de facto the company operating the exchange. By operating we means: Accepting deposits, Processing withdrawals, verifiying customers identities and allowing customers to trade safely.&lt;/p&gt;
-</description>
-            <pubDate>Fri, 31 Oct 2014 20:05:00 -0400</pubDate>
-            <link>https://testnet.blinktrade.com/blog/faq-what-is-the-relationship-between-the-exchange-and-blinktrade/</link>
-            <guid isPermaLink="true">https://testnet.blinktrade.com/blog/faq-what-is-the-relationship-between-the-exchange-and-blinktrade/</guid>
-        </item>
-        
-        <item>
-            <title>Does the exchange buy/sell bitcoin directly?</title>
-            <description>&lt;p&gt;No. We are providing a service. Think on the exchange like eBay, we are just providing a service where you can find buyers or sellers.&lt;/p&gt;
-
-&lt;p&gt;All we do is provide a safe and simple environment to trade with other users, that is all.&lt;/p&gt;
-
-&lt;p&gt;We guarantee that buyers get their bitcoins and sellers get their money at agreed price.&lt;/p&gt;
-</description>
-            <pubDate>Fri, 31 Oct 2014 20:04:00 -0400</pubDate>
-            <link>https://testnet.blinktrade.com/blog/faq-does-the-exchange-buy-or-sell-bitcoins-directly/</link>
-            <guid isPermaLink="true">https://testnet.blinktrade.com/blog/faq-does-the-exchange-buy-or-sell-bitcoins-directly/</guid>
-        </item>
-        
-        <item>
-            <title>How does a bitcoin exchange works?</title>
-            <description>&lt;p&gt;SurBitcoin allow buyers deposit Venezuelans Bolivares and sellers deposit Bitcoins. SurBitcoin then allows buyers transact with sellers.&lt;/p&gt;
-
-</description>
-            <pubDate>Fri, 31 Oct 2014 20:03:00 -0400</pubDate>
-            <link>https://testnet.blinktrade.com/blog/faq-how-does-a-bitcoin-exchange-works/</link>
-            <guid isPermaLink="true">https://testnet.blinktrade.com/blog/faq-how-does-a-bitcoin-exchange-works/</guid>
-        </item>
-        
-        <item>
-            <title>What is a Bitcoin Exchange?</title>
-            <description>&lt;p&gt;It is just a marketplace, where people interested in buying bitcoins find sellers interested in selling their bitcoins and vice-versa.&lt;/p&gt;
-</description>
-            <pubDate>Fri, 31 Oct 2014 20:02:00 -0400</pubDate>
-            <link>https://testnet.blinktrade.com/blog/faq-what-is-a-bitcoin-exchange/</link>
-            <guid isPermaLink="true">https://testnet.blinktrade.com/blog/faq-what-is-a-bitcoin-exchange/</guid>
-        </item>
-        
-        <item>
-            <title>What is Bitcoin?</title>
-            <description>&lt;p&gt;Bitcoin is a open source P2P digital network created in 2009 by pseudonymous author Satoshi Nakamoto. The protocol allows the user to send, store and receive value at a significant low cost and in a short matter of time. Bitcoin avoids the need for central authorities and issuers.&lt;/p&gt;
-
-</description>
-            <pubDate>Fri, 31 Oct 2014 20:01:00 -0400</pubDate>
-            <link>https://testnet.blinktrade.com/blog/faq-what-is-bitcoin/</link>
-            <guid isPermaLink="true">https://testnet.blinktrade.com/blog/faq-what-is-bitcoin/</guid>
->>>>>>> e506eb89942df858aa276ceab2c1845beb8fe2e3
         </item>
         
 
