@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title></title>
-        <description></description>
+        <title>Blinktrade</title>
+        <description>Blinktrade demonstration exchange</description>
         <link>https://testnet.blinktrade.com/</link>
         <atom:link href="https://testnet.blinktrade.com/feed.xml" rel="self" type="application/rss+xml" />
 
@@ -18,8 +18,8 @@ categories: en_US blog&lt;/p&gt;
 &lt;p&gt;Yes. On the main menu go to “ledger” where a record of all the transactions is kept. You can also check your history of deposits and withdrawals by going to the main menu and clicking either on “deposits” or “withdrawals”.&lt;/p&gt;
 </description>
             <pubDate>Fri, 07 Nov 2014 00:00:00 -0500</pubDate>
-            <link>https://testnet.blinktrade.com/post/faq-can-I-keep-track-of-all-my-past-activity-on-the-platform/</link>
-            <guid isPermaLink="true">https://testnet.blinktrade.com/post/faq-can-I-keep-track-of-all-my-past-activity-on-the-platform/</guid>
+            <link>https://testnet.blinktrade.com/blog/faq-can-I-keep-track-of-all-my-past-activity-on-the-platform/</link>
+            <guid isPermaLink="true">https://testnet.blinktrade.com/blog/faq-can-I-keep-track-of-all-my-past-activity-on-the-platform/</guid>
         </item>
         
         <item>
@@ -34,43 +34,8 @@ categories: en_US blog&lt;/p&gt;
 
 </description>
             <pubDate>Fri, 07 Nov 2014 00:00:00 -0500</pubDate>
-            <link>https://testnet.blinktrade.com/post/faq-can-I-audit-the-balance-of-the-wallets-of-the-exchange/</link>
-            <guid isPermaLink="true">https://testnet.blinktrade.com/post/faq-can-I-audit-the-balance-of-the-wallets-of-the-exchange/</guid>
-        </item>
-        
-        <item>
-            <title>Hours of operation</title>
-            <description>&lt;p&gt;Trading: 24 hours / 7 days
-Helpdesk: Monday to Friday 9 AM - 6 PM (GMT -5)&lt;/p&gt;
-</description>
-            <pubDate>Thu, 06 Nov 2014 19:29:00 -0500</pubDate>
-            <link>https://testnet.blinktrade.com/post/faq-hours-of-operation/</link>
-            <guid isPermaLink="true">https://testnet.blinktrade.com/post/faq-hours-of-operation/</guid>
-        </item>
-        
-        <item>
-            <title>Why are the user names shown in the order book?</title>
-            <description>&lt;p&gt;We assign a random name for every single account. The name looks like something like this:  Rhino_899009&lt;/p&gt;
-
-&lt;p&gt;So, instead of publishing the actual name of the user, we are publishing a random name.&lt;/p&gt;
-
-&lt;p&gt;This protects the user’s privacy as long as he doesn’t reveal the link between his real name and the randomly generated name. It is the user’s responsibility to protect his own privacy.&lt;/p&gt;
-
-&lt;p&gt;Why are we not hiding all the information, including the random name?&lt;/p&gt;
-
-&lt;p&gt;There are a lot of reasons behind this. I will name the most important:&lt;/p&gt;
-
-&lt;p&gt;1 - This avoids market manipulations, like FrontRunning, PumpAndDump, and other manipulations. You can try, but people would catch you instantly and would not follow the manipulators.  Essentially, the market manipulators would lose their money because people would be able to catch the manipulation very easily.&lt;/p&gt;
-
-&lt;p&gt;2 - Help to build reputation, remember, in case of a government BAN on bitcoins, we will turn surbitcoin into a P2P market, therefore, reputation will be extremely important.&lt;/p&gt;
-
-&lt;p&gt;3 - It allows users to audit the “exchange operator”. This will help SurBitcoin operators to prove its solvency to the public without a need of an auditor who can be easily bought.&lt;/p&gt;
-
-&lt;p&gt;I understand that most of the exchanges today don’t publish this, that is why we see a lot of market manipulations out there, and also a lot of scammers who just want to rob bitcoins from their customers (I am not talking about the big exchanges, I am talking about a lot of small bitcoin exchanges that already closed their doors because they claimed they were hacked)&lt;/p&gt;
-</description>
-            <pubDate>Thu, 06 Nov 2014 19:28:00 -0500</pubDate>
-            <link>https://testnet.blinktrade.com/post/faq-why-are-the-user-names-shown-in-the-order-book/</link>
-            <guid isPermaLink="true">https://testnet.blinktrade.com/post/faq-why-are-the-user-names-shown-in-the-order-book/</guid>
+            <link>https://testnet.blinktrade.com/blog/faq-can-I-audit-the-balance-of-the-wallets-of-the-exchange/</link>
+            <guid isPermaLink="true">https://testnet.blinktrade.com/blog/faq-can-I-audit-the-balance-of-the-wallets-of-the-exchange/</guid>
         </item>
         
         <item>
@@ -80,8 +45,8 @@ Helpdesk: Monday to Friday 9 AM - 6 PM (GMT -5)&lt;/p&gt;
 &lt;p&gt;All the necessary bank information will pop up in a new window when you request a deposit order on the main menu.&lt;/p&gt;
 </description>
             <pubDate>Thu, 06 Nov 2014 19:24:00 -0500</pubDate>
-            <link>https://testnet.blinktrade.com/post/faq-where-is-your-bank-account-information/</link>
-            <guid isPermaLink="true">https://testnet.blinktrade.com/post/faq-where-is-your-bank-account-information/</guid>
+            <link>https://testnet.blinktrade.com/blog/faq-where-is-your-bank-account-information/</link>
+            <guid isPermaLink="true">https://testnet.blinktrade.com/blog/faq-where-is-your-bank-account-information/</guid>
         </item>
         
         <item>
@@ -89,8 +54,8 @@ Helpdesk: Monday to Friday 9 AM - 6 PM (GMT -5)&lt;/p&gt;
             <description>&lt;p&gt;In both cases of withdrawing FIAT or BTC the fees are on the trader’s side. FIAT fees are established by the broker. BTC fees are established by the blockchain.&lt;/p&gt;
 </description>
             <pubDate>Thu, 06 Nov 2014 19:23:00 -0500</pubDate>
-            <link>https://testnet.blinktrade.com/post/faq-who-pays-the-withdrawal-fee/</link>
-            <guid isPermaLink="true">https://testnet.blinktrade.com/post/faq-who-pays-the-withdrawal-fee/</guid>
+            <link>https://testnet.blinktrade.com/blog/faq-who-pays-the-withdrawal-fee/</link>
+            <guid isPermaLink="true">https://testnet.blinktrade.com/blog/faq-who-pays-the-withdrawal-fee/</guid>
         </item>
         
         <item>
@@ -98,8 +63,8 @@ Helpdesk: Monday to Friday 9 AM - 6 PM (GMT -5)&lt;/p&gt;
             <description>&lt;p&gt;As in the same case for depositing BTC, withdraw timing is subject to the speed of the blockchain network to confirm that specific transaction.&lt;/p&gt;
 </description>
             <pubDate>Thu, 06 Nov 2014 19:22:00 -0500</pubDate>
-            <link>https://testnet.blinktrade.com/post/faq-how-long-does-a-BTC-withdrawal-take/</link>
-            <guid isPermaLink="true">https://testnet.blinktrade.com/post/faq-how-long-does-a-BTC-withdrawal-take/</guid>
+            <link>https://testnet.blinktrade.com/blog/faq-how-long-does-a-BTC-withdrawal-take/</link>
+            <guid isPermaLink="true">https://testnet.blinktrade.com/blog/faq-how-long-does-a-BTC-withdrawal-take/</guid>
         </item>
         
         <item>
@@ -107,8 +72,8 @@ Helpdesk: Monday to Friday 9 AM - 6 PM (GMT -5)&lt;/p&gt;
             <description>&lt;p&gt;It should not take any longer than 24 hours. However, in periods of high activity the broker may take longer to transact the withdraw.&lt;/p&gt;
 </description>
             <pubDate>Thu, 06 Nov 2014 19:21:00 -0500</pubDate>
-            <link>https://testnet.blinktrade.com/post/faq-how-long-does-a-FIAT-withdrawal-take/</link>
-            <guid isPermaLink="true">https://testnet.blinktrade.com/post/faq-how-long-does-a-FIAT-withdrawal-take/</guid>
+            <link>https://testnet.blinktrade.com/blog/faq-how-long-does-a-FIAT-withdrawal-take/</link>
+            <guid isPermaLink="true">https://testnet.blinktrade.com/blog/faq-how-long-does-a-FIAT-withdrawal-take/</guid>
         </item>
         
         <item>
@@ -116,8 +81,8 @@ Helpdesk: Monday to Friday 9 AM - 6 PM (GMT -5)&lt;/p&gt;
             <description>&lt;p&gt;Yes. Users are able to deposit money from third party bank accounts as long as they provide a valid form of id and authentication.&lt;/p&gt;
 </description>
             <pubDate>Thu, 06 Nov 2014 19:20:00 -0500</pubDate>
-            <link>https://testnet.blinktrade.com/post/faq-can-I-deposit-funds-from-a-bank-account-other-than-my-own/</link>
-            <guid isPermaLink="true">https://testnet.blinktrade.com/post/faq-can-I-deposit-funds-from-a-bank-account-other-than-my-own/</guid>
+            <link>https://testnet.blinktrade.com/blog/faq-can-I-deposit-funds-from-a-bank-account-other-than-my-own/</link>
+            <guid isPermaLink="true">https://testnet.blinktrade.com/blog/faq-can-I-deposit-funds-from-a-bank-account-other-than-my-own/</guid>
         </item>
         
         <item>
@@ -125,8 +90,26 @@ Helpdesk: Monday to Friday 9 AM - 6 PM (GMT -5)&lt;/p&gt;
             <description>&lt;p&gt;It’s a feature of the exchange that enables trusted and verified users to start trading even though the FIAT deposit hasn’t still been verified by the broker. The account of the user gets credited without the need of waiting for deposit confirmations.&lt;/p&gt;
 </description>
             <pubDate>Thu, 06 Nov 2014 19:19:00 -0500</pubDate>
-            <link>https://testnet.blinktrade.com/post/faq-what-is-the-instant-deposit-mode/</link>
-            <guid isPermaLink="true">https://testnet.blinktrade.com/post/faq-what-is-the-instant-deposit-mode/</guid>
+            <link>https://testnet.blinktrade.com/blog/faq-what-is-the-instant-deposit-mode/</link>
+            <guid isPermaLink="true">https://testnet.blinktrade.com/blog/faq-what-is-the-instant-deposit-mode/</guid>
+        </item>
+        
+        <item>
+            <title>How long does a BTC deposit take?</title>
+            <description>&lt;p&gt;As long as the blockchain network takes to confirm the transaction. Usually no longer than 10 minutes.  For deposits higher than 2 BTC, we require 3 confirmations that can take up to 30 minutes. And for amounts higher than 10 BTC, we require of 6 confirmations that can take up to 60 minutes.&lt;/p&gt;
+</description>
+            <pubDate>Thu, 06 Nov 2014 19:18:00 -0500</pubDate>
+            <link>https://testnet.blinktrade.com/blog/faq-how-long-does-a-BTC-deposit-take/</link>
+            <guid isPermaLink="true">https://testnet.blinktrade.com/blog/faq-how-long-does-a-BTC-deposit-take/</guid>
+        </item>
+        
+        <item>
+            <title>How long does a FIAT deposit confirmation take?</title>
+            <description>&lt;p&gt;If you perform the deposit from an account of the same bank used by the exchange the confirmation will be made within 24 hours. If you do the deposit from a different bank in the country/region, the confirmation can take as long as 48 hours.&lt;/p&gt;
+</description>
+            <pubDate>Thu, 06 Nov 2014 19:17:00 -0500</pubDate>
+            <link>https://testnet.blinktrade.com/blog/faq-how-long-does-a-FIAT-deposit-confirmation-take/</link>
+            <guid isPermaLink="true">https://testnet.blinktrade.com/blog/faq-how-long-does-a-FIAT-deposit-confirmation-take/</guid>
         </item>
         
 
