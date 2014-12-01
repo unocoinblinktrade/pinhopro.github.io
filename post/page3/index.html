@@ -41,8 +41,8 @@
     <link href="https://testnet.blinktrade.com/assets/themes/default/css/Dialog.css" rel="stylesheet">
     <link href="https://testnet.blinktrade.com/assets/themes/default/css/fuelux.css" rel="stylesheet">
     <link href="https://testnet.blinktrade.com/assets/themes/default/css/default.uni-form.css" rel="stylesheet">
-    <link href="https://testnet.blinktrade.com/assets/themes/default/css/style.css?v=748c7ea" rel="stylesheet">
-    <script data-cfasync="false" src="https://testnet.blinktrade.com/assets/js/bitex_app_blink_trade.compiled.en_US.default.js?v=748c7ea" type="text/javascript"></script>
+    <link href="https://testnet.blinktrade.com/assets/themes/default/css/style.css?v=b0dae5f" rel="stylesheet">
+    <script data-cfasync="false" src="https://testnet.blinktrade.com/assets/js/bitex_app_blink_trade.compiled.en_US.default.js?v=b0dae5f" type="text/javascript"></script>
     
   </head>
   <body class=" ws-not-connected bitex-not-logged active-view-start ">
@@ -633,6 +633,14 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
         </div>
       </div>
 
+      <div id="algotrading" class="bitex-view">
+        <div class="section-title">
+          <h3 class="bitex-view-title">Algorithm Trading</h3>
+        </div>
+        <div class="bitex-view-content"></div>
+      </div>
+
+
       <div id="offerbook" class="bitex-view">
         <div class="section-title">
           <h3 class="bitex-view-title">Order Book</h3>
@@ -732,6 +740,9 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
         </div>
       </div>
 
+
+
+
       <div id="settings" class="bitex-view">
         <div class="section-title">
           <h3 class="bitex-view-title">Settings</h3>
@@ -791,6 +802,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
                                                 bitex-view-deposit_requests
                                                 bitex-view-ledger
                                                 bitex-view-settings
+                                                bitex-view-algotrading
                                                 bitex-view-my_broker
                                                 bitex-view-verification">
       <h3><span class="bitex-model bitex-view-title" data-model-key="DisplayName"></span>
@@ -829,6 +841,10 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
               <i data-switch-view="offerbook" class="icon-book"></i> Order book</a>
           </li>
 
+          <li style="">
+            <a href="" data-switch-view="algotrading">
+              <i data-switch-view="algotrading" class="icon-cog"></i> Algo Trading</a>
+          </li>
 
           <li style="">
             <a href="" data-switch-view="ledger">
@@ -900,7 +916,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
           
           <a href="" data-switch-view="admin">admin</a> |
           Latency: <span class="bitex-model" data-model-key="latency">0</span> ms |
-          Version: 748c7ea |
+          Version: b0dae5f |
           
           <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
           | <a href="https://github.com/blinktrade/" target="_blank">Proudly 100% open source <span class="bitex-model" data-model-key="JSVersion"></span></a>

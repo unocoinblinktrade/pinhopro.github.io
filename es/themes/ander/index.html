@@ -38,9 +38,9 @@
   
   <!--link href="/assets/themes/default/css/Dialog.css" rel="stylesheet"-->
   <link href="https://testnet.blinktrade.com/es/assets/themes/default/css/fuelux.css" rel="stylesheet">
-  <link href="https://testnet.blinktrade.com/es/assets/themes/default/css/style-new.css?v=748c7ea" rel="stylesheet">
-  <link href="https://testnet.blinktrade.com/es/assets/themes/ander/css/blinktrade.css?v=748c7ea" rel="stylesheet">
-  <script data-cfasync="false" src="https://testnet.blinktrade.com/es/assets/js/bitex_app_blink_trade.compiled.es.ander.js?v=748c7ea" type="text/javascript"></script>
+  <link href="https://testnet.blinktrade.com/es/assets/themes/default/css/style-new.css?v=b0dae5f" rel="stylesheet">
+  <link href="https://testnet.blinktrade.com/es/assets/themes/ander/css/blinktrade.css?v=b0dae5f" rel="stylesheet">
+  <script data-cfasync="false" src="https://testnet.blinktrade.com/es/assets/js/bitex_app_blink_trade.compiled.es.ander.js?v=b0dae5f" type="text/javascript"></script>
   
 </head>
 <body class=" ws-not-connected bitex-not-logged active-view-start ">
@@ -147,22 +147,28 @@
                   </a>
                 </li>
                 <li class="bitex-display-if-logged">
-                  <a href="#trading" title="Buy or Sell" data-switch-view="trading">
+                  <a href="#trading" title="Comprar o Vender" data-switch-view="trading">
                     <i class="icon-random"></i> Comprar o Vender
                   </a>
                 </li>
                 <li class="bitex-display-if-logged">
-                  <a href="#ledger" title="Ledger" data-switch-view="ledger">
+                  <a href="#algotrading" title="Algo Trading" data-switch-view="algotrading">
+                    <i class="icon-cog"></i> Algo Trading
+                  </a>
+                </li>
+
+                <li class="bitex-display-if-logged">
+                  <a href="#ledger" title="Livro de cuentas" data-switch-view="ledger">
                     <i class="icon-list"></i> Livro de cuentas
                   </a>
                 </li>
                 <li>
-                  <a data-switch-view="market" href="#market" title="Market">
+                  <a data-switch-view="market" href="#market" title="Mercado">
                     <i class="icon-bar-chart"></i> Mercado
                   </a>
                 </li>
                 <li class="bitex-hide-if-logged">
-                  <a data-switch-view="signup" href="#signup" title="Signup">
+                  <a data-switch-view="signup" href="#signup" title="Registrarse">
                     <i class="icon-signin"></i> Registrarse
                   </a>
                 </li>
@@ -201,7 +207,7 @@
                 </li>
 
                 <li class="head__nav-last-item bitex-hide-if-logged">
-                  <a data-switch-view="signin" href="#signin" title="Login">
+                  <a data-switch-view="signin" href="#signin" title="Ingressar">
                     <i class="icon-power-off"></i> Ingressar
                   </a>
                 </li>
@@ -980,6 +986,7 @@ También podrá revisar su historial de depósitos y retiros median</p>
                                               bitex-view-deposit_requests
                                               bitex-view-ledger
                                               bitex-view-settings
+                                              bitex-view-algotrading
                                               bitex-view-my_broker
                                               bitex-view-verification">
                 <!-- .sidebar__head -->
@@ -1169,6 +1176,22 @@ También podrá revisar su historial de depósitos y retiros median</p>
             <!-- /.page__body -->
           </div>
           <!-- /#trading -->
+
+          <!-- #algotrading -->
+          <div id="algotrading" class="bitex-view">
+            <!-- .page__head -->
+            <header class="page__head section-title">
+              <h1 class="page__title beta bitex-view-title">Algorithm Trading</h1>
+            </header>
+            <!-- /.page__head -->
+
+            <!-- .page__body -->
+            <div class="page__body bitex-view-content">
+            </div>
+            <!-- /.page__body -->
+          </div>
+          <!-- /#algotrading -->
+
 
           <!-- #ledger -->
           <div id="ledger" class="bitex-view">
@@ -1430,7 +1453,7 @@ También podrá revisar su historial de depósitos y retiros median</p>
         
         <a href="" data-switch-view="admin">admin</a> |
         Latency: <span class="bitex-model" data-model-key="latency">0</span> ms |
-        Version: 748c7ea |
+        Version: b0dae5f |
         
         <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
         | <a href="https://github.com/blinktrade/" target="_blank">Proudly 100% open source <span class="bitex-model" data-model-key="JSVersion"></span></a>
