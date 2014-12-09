@@ -3,130 +3,116 @@
     <channel>
         <title></title>
         <description></description>
-        <link>https://testnet.blinktrade.com/</link>
-        <atom:link href="https://testnet.blinktrade.com/feed.xml" rel="self" type="application/rss+xml" />
+        <link>https://www.surbitcoin.com/</link>
+        <atom:link href="https://www.surbitcoin.com/feed.xml" rel="self" type="application/rss+xml" />
 
         
         <item>
-            <title>Faq Can I Keep Track Of All My Past Activity On The Platform</title>
-            <description>&lt;hr /&gt;
-&lt;p&gt;layout: post
-title:  “Can I keep track of all my past activity in the platform?”
-date:   2014-11-07 00:26:00
-categories: en_US blog&lt;/p&gt;
+            <title>¿Porque se publica el nombre de usuario en el libro de ordenes?</title>
+            <description>&lt;p&gt;Asignamos un nombre aleatorio para cada cuenta individual. El nombre puede ser algo así como: Rhino_899009&lt;/p&gt;
 
-&lt;p&gt;Yes. On the main menu go to “ledger” where a record of all the transactions is kept. You can also check your history of deposits and withdrawals by going to the main menu and clicking either on “deposits” or “withdrawals”.&lt;/p&gt;
+&lt;p&gt;Así, en lugar de publicar la identidad real del usuario, estamos publicando un nombre ficticio.&lt;/p&gt;
+
+&lt;p&gt;Esto protege la privacidad, siempre y cuando el usuario no haga publico el vinculo entre su nombre real y el nombre aleatorio. Es responsabilidad del usuario la proteccion de su identidad.&lt;/p&gt;
+
+&lt;p&gt;¿Por qué no se oculta toda la información, incluyendo el nombre aleatorio?&lt;/p&gt;
+
+&lt;p&gt;Hay varias razones detrás de esto. Nombraremos las más importantes:&lt;/p&gt;
+
+&lt;p&gt;1 - Esto evita manipulaciones en el mercado, como pueden ser el front running, Pump And Dump, u otras manipulaciones. Ante cualquier tentativa de manupulacion, los demas participantes pueden identificar al manipulador facilmente.&lt;/p&gt;
+
+&lt;p&gt;2 - Ayuda a construir la reputación del usuario, recuerda, en caso de una prohibición gubernamental de bitcoins, giraremos surbitcoin a un mercado de P2P, por lo tanto, la reputación será muy importante.&lt;/p&gt;
+
+&lt;p&gt;3 - Permite a los usuarios auditar al operador del exchange. Esto ayudará a los operadores de SurBitcoin demostrar su solvencia al público ademas de no tener que contratar los servicios de un auditor que pueda manipular facilmente las cuentas.&lt;/p&gt;
+
+&lt;p&gt;Entendemos que la mayoría de las bolsas, a dia de hoy, no publican este tipo de contenido. Es por eso que constantemente estan surgiendo casos de manupulacion en el mercado y de estafadores cuyo unico interes es apoderarse de los bitcoins de sus clientes (en este caso no estamos hablando de los grandes exchanges, sino de una gran cantidad de pequeños exchanges que ya han cerrado sus puertas, declarando haber sido “hackeados”)&lt;/p&gt;
 </description>
-            <pubDate>Fri, 07 Nov 2014 00:00:00 -0500</pubDate>
-            <link>https://testnet.blinktrade.com/post/faq-can-I-keep-track-of-all-my-past-activity-on-the-platform/</link>
-            <guid isPermaLink="true">https://testnet.blinktrade.com/post/faq-can-I-keep-track-of-all-my-past-activity-on-the-platform/</guid>
+            <pubDate>Sun, 09 Nov 2014 19:30:00 -0500</pubDate>
+            <link>https://www.surbitcoin.com/post/faq-porque-se-publica-el-nombre-de-usuario-en-el-libro-de-ordenes/</link>
+            <guid isPermaLink="true">https://www.surbitcoin.com/post/faq-porque-se-publica-el-nombre-de-usuario-en-el-libro-de-ordenes/</guid>
         </item>
         
         <item>
-            <title>Faq Can I Audit The Balance Of The Wallets Of The Exchange</title>
-            <description>&lt;hr /&gt;
-&lt;p&gt;layout: post
-title:  “Can I audit the balance of the wallets of the exchange?”
-date:   2014-11-07 00:25:00
-categories: en_US blog&lt;/p&gt;
-
-&lt;p&gt;Yes. Both public keys for the hot and cold wallets are available for auditing. All you have to do is go to blockchain.info and enter the adress you want to check out.&lt;/p&gt;
-
-</description>
-            <pubDate>Fri, 07 Nov 2014 00:00:00 -0500</pubDate>
-            <link>https://testnet.blinktrade.com/post/faq-can-I-audit-the-balance-of-the-wallets-of-the-exchange/</link>
-            <guid isPermaLink="true">https://testnet.blinktrade.com/post/faq-can-I-audit-the-balance-of-the-wallets-of-the-exchange/</guid>
-        </item>
-        
-        <item>
-            <title>Hours of operation</title>
-            <description>&lt;p&gt;Trading: 24 hours / 7 days
-Helpdesk: Monday to Friday 9 AM - 6 PM (GMT -5)&lt;/p&gt;
+            <title>¿Que alternativa hay al uso del libro de ordenes?</title>
+            <description>&lt;p&gt;Para aquellos usuarios que no estén familiarizados con la operativa de un libro de órdenes la alternativa es utilizar la opción de comprar a precio de mercado. Esta opción la encontrarán dirigiéndose a “buy or sell”  en el menú principal y solo tendrán que especificar la cantidad de bitcoins que desean comprar o vender.&lt;/p&gt;
 </description>
             <pubDate>Thu, 06 Nov 2014 19:29:00 -0500</pubDate>
-            <link>https://testnet.blinktrade.com/post/faq-hours-of-operation/</link>
-            <guid isPermaLink="true">https://testnet.blinktrade.com/post/faq-hours-of-operation/</guid>
+            <link>https://www.surbitcoin.com/post/faq-que-alternativa-hay-al-uso-del-libro-de-ordenes/</link>
+            <guid isPermaLink="true">https://www.surbitcoin.com/post/faq-que-alternativa-hay-al-uso-del-libro-de-ordenes/</guid>
         </item>
         
         <item>
-            <title>Why are the user names shown in the order book?</title>
-            <description>&lt;p&gt;We assign a random name for every single account. The name looks like something like this:  Rhino_899009&lt;/p&gt;
-
-&lt;p&gt;So, instead of publishing the actual name of the user, we are publishing a random name.&lt;/p&gt;
-
-&lt;p&gt;This protects the user’s privacy as long as he doesn’t reveal the link between his real name and the randomly generated name. It is the user’s responsibility to protect his own privacy.&lt;/p&gt;
-
-&lt;p&gt;Why are we not hiding all the information, including the random name?&lt;/p&gt;
-
-&lt;p&gt;There are a lot of reasons behind this. I will name the most important:&lt;/p&gt;
-
-&lt;p&gt;1 - This avoids market manipulations, like FrontRunning, PumpAndDump, and other manipulations. You can try, but people would catch you instantly and would not follow the manipulators.  Essentially, the market manipulators would lose their money because people would be able to catch the manipulation very easily.&lt;/p&gt;
-
-&lt;p&gt;2 - Help to build reputation, remember, in case of a government BAN on bitcoins, we will turn surbitcoin into a P2P market, therefore, reputation will be extremely important.&lt;/p&gt;
-
-&lt;p&gt;3 - It allows users to audit the “exchange operator”. This will help SurBitcoin operators to prove its solvency to the public without a need of an auditor who can be easily bought.&lt;/p&gt;
-
-&lt;p&gt;I understand that most of the exchanges today don’t publish this, that is why we see a lot of market manipulations out there, and also a lot of scammers who just want to rob bitcoins from their customers (I am not talking about the big exchanges, I am talking about a lot of small bitcoin exchanges that already closed their doors because they claimed they were hacked)&lt;/p&gt;
+            <title>¿Porque no poseo la llave privada de mi cartera en el exchange?</title>
+            <description>&lt;p&gt;Nuestro principio es que los bitcoins hay que depositarlos en el exchange con el fin de intercambiarlos por FIAT. En consecuencia, para garantizar la seguridad y la rapidez en la transacción, el exchange mantiene la posesión de los depósitos tanto en FIAT como en BTC.&lt;/p&gt;
 </description>
             <pubDate>Thu, 06 Nov 2014 19:28:00 -0500</pubDate>
-            <link>https://testnet.blinktrade.com/post/faq-why-are-the-user-names-shown-in-the-order-book/</link>
-            <guid isPermaLink="true">https://testnet.blinktrade.com/post/faq-why-are-the-user-names-shown-in-the-order-book/</guid>
+            <link>https://www.surbitcoin.com/post/faq-porque-no-poseo-la-llave-privada-de-mi-cartera-en-el-exchange/</link>
+            <guid isPermaLink="true">https://www.surbitcoin.com/post/faq-porque-no-poseo-la-llave-privada-de-mi-cartera-en-el-exchange/</guid>
         </item>
         
         <item>
-            <title>Where is your bank account information?</title>
-            <description>&lt;p&gt;In order to be able to deposit funds into the exchange, the operator team has to verify your bank account. Once that process has been made you can deposit your funds.&lt;/p&gt;
-
-&lt;p&gt;All the necessary bank information will pop up in a new window when you request a deposit order on the main menu.&lt;/p&gt;
+            <title>¿Como desactivar mi cuenta en el exchange?</title>
+            <description>&lt;p&gt;Para desactivar su cuenta del exchange diríjase a “Mi cuenta” y seleccione “Preferencias” en el menú principal. Haga click a “desactivar mi cuenta” y proceda.&lt;/p&gt;
+</description>
+            <pubDate>Thu, 06 Nov 2014 19:27:00 -0500</pubDate>
+            <link>https://www.surbitcoin.com/post/faq-como-desactivar-mi-cuenta-en-el-exchange/</link>
+            <guid isPermaLink="true">https://www.surbitcoin.com/post/faq-como-desactivar-mi-cuenta-en-el-exchange/</guid>
+        </item>
+        
+        <item>
+            <title>¿Puedo mantener un registro de toda mi actividad en la plataforma?</title>
+            <description>&lt;p&gt;Si. En el menú principal vaya a “libro registro” donde hay un registro de todas las transacciones llevadas a cabo por el usuario.
+También podrá revisar su historial de depósitos y retiros median&lt;/p&gt;
+</description>
+            <pubDate>Thu, 06 Nov 2014 19:26:00 -0500</pubDate>
+            <link>https://www.surbitcoin.com/post/faq-puedo-mantener-un-registro-de-toda-mi-actividad-en-la-plataforma/</link>
+            <guid isPermaLink="true">https://www.surbitcoin.com/post/faq-puedo-mantener-un-registro-de-toda-mi-actividad-en-la-plataforma/</guid>
+        </item>
+        
+        <item>
+            <title>¿Pueden auditarse las direciones de almacenamiento de BTC?</title>
+            <description>&lt;p&gt;Si. Tanto la clave pública de almacenamiento en frío como la del almacenamiento en caliente se pueden auditar. Lo único que tendrá que hacer será dirigirse al blockchain e introducir la dirección que usted desee verificar.&lt;/p&gt;
+</description>
+            <pubDate>Thu, 06 Nov 2014 19:25:00 -0500</pubDate>
+            <link>https://www.surbitcoin.com/post/faq-pueden-auditarse-las-direcciones-de-almacenamiento-de-BTC/</link>
+            <guid isPermaLink="true">https://www.surbitcoin.com/post/faq-pueden-auditarse-las-direcciones-de-almacenamiento-de-BTC/</guid>
+        </item>
+        
+        <item>
+            <title>¿Donde se puede encontrar la informacion bancaria?</title>
+            <description>&lt;p&gt;Para poder depositar fondos en el exchange, el equipo de la plataforma tiene que verificar su cuenta bancaria. Una vez que este proceso se haya realizado usted podrá depositar sus fondos.
+La información relativa a nuestra cuenta bancaria que usted necesitará le aparecerá en pantalla cuando vaya a procesar una orden de depósito o de retiro.&lt;/p&gt;
 </description>
             <pubDate>Thu, 06 Nov 2014 19:24:00 -0500</pubDate>
-            <link>https://testnet.blinktrade.com/post/faq-where-is-your-bank-account-information/</link>
-            <guid isPermaLink="true">https://testnet.blinktrade.com/post/faq-where-is-your-bank-account-information/</guid>
+            <link>https://www.surbitcoin.com/post/faq-donde-se-puede-encontrar-la-informacion-bancaria/</link>
+            <guid isPermaLink="true">https://www.surbitcoin.com/post/faq-donde-se-puede-encontrar-la-informacion-bancaria/</guid>
         </item>
         
         <item>
-            <title>Who pays the withdrawal fee?</title>
-            <description>&lt;p&gt;In both cases of withdrawing FIAT or BTC the fees are on the trader’s side. FIAT fees are established by the broker. BTC fees are established by the blockchain.&lt;/p&gt;
+            <title>¿Quien paga las tasas de retiro?</title>
+            <description>&lt;p&gt;En cualquiera de los casos las tasas corren a cargo del usuario. Las tasas sobre los retiros en FIAT las establece el bróker. Las tasas sobre los movimientos de BTC son establecidas por la cadena de bloques.&lt;/p&gt;
 </description>
             <pubDate>Thu, 06 Nov 2014 19:23:00 -0500</pubDate>
-            <link>https://testnet.blinktrade.com/post/faq-who-pays-the-withdrawal-fee/</link>
-            <guid isPermaLink="true">https://testnet.blinktrade.com/post/faq-who-pays-the-withdrawal-fee/</guid>
+            <link>https://www.surbitcoin.com/post/faq-quien-paga-las-tasas-de-retiro/</link>
+            <guid isPermaLink="true">https://www.surbitcoin.com/post/faq-quien-paga-las-tasas-de-retiro/</guid>
         </item>
         
         <item>
-            <title>How long does a BTC withdrawal take?</title>
-            <description>&lt;p&gt;As in the same case for depositing BTC, withdraw timing is subject to the speed of the blockchain network to confirm that specific transaction.&lt;/p&gt;
+            <title>¿Cuanto se tarda en retirar FIAT?</title>
+            <description>&lt;p&gt;Al igual que en el caso de depositar BTC. El tiempo para retirarlos depende del tiempo que tarde la cadena de bloques en confirmar esa transacción.&lt;/p&gt;
 </description>
             <pubDate>Thu, 06 Nov 2014 19:22:00 -0500</pubDate>
-            <link>https://testnet.blinktrade.com/post/faq-how-long-does-a-BTC-withdrawal-take/</link>
-            <guid isPermaLink="true">https://testnet.blinktrade.com/post/faq-how-long-does-a-BTC-withdrawal-take/</guid>
+            <link>https://www.surbitcoin.com/post/faq-cuanto-se-tarda-en-retirar-BTC/</link>
+            <guid isPermaLink="true">https://www.surbitcoin.com/post/faq-cuanto-se-tarda-en-retirar-BTC/</guid>
         </item>
         
         <item>
-            <title>How long does a FIAT withdrawal take?</title>
-            <description>&lt;p&gt;It should not take any longer than 24 hours. However, in periods of high activity the broker may take longer to transact the withdraw.&lt;/p&gt;
+            <title>¿Cuanto se tarda en retirar FIAT?</title>
+            <description>&lt;p&gt;No debería tardar más de 24 horas. Aun así, en periodos de mucha actividad el bróker puede tardar algo más en efectuar la transacción.&lt;/p&gt;
 </description>
             <pubDate>Thu, 06 Nov 2014 19:21:00 -0500</pubDate>
-            <link>https://testnet.blinktrade.com/post/faq-how-long-does-a-FIAT-withdrawal-take/</link>
-            <guid isPermaLink="true">https://testnet.blinktrade.com/post/faq-how-long-does-a-FIAT-withdrawal-take/</guid>
-        </item>
-        
-        <item>
-            <title>Can I deposit funds from a bank account other than my own?</title>
-            <description>&lt;p&gt;Yes. Users are able to deposit money from third party bank accounts as long as they provide a valid form of id and authentication.&lt;/p&gt;
-</description>
-            <pubDate>Thu, 06 Nov 2014 19:20:00 -0500</pubDate>
-            <link>https://testnet.blinktrade.com/post/faq-can-I-deposit-funds-from-a-bank-account-other-than-my-own/</link>
-            <guid isPermaLink="true">https://testnet.blinktrade.com/post/faq-can-I-deposit-funds-from-a-bank-account-other-than-my-own/</guid>
-        </item>
-        
-        <item>
-            <title>What is the instant deposit mode?</title>
-            <description>&lt;p&gt;It’s a feature of the exchange that enables trusted and verified users to start trading even though the FIAT deposit hasn’t still been verified by the broker. The account of the user gets credited without the need of waiting for deposit confirmations.&lt;/p&gt;
-</description>
-            <pubDate>Thu, 06 Nov 2014 19:19:00 -0500</pubDate>
-            <link>https://testnet.blinktrade.com/post/faq-what-is-the-instant-deposit-mode/</link>
-            <guid isPermaLink="true">https://testnet.blinktrade.com/post/faq-what-is-the-instant-deposit-mode/</guid>
+            <link>https://www.surbitcoin.com/post/faq-cuanto-se-tarda-en-retirar-FIAT/</link>
+            <guid isPermaLink="true">https://www.surbitcoin.com/post/faq-cuanto-se-tarda-en-retirar-FIAT/</guid>
         </item>
         
 
