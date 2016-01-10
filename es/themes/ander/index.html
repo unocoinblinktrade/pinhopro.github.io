@@ -3,19 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-      <title>BlinkDemo - Demostración de la plataforma de negociación de Bitcoins de blinktrade</title>
   
+  <title> BlinkDemo - Demostración de la plataforma de negociación de Bitcoins de blinktrade </title>
 
   <!-- Meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="BlinkTrade">
 
   
-      <meta name="description" content="Sitio web de demostración de la plataforma de negociación de Bitcoins de blinktrade">
-      <meta name="keywords" content="bitcoin, exchange de bitcoins, mercado de bitcoins, bolsa de bitcoins, open source">
-      <meta property="og:title" content="BlinkDemo - Demostración de la plataforma de negociación de Bitcoins de blinktrade">
-      <meta property="og:description" content="Sitio web de demostración de la plataforma de negociación de Bitcoins de blinktrade">
   
+
+  <meta name="description" content="Sitio web de demostración de la plataforma de negociación de Bitcoins de blinktrade">
+  <meta name="keywords" content="bitcoin, exchange de bitcoins, mercado de bitcoins, bolsa de bitcoins, open source">
+  <meta property="og:title" content="BlinkDemo - Demostración de la plataforma de negociación de Bitcoins de blinktrade">
+  <meta property="og:description" content="Sitio web de demostración de la plataforma de negociación de Bitcoins de blinktrade">
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://testnet.blinktrade.com/es/themes/ander/index.html">
@@ -38,9 +39,9 @@
   
   <!--link href="/assets/themes/default/css/Dialog.css" rel="stylesheet"-->
   <link href="https://testnet.blinktrade.com/es/assets/themes/default/css/fuelux.css" rel="stylesheet">
-  <link href="https://testnet.blinktrade.com/es/assets/themes/default/css/style-new.css?v=4e0e666" rel="stylesheet">
-  <link href="https://testnet.blinktrade.com/es/assets/themes/ander/css/blinktrade.css?v=4e0e666" rel="stylesheet">
-  <script data-cfasync="false" src="https://testnet.blinktrade.com/es/assets/js/bitex_app_blink_trade.compiled.es.ander.js?v=4e0e666" type="text/javascript"></script>
+  <link href="https://testnet.blinktrade.com/es/assets/themes/default/css/style-new.css?v=8a58871" rel="stylesheet">
+  <link href="https://testnet.blinktrade.com/es/assets/themes/ander/css/blinktrade.css?v=8a58871" rel="stylesheet">
+  <script data-cfasync="false" src="https://testnet.blinktrade.com/es/assets/js/bitex_app_blink_trade.compiled.es.ander.js?v=8a58871" type="text/javascript"></script>
   
 </head>
 <body class=" ws-not-connected bitex-not-logged active-view-start ">
@@ -56,11 +57,7 @@
         <!-- .logo -->
         
         <a href="#" class="logo brand-face" data-switch-view="offerbook" style="padding-top: 0px;">
-          <img data-switch-view="offerbook" class="logo__img" src="/es/assets/exchange_logos/demo_toolbar_logo.png" style="
-                height: 30px;
-                margin-top: -10px;
-                margin-bottom: -10px;
-            ">
+          <img data-switch-view="offerbook" class="logo__img" src="/es/assets/exchange_logos/demo_toolbar_logo.png" style="height:30px;margin-top:-10px;margin-bottom:-10px;">
         </a>
         
         <!-- /.logo -->
@@ -273,8 +270,7 @@
         <!-- .home__title -->
         <h1 class="home__title">
           
-              Véase nuestra exchange open source en acción
-          
+          Véase nuestra exchange open source en acción
         </h1>
         <!-- /.home__title -->
 
@@ -291,7 +287,7 @@
               <!-- .layout__item -->
               <div class="layout__item one-whole desk--six-tenths">
                 <label for="id_landing_username" class="home-form__label">Nombre de usuario:</label>
-                <input class="home-form__input input input--large input--full" id="id_landing_username" type="text" size="30">
+                <input class="home-form__input input input--large input--full" id="id_landing_username" type="text" size="30" autofocus>
               </div>
               <!-- /.layout__item -->
 
@@ -841,8 +837,34 @@ También podrá revisar su historial de depósitos y retiros median</p>
   <!-- /#market -->
 
   <!-- /#themes -->
-  <div id="themes" class="bitex-view">
-  
+  <div id="themes" class="bitex-view container page bitex-view" style="display: none">
+    <div class="page__head">
+        <h1 class="page__title beta bitex-view-title">Themes</h1>
+        <p>Choose a Theme</p>
+    </div>
+    <hr>
+    <div class="bitex-view-content">
+        <div class="layout row" style="text-align:center;margin:auto">
+            <div class="layout__item" style="width: 380px">
+                <a href="https://testnet.blinktrade.com/es/themes/default/">
+                    <img src="https://testnet.blinktrade.com/es/assets/exchange_logos/thumb-themes/default-theme.jpg" alt="Default Theme">
+                    <h3>Default Theme</h3>
+                </a>
+            </div>
+            <div class="layout__item" style="width: 380px">
+                <a href="https://testnet.blinktrade.com/es/themes/ander/">
+                    <img src="https://testnet.blinktrade.com/es/assets/exchange_logos/thumb-themes/ander-theme.jpg" alt="Ander Theme">
+                    <h3>Ander</h3>
+                </a>
+            </div>
+            <div class="layout__item" style="width: 380px">
+                <a href="https://testnet.blinktrade.com/es/themes/whitedev/">
+                    <img src="https://testnet.blinktrade.com/es/assets/exchange_logos/thumb-themes/whitedev-theme.jpg" alt="Whitedev Theme">
+                    <h3>Whitedev</h3>
+                </a>
+            </div>
+        </div>
+    </div>
   </div>
   <!-- #themes -->
 
@@ -1517,9 +1539,10 @@ También podrá revisar su historial de depósitos y retiros median</p>
         
         <a href="" data-switch-view="admin">admin</a> |
         Latency: <span class="bitex-model" data-model-key="latency">0</span> ms |
-        Version: 4e0e666 |
+        Version: 8a58871 |
         
         <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
+        | <a href="#themes">Themes</a>
         | <a href="https://github.com/blinktrade/" target="_blank">Proudly 100% open source <span class="bitex-model" data-model-key="JSVersion"></span></a>
         | <a href="http://nytm.org/made-in-nyc/" target="_blank">Made with <span style="color: #d11f0d;font-size: 19px;">♥</span> in NYC</a>
       </p>
@@ -1538,7 +1561,7 @@ También podrá revisar su historial de depósitos y retiros median</p>
       var country_code = "US";
       var blinktrade_api = "api.testnet.blinktrade.com";
 
-      var remittance_box = { 'BRL':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> BRL',  'BRL', 'BLINK_BTCBRL_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID'  ], ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID'  ] ], 'USD':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ] ], 'VEF':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCVEF_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'CLP':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ] , ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'PKR':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> PKR',  'PKR', 'BLINK_BTCPKR_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCPKR_BEST_BID' ] ] };
+      var remittance_box = { 'BRL':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['DOL. BTC',           'BRL', 'BLINK_BTCBRL_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID'  ], ['DOL. TUR',           'VEF', 'UOL_USDBRT_BEST_BID / 100000000', 'UOL_USDBRT_BEST_ASK / 100000000' ] ], 'USD':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['KrakenUSD',          'USD', 'KRAKEN_BTCUSD_BEST_BID / 100000000', 'KRAKEN_BTCUSD_BEST_ASK / 100000000'  ], ['itBitUSD',           'USD', 'ITBIT_BTCUSD_BEST_BID / 100000000', 'ITBIT_BTCUSD_BEST_ASK / 100000000'  ] ], 'VEF':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCVEF_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'CLP':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ] , ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'PKR':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> PKR',  'PKR', 'BLINK_BTCPKR_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCPKR_BEST_BID' ] ] };
 
       _app = new BlinkTradeApp(broker_id, remittance_box,  country_code );
       _app.run(blinktrade_api);

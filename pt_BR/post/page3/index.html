@@ -3,19 +3,20 @@
   <head>
     <meta charset="utf-8">
     
-        <title>BlinkDemo - Demonstração da plataforma open source de negociação de Bitcoins da blinktrade</title>
     
+    <title> BlinkDemo - Demonstração da plataforma open source de negociação de Bitcoins da blinktrade </title>
 
     <!-- Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="BlinkTrade">
 
     
-        <meta name="description" content="Site de demonstração da plataforma de negociação de Bitcoins open source da Blinktrade">
-        <meta name="keywords" content="bitcoin, exchange de bitcoins, mercado de bitcoins, bolsa de bitcoins, open source">
-        <meta property="og:title" content="BlinkDemo - Demonstração da plataforma open source de negociação de Bitcoins da blinktrade">
-        <meta property="og:description" content="Site de demonstração da plataforma de negociação de Bitcoins open source da Blinktrade">
     
+
+    <meta name="description" content="Site de demonstração da plataforma de negociação de Bitcoins open source da Blinktrade">
+    <meta name="keywords" content="bitcoin, exchange de bitcoins, mercado de bitcoins, bolsa de bitcoins, open source">
+    <meta property="og:title" content="BlinkDemo - Demonstração da plataforma open source de negociação de Bitcoins da blinktrade">
+    <meta property="og:description" content="Site de demonstração da plataforma de negociação de Bitcoins open source da Blinktrade">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://testnet.blinktrade.com/pt_BR/post/page3/index.html">
@@ -42,8 +43,8 @@
     <link href="https://testnet.blinktrade.com/pt_BR/assets/themes/default/css/Dialog.css" rel="stylesheet">
     <link href="https://testnet.blinktrade.com/pt_BR/assets/themes/default/css/fuelux.css" rel="stylesheet">
     <link href="https://testnet.blinktrade.com/pt_BR/assets/themes/default/css/default.uni-form.css" rel="stylesheet">
-    <link href="https://testnet.blinktrade.com/pt_BR/assets/themes/default/css/style.css?v=4e0e666" rel="stylesheet">
-    <script data-cfasync="false" src="https://testnet.blinktrade.com/pt_BR/assets/js/bitex_app_blink_trade.compiled.pt_BR.default.js?v=4e0e666" type="text/javascript"></script>
+    <link href="https://testnet.blinktrade.com/pt_BR/assets/themes/default/css/style.css?v=8a58871" rel="stylesheet">
+    <script data-cfasync="false" src="https://testnet.blinktrade.com/pt_BR/assets/js/bitex_app_blink_trade.compiled.pt_BR.default.js?v=8a58871" type="text/javascript"></script>
     
   </head>
   <body class=" ws-not-connected bitex-not-logged active-view-start ">
@@ -142,8 +143,7 @@
       <img src="/pt_BR/assets/exchange_logos/demo_landing_page_logo.png" style="">
       <p class="lead bitex-view-title bitex-view-title">
         
-            Demonstração da exchange de Bitcoins open source da Blinktrade
-          
+        Demonstração da exchange de Bitcoins open source da Blinktrade
       </p>
     </header>
 
@@ -152,7 +152,7 @@
         <form action="" class="form-inline">
           <div class="row-fluid">
             <label for="id_landing_username">Nome de usuário:</label>
-            <input class="focus" id="id_landing_username" placeholder="" size="30" type="text">
+            <input class="focus" id="id_landing_username" placeholder="" size="30" type="text" autofocus>
             <label for="id_landing_password">Senha:</label>
             <input id="id_landing_password" placeholder="" size="30"  type="password">
             <button id="id_landing_signin" class="btn btn-primary">Entrar</button>
@@ -956,6 +956,14 @@ Ou seja, mesmo que um hacker comprometa a segurança da chave da FoxBit, ele tam
         </div>
       </div>
 
+      <div id="history" class="bitex-view">
+        <div class="section-title">
+          <h3 class="bitex-view-title">Histórico de ordens</h3>
+        </div>
+        <div class="content bitex-view-content">
+        </div>
+      </div>
+
       <div id="customers" class="bitex-view">
         <div class="section-title">
           <h3 class="bitex-view-title">Meus clientes</h3>
@@ -991,10 +999,10 @@ Ou seja, mesmo que um hacker comprometa a segurança da chave da FoxBit, ele tam
       </div>
 
       <div id="withdraw" class="bitex-view">
-        <div class="section-title">
+        <div class="section-title title-float">
           <h3 class="bitex-view-title">Saques</h3>
         </div>
-        <div class="content bitex-view-content">
+        <div class="content bitex-view-content content-padding">
           <div id="id_withdraw_button_group" class="row-fluid text-right" style="margin-bottom:20px" ></div>
           <div id="id_user_balances_well"></div>
 
@@ -1012,10 +1020,10 @@ Ou seja, mesmo que um hacker comprometa a segurança da chave da FoxBit, ele tam
       </div>
 
       <div id="deposit" class="bitex-view">
-        <div class="section-title">
+        <div class="section-title title-float">
           <h3 class="bitex-view-title">Depósitos</h3>
         </div>
-        <div class="content bitex-view-content">
+        <div class="content bitex-view-content content-padding">
           <div id="id_deposit_button_group" class="row-fluid text-right" style="margin-bottom:20px" ></div>
           <div id="id_deposit_balances_container"></div>
 
@@ -1030,6 +1038,23 @@ Ou seja, mesmo que um hacker comprometa a segurança da chave da FoxBit, ele tam
         <div class="content bitex-view-content">
           <div id="id_deposit_request_list"></div>
         </div>
+      </div>
+
+      <div id="card" class="bitex-view">
+          <div class="section-title">
+              <h3 class="bitex-view-title">
+                  <i class="icon-tag"></i>
+                  <span>BlinkCard</span>
+              </h3>
+          </div>
+          <div class="content bitex-view-content">
+              <div id="id_card_button_group" class="row-fluid text-right">
+                  <a id="id_btn_new_card" class="btn btn-primary">
+                      <i class="icon-plus">New Card</i>
+                  </a>
+              </div>
+              <br>
+          </div>
       </div>
 
       <div id="ledger" class="bitex-view">
@@ -1114,10 +1139,12 @@ Ou seja, mesmo que um hacker comprometa a segurança da chave da FoxBit, ele tam
                                                 bitex-view-profile
                                                 bitex-view-trading
                                                 bitex-view-offerbook
+                                                bitex-view-history
                                                 bitex-view-customers
                                                 bitex-view-account_overview
                                                 bitex-view-withdraw
                                                 bitex-view-withdraw_requests
+                                                bitex-view-card
                                                 bitex-view-deposit
                                                 bitex-view-deposit_requests
                                                 bitex-view-ledger
@@ -1127,8 +1154,7 @@ Ou seja, mesmo que um hacker comprometa a segurança da chave da FoxBit, ele tam
                                                 bitex-view-line_of_credit 
                                                 bitex-view-my_broker
                                                 bitex-view-verification">
-      <h3><span class="bitex-model bitex-view-title" data-model-key="DisplayName"></span></h3>
-
+      <h3><span class="bitex-model bitex-view-title" data-model-key="DisplayName"></span></h3> 
       <div class="bitex-view-content">
         <div id="account_balance" style="">
 
@@ -1146,11 +1172,11 @@ Ou seja, mesmo que um hacker comprometa a segurança da chave da FoxBit, ele tam
 
         <h6>Menu</h6>
         <ul class="nav nav-list">
-          <li style="">
+          <li>
             <a href="" data-switch-view="profile">
               <i data-switch-view="profile" class="icon-user"></i> Meu perfil</a>
           </li>
-          <li style="">
+          <li>
             <a href="" data-switch-view="my_broker">
               <i data-switch-view="my_broker" class="icon-search"></i> Sobre a exchange</a></li>
 
@@ -1164,39 +1190,49 @@ Ou seja, mesmo que um hacker comprometa a segurança da chave da FoxBit, ele tam
               <i data-switch-view="offerbook" class="icon-book"></i> Livro de ofertas</a>
           </li>
 
-          <li style="">
+          <li class="bitex-display-if-non-broker">
+            <a href="" data-switch-view="history">
+              <i data-switch-view="history" class="icon-list-alt"></i> Histórico de ordens</a>
+          </li>
+
+          <li>
             <a href="" data-switch-view="algotrading">
               <i data-switch-view="algotrading" class="icon-cog"></i> Algo Trading</a>
           </li>
 
-          <li style="">
+          <li>
             <a href="" data-switch-view="ledger">
               <i data-switch-view="ledger" class="icon-list"></i> Livro contábil</a>
           </li>
 
-          <li style="" class="bitex-display-if-broker">
+          <li class="bitex-display-if-broker">
             <a href="" data-switch-view="customers">
               <i data-switch-view="customers" class="icon-user"></i> Meus clientes</a>
           </li>
 
-          <li style="" class="bitex-display-if-broker">
+          <li class="bitex-display-if-broker">
             <a href="" data-switch-view="deposit_requests">
               <i data-switch-view="deposit_requests" class="icon-plus"></i> Depósitos ( clientes )</a>
           </li>
 
-          <li style="" class="bitex-display-if-broker">
+          <li class="bitex-display-if-broker">
             <a href="" data-switch-view="withdraw_requests">
               <i data-switch-view="withdraw_requests" class="icon-minus"></i> Saques ( clientes )</a>
           </li>
 
-          <li style="">
+          <li>
             <a href="" data-switch-view="deposit">
               <i data-switch-view="deposit" class="icon-plus"></i> Depósitos</a>
           </li>
 
-          <li style="">
+          <li>
             <a href="" data-switch-view="withdraw">
               <i data-switch-view="withdraw" class="icon-minus"></i> Saques</a>
+          </li>
+
+          <li class="bitex-display-if-non-broker bitex-model" style="display: none" id="card_menu_id"  data-model-key="HasCardFeature" data-model-action="show_element" >
+              <a href="" data-switch-view="card">
+                  <i data-switch-view="card" class="icon-tag"></i> Blink Card</a>
           </li>
 
           <li style="" class="bitex-display-if-non-broker" id="verification_menu_id">
@@ -1279,7 +1315,7 @@ Ou seja, mesmo que um hacker comprometa a segurança da chave da FoxBit, ele tam
           
           <a href="" data-switch-view="admin">admin</a> |
           Latency: <span class="bitex-model" data-model-key="latency">0</span> ms |
-          Version: 4e0e666 |
+          Version: 8a58871 |
           
 		      <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
           | <a href="#themes">Themes</a>
@@ -1297,7 +1333,7 @@ Ou seja, mesmo que um hacker comprometa a segurança da chave da FoxBit, ele tam
         var country_code = "US";
         var blinktrade_api = "api.testnet.blinktrade.com";
 
-        var remittance_box = { 'BRL':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> BRL',  'BRL', 'BLINK_BTCBRL_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID'  ], ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID'  ] ], 'USD':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ] ], 'VEF':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCVEF_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'CLP':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ] , ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'PKR':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> PKR',  'PKR', 'BLINK_BTCPKR_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCPKR_BEST_BID' ] ] };
+        var remittance_box = { 'BRL':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['DOL. BTC',           'BRL', 'BLINK_BTCBRL_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID'  ], ['DOL. TUR',           'VEF', 'UOL_USDBRT_BEST_BID / 100000000', 'UOL_USDBRT_BEST_ASK / 100000000' ] ], 'USD':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['KrakenUSD',          'USD', 'KRAKEN_BTCUSD_BEST_BID / 100000000', 'KRAKEN_BTCUSD_BEST_ASK / 100000000'  ], ['itBitUSD',           'USD', 'ITBIT_BTCUSD_BEST_BID / 100000000', 'ITBIT_BTCUSD_BEST_ASK / 100000000'  ] ], 'VEF':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCVEF_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'CLP':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ] , ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'PKR':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> PKR',  'PKR', 'BLINK_BTCPKR_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCPKR_BEST_BID' ] ] };
 
         _app = new BlinkTradeApp(broker_id, remittance_box,  country_code );
         _app.run(blinktrade_api);

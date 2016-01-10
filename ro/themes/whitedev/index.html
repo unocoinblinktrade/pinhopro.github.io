@@ -3,8 +3,8 @@
 <html class="ls-theme-orange  ls-pre-panel">
 <head>
   
-      <title>BlinkDemo - Exchange de Bitcoin Open Source</title>
   
+  <title> BlinkDemo - Exchange de Bitcoin Open Source </title>
 
   <meta charset="utf-8">
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
@@ -12,11 +12,12 @@
   <meta name="author" content="BlinkTrade">
 
   
-      <meta name="description" content="Exchange de Bitcoin Open Source site demo">
-      <meta name="keywords" content="bitcoin, bitcoin exchange, open source bitcoin exchange, bitcoin trading plataform, open source bitcoin trading plataforma">
-      <meta property="og:title" content="BlinkDemo - Exchange de Bitcoin Open Source">
-      <meta property="og:description" content="Exchange de Bitcoin Open Source site demo">
   
+
+  <meta name="description" content="Exchange de Bitcoin Open Source site demo">
+  <meta name="keywords" content="bitcoin, bitcoin exchange, open source bitcoin exchange, bitcoin trading plataform, open source bitcoin trading plataforma">
+  <meta property="og:title" content="BlinkDemo - Exchange de Bitcoin Open Source">
+  <meta property="og:description" content="Exchange de Bitcoin Open Source site demo">
 
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -41,9 +42,11 @@
   <link href="https://testnet.blinktrade.com/ro/assets/themes/default/css/default.uni-form.css" rel="stylesheet">
   <link href="https://testnet.blinktrade.com/ro/assets/themes/whitedev/css/main.css" rel="stylesheet">
 
-  
 
-  <script data-cfasync="false" src="https://testnet.blinktrade.com/ro/assets/js/bitex_app_blink_trade.compiled.ro.whitedev.js?v=4e0e666" type="text/javascript"></script>
+  <!--Custom CSS -->
+  <link href="https://testnet.blinktrade.com/ro/assets/themes/whitedev/css/main.demo.css" rel="stylesheet">
+
+  <script data-cfasync="false" src="https://testnet.blinktrade.com/ro/assets/js/bitex_app_blink_trade.compiled.ro.whitedev.js?v=8a58871" type="text/javascript"></script>
 </head>
 <body class=" ws-not-connected bitex-not-logged active-view-start ">
 
@@ -165,6 +168,7 @@
                                             bitex-view-settings
                                             bitex-view-settings
                                             bitex-view-algotrading
+                                            bitex-view-api
                                             bitex-view-my_broker
                                             bitex-view-verification">
 
@@ -181,7 +185,7 @@
                 <li><a href="" data-switch-view="trading" role="option">Cumpără sau Vinde</a></li>
                 <li><a href="" data-switch-view="offerbook" role="option">Registrul de comenzi</a></li>
             </ul>
-            <a href="javascript:location.reload()" class="ls-btn-logout" role="combobox" aria-expanded="false">Sair</a>
+            <a href="javascript:location.reload()" class="ls-btn-logout" role="combobox" aria-expanded="false">Delogare</a>
         </nav>
 
     </div>
@@ -190,6 +194,7 @@
     <div class="bitex-display-if-non-broker">
         <h1 data-switch-view="offerbook" class="ls-brand-name">
             <a href="#" data-switch-view="offerbook">
+
                 
             </a>
         </h1>
@@ -207,12 +212,10 @@
             </select>
         </div>
     </form>
-    <hr>
-
     <div id="id_account_summary_content" ></div>
     </div>
 
-    <div id="id_remittance_box" style="margin-top:-35px;border-right:1px solid #eee" class="youraccount"></div>
+    <div id="id_remittance_box" style="border-right:1px solid #eee" class="youraccount"></div>
 
     <nav class="ls-menu" role="navigation">
         <ul role="menu">
@@ -287,8 +290,7 @@
                     <img src="/ro/assets/exchange_logos/demo_landing_page_logo.png" style="max-width:60%;">
                     <h1 class="ls-title-intro">
                         
-                            Urmăriți exchange-ul nostru open source în acțiune
-                        
+                        Urmăriți exchange-ul nostru open source în acțiune
                     </h1>
                 <form action="" class="form-inline">
                     <div class="row">
@@ -301,7 +303,7 @@
                         <div class="col-md-3"></div>
                         <div class="col-md-6">
                             <div class="col-md-12 login-input">
-                                    <input class="focus" id="id_landing_username" placeholder="Nume utilizator:" size="30" type="text">
+                                    <input class="focus" id="id_landing_username" placeholder="Nume utilizator:" size="30" type="text" autofocus>
                                     <input id="id_landing_password" placeholder="Parola:" size="30"  type="password">
                             </div>
                         </div>
@@ -824,8 +826,9 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
           <h3 class="ls-title-intro ls-ico-list">API Keys</h3>
         </div>
         <div class="content bitex-view-content">
-          <div id="id_api_button_group"></div>
-          <div id="id_api_list"></div>
+          <div id="id_api_button_group" class="row-fluid text-right" style="margin-bottom:20px">
+            <a id="id_btn_new_api_key" class="ls-btn ls-btn-primary"><i class="icon-plus "> New API Key</i></a>
+          </div>
         </div>
       </div>
 
@@ -888,7 +891,7 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
                       <a href="#">Latency: <span class="bitex-model" data-model-key="latency">0</span> ms</a>
                     </div>
                     <div class="col-md-1 ls-footer-item">
-                      <a href="#">Version: 4e0e666</a>
+                      <a href="#">Version: 8a58871</a>
                     </div>
                     
                     <div class="col-md-2 ls-footer-item">
@@ -923,7 +926,7 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
                       <a href="#">Latency: <span class="bitex-model" data-model-key="latency">0</span> ms</a>
                     </div>
                     <div class="col-md-1 ls-footer-item">
-                      <a href="#">Version: 4e0e666</a>
+                      <a href="#">Version: 8a58871</a>
                     </div>
                     
                     <div class="col-md-2 ls-footer-item">
@@ -962,7 +965,7 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
         var country_code = "US";
         var blinktrade_api = "api.testnet.blinktrade.com";
 
-        var remittance_box = { 'BRL':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> BRL',  'BRL', 'BLINK_BTCBRL_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID'  ], ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID'  ] ], 'USD':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ] ], 'VEF':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCVEF_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'CLP':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ] , ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'PKR':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> PKR',  'PKR', 'BLINK_BTCPKR_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCPKR_BEST_BID' ] ] };
+        var remittance_box = { 'BRL':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['DOL. BTC',           'BRL', 'BLINK_BTCBRL_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID'  ], ['DOL. TUR',           'VEF', 'UOL_USDBRT_BEST_BID / 100000000', 'UOL_USDBRT_BEST_ASK / 100000000' ] ], 'USD':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['KrakenUSD',          'USD', 'KRAKEN_BTCUSD_BEST_BID / 100000000', 'KRAKEN_BTCUSD_BEST_ASK / 100000000'  ], ['itBitUSD',           'USD', 'ITBIT_BTCUSD_BEST_BID / 100000000', 'ITBIT_BTCUSD_BEST_ASK / 100000000'  ] ], 'VEF':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCVEF_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'CLP':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ] , ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'PKR':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> PKR',  'PKR', 'BLINK_BTCPKR_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCPKR_BEST_BID' ] ] };
 
         _app = new BlinkTradeApp(broker_id, remittance_box,  country_code );
         _app.run(blinktrade_api);
