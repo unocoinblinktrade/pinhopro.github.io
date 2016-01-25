@@ -39,9 +39,9 @@
   
   <!--link href="/assets/themes/default/css/Dialog.css" rel="stylesheet"-->
   <link href="https://testnet.blinktrade.com/pt_BR/assets/themes/default/css/fuelux.css" rel="stylesheet">
-  <link href="https://testnet.blinktrade.com/pt_BR/assets/themes/default/css/style-new.css?v=5a4bea0" rel="stylesheet">
-  <link href="https://testnet.blinktrade.com/pt_BR/assets/themes/ander/css/blinktrade.css?v=5a4bea0" rel="stylesheet">
-  <script data-cfasync="false" src="https://testnet.blinktrade.com/pt_BR/assets/js/bitex_app_blink_trade.compiled.pt_BR.ander.js?v=5a4bea0" type="text/javascript"></script>
+  <link href="https://testnet.blinktrade.com/pt_BR/assets/themes/default/css/style-new.css?v=dc67993" rel="stylesheet">
+  <link href="https://testnet.blinktrade.com/pt_BR/assets/themes/ander/css/blinktrade.css?v=dc67993" rel="stylesheet">
+  <script data-cfasync="false" src="https://testnet.blinktrade.com/pt_BR/assets/js/bitex_app_blink_trade.compiled.pt_BR.ander.js?v=dc67993" type="text/javascript"></script>
   
 </head>
 <body class=" ws-not-connected bitex-not-logged active-view-start ">
@@ -100,37 +100,37 @@
 
                   <!-- .head-dropdown -->
                   <ul class="head-dropdown">
-                    <li>
+                    <li id="menu-profile">
                       <a href="#profile" title="Profile" data-switch-view="profile">
                         Meu perfil
                       </a>
                     </li>
-                    <li>
+                    <li id="menu-broker">
                       <a href="#my_broker" title="Broker info" data-switch-view="my_broker">
                         Sobre a exchange
                       </a>
                     </li>
-                    <li class="bitex-display-if-broker">
+                    <li class="bitex-display-if-broker" id="menu-customers">
                       <a href="#customers" title="Customers" data-switch-view="customers">
                         Meus clientes
                       </a>
                     </li>
-                    <li class="bitex-display-if-broker">
+                    <li class="bitex-display-if-broker" id="menu-deposit_requests">
                       <a href="deposit_requests" title="Deposit" data-switch-view="deposit_requests">
                         Depósitos ( clientes )
                       </a>
                     </li>
-                    <li class="bitex-display-if-broker">
+                    <li class="bitex-display-if-broker" id="menu-withdraw_requests">
                       <a href="withdraw_requests" title="Withdraw" data-switch-view="withdraw_requests">
                         Saques ( clientes )
                       </a>
                     </li>
-                    <li>
+                    <li id="menu-deposit">
                       <a href="#deposit" title="Deposit" data-switch-view="deposit">
                         Depósitos
                       </a>
                     </li>
-                    <li>
+                    <li id="menu-withdraw">
                       <a href="#withdraw" title="Withdrawals" data-switch-view="withdraw">
                         Saques
                       </a>
@@ -854,27 +854,35 @@ Ou seja, mesmo que um hacker comprometa a segurança da chave da FoxBit, ele tam
   <!-- /#themes -->
   <div id="themes" class="bitex-view container page bitex-view" style="display: none">
     <div class="page__head">
-        <h1 class="page__title beta bitex-view-title">Themes</h1>
-        <p>Choose a Theme</p>
+        <h1 class="page__title beta bitex-view-title">Temas</h1>
+        <p>Escolha um tema</p>
     </div>
     <hr>
     <div class="bitex-view-content">
+        <div class="layout row" style="margin:auto;text-align:center">
+            <div class="layout__item">
+                <a href="https://testnet.blinktrade.com/pt_BR/themes/coinage/">
+                    <img src="https://testnet.blinktrade.com/pt_BR/assets/exchange_logos/thumb-themes/demo-coinage-thumb.jpg" alt="Coinage Theme">
+                    <h3>Coinage Theme</h3>
+                </a>
+            </div>
+        </div>
         <div class="layout row" style="text-align:center;margin:auto">
             <div class="layout__item" style="width: 380px">
                 <a href="https://testnet.blinktrade.com/pt_BR/themes/default/">
-                    <img src="https://testnet.blinktrade.com/pt_BR/assets/exchange_logos/thumb-themes/default-theme.jpg" alt="Default Theme">
+                    <img src="https://testnet.blinktrade.com/pt_BR/assets/exchange_logos/thumb-themes/demo-default-thumb.jpg" alt="Default Theme">
                     <h3>Default Theme</h3>
                 </a>
             </div>
             <div class="layout__item" style="width: 380px">
                 <a href="https://testnet.blinktrade.com/pt_BR/themes/ander/">
-                    <img src="https://testnet.blinktrade.com/pt_BR/assets/exchange_logos/thumb-themes/ander-theme.jpg" alt="Ander Theme">
+                    <img src="https://testnet.blinktrade.com/pt_BR/assets/exchange_logos/thumb-themes/demo-ander-thumb.jpg" alt="Ander Theme">
                     <h3>Ander</h3>
                 </a>
             </div>
             <div class="layout__item" style="width: 380px">
                 <a href="https://testnet.blinktrade.com/pt_BR/themes/whitedev/">
-                    <img src="https://testnet.blinktrade.com/pt_BR/assets/exchange_logos/thumb-themes/whitedev-theme.jpg" alt="Whitedev Theme">
+                    <img src="https://testnet.blinktrade.com/pt_BR/assets/exchange_logos/thumb-themes/demo-whitedev-thumb.jpg" alt="Whitedev Theme">
                     <h3>Whitedev</h3>
                 </a>
             </div>
@@ -1055,6 +1063,7 @@ Ou seja, mesmo que um hacker comprometa a segurança da chave da FoxBit, ele tam
           <!-- .sidebar -->
           <div id="id_sidebar" class="sidebar bitex-view
                                               bitex-view-profile
+                                              bitex-view-twofactor
                                               bitex-view-trading
                                               bitex-view-offerbook
                                               bitex-view-customers
@@ -1241,6 +1250,9 @@ Ou seja, mesmo que um hacker comprometa a segurança da chave da FoxBit, ele tam
             <!-- /.page__body -->
           </div>
           <!-- /#my_broker -->
+          <div id="twofactor" class="bitex-view">
+            <div id="twofactor_content"></div>
+          </div>
 
           <!-- #trading -->
           <div id="trading" class="bitex-view">
@@ -1554,7 +1566,7 @@ Ou seja, mesmo que um hacker comprometa a segurança da chave da FoxBit, ele tam
         
         <a href="" data-switch-view="admin">admin</a> |
         Latency: <span class="bitex-model" data-model-key="latency">0</span> ms |
-        Version: 5a4bea0 |
+        Version: dc67993 |
         
         <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
         | <a href="#themes">Themes</a>

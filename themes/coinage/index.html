@@ -38,15 +38,17 @@
   <script type="text/javascript" src="//apis.google.com/js/plusone.js"></script>
 
   
-  <link href="https://testnet.blinktrade.com/assets/themes/default/css/style-new.css?v=5a4bea0" rel="stylesheet">
+  <link href="https://testnet.blinktrade.com/assets/themes/default/css/style-new.css?v=dc67993" rel="stylesheet">
   <link href="https://testnet.blinktrade.com/assets/css/flag-icon.css" rel="stylesheet">
 
   
-    <link href="https://testnet.blinktrade.com/assets/themes/coinage/sass/main.coinage.css?v=5a4bea0" rel="stylesheet">
+    <link href="https://testnet.blinktrade.com/assets/themes/coinage/sass/main.coinage.css?v=dc67993" rel="stylesheet">
   
 
   <link rel="stylesheet" href="https://testnet.blinktrade.com/assets/themes/coinage/css/font-awesome.min.css">
-  <script data-cfasync="false" src="https://testnet.blinktrade.com/assets/js/bitex_app_blink_trade.compiled.en_US.coinage.js?v=5a4bea0" type="text/javascript"></script>
+  <script data-cfasync="false" src="https://testnet.blinktrade.com/assets/js/bitex_app_blink_trade.compiled.en_US.coinage.js?v=dc67993" type="text/javascript"></script>
+  <script src="https://testnet.blinktrade.com/assets/themes/coinage/javascript/jquery-1.12.0.min.js"></script>
+  <script src="https://testnet.blinktrade.com/assets/themes/coinage/javascript/bootstrap.min.js"></script>
   
 </head>
 <body class=" ws-not-connected bitex-not-logged active-view-start ">
@@ -86,7 +88,7 @@
             </ul>
             <!-- /.head-ticker -->
 
-            <ul class="head-top-nav navbar-right">
+            <ul class="head-top-nav navbar-right pull-right">
               <!-- .head-market -->
               <li>
                 <a data-switch-view="market" href="#" class="head-top-button">
@@ -152,7 +154,7 @@
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -184,16 +186,16 @@
               </a>
               <div class="dropdown-arrow"></div>
               <ul class="dropdown-menu" role="menu" style="min-width: 220px;">
-                  <li class="dropdown-account" role="presentation" data-switch-view="profile">
-                      <a href="#" data-switch-view="profile">
-                        <div class="row">
+                  <li class="dropdown-account" role="presentation">
+                      <a href="#">
+                        <div class="row" data-switch-view="profile">
                           <div class="col-xs-4">
-                            <img class="thumb thumb-g" src="https://testnet.blinktrade.com/assets/themes/coinage/img/coinage-avatar.png" />
+                            <img class="thumb thumb-g" data-switch-view="profile" src="https://testnet.blinktrade.com/assets/themes/coinage/img/coinage-avatar.png" />
                           </div>
-                          <div class="col-xs-8">
+                          <div class="col-xs-8" data-switch-view="profile">
                             <strong class="bitex-model bitex-view-title" data-switch-view="profile" data-model-key="DisplayName"></strong>
                             <br>
-                            <small style="line-height: 1;">(<span class="bitex-model bitex-view-title" data-model-key="PseudoName"></span>)</small>
+                            <small style="line-height: 1;">(<span class="bitex-model bitex-view-title" data-model-key="PseudoName" data-switch-view="profile"></span>)</small>
                           </div>
                         </div>
                       </a>
@@ -232,12 +234,12 @@
               </ul>
             </li>
             <li class="bitex-hide-if-logged">
-              <button class="btn btn-outline btn-signup" href="#" data-switch-view="signup">
+              <button class="btn btn-outline btn-signup col-xs-12" style="float:none" href="#" data-switch-view="signup">
                   Sign up
               </button>
             </li>
             <li class="bitex-hide-if-logged">
-              <button class="btn btn-primary btn-signin" href="#" data-switch-view="signin">
+              <button class="btn btn-primary btn-signin col-xs-12" href="#" data-switch-view="signin">
                   Sign in
               </button>
             </li>
@@ -288,7 +290,7 @@
       <!-- .home -->
       <div class="home">
         <!-- .home-banner -->
-        <div class="home-banner" style="background-image: url(https://testnet.blinktrade.com/assets/themes/coinage/img/home-banner-demo.png)">
+        <div class="home-banner" style="background-image: url(https://testnet.blinktrade.com/assets/themes/coinage/img/home-banner-demo.jpg)">
             <!-- .home-banner__table -->
             <div class="home-banner__table">
                 
@@ -298,7 +300,7 @@
                     <h1 class="home-banner__title">See our open source Bitcoin exchange in action</h1>
 
                     <!-- .home-->
-                    <div class="col-xs-8 col-md-6 col-xs-offset-3">
+                    <div class="col-xs-12 col-sm-8 col-md-6 col-md-offset-3 col-sm-offset-2">
 
                         <div class="row">
                           <div class="col-xs-12 col-md-offset-3">
@@ -335,7 +337,7 @@
                         <!-- .home-news-item -->
                         <div class="home-news-item">
                             <div class="home-news-item__icon">
-                                <img src="/assets/themes/coinage/img/ico-tradewithus.png" alt="" />
+                                <img class="home-img" src="/assets/themes/coinage/img/ico-tradewithus.png" alt="" />
                             </div>
 
                             
@@ -353,9 +355,9 @@
 
                             
 
-                            <h2 class="home-news-item__title h3">Lorem ipsum dolor</h2>
+                            <h2 class="home-news-item__title h3">Proin quis egestas eros</h2>
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>Nunc non est ut neque lobortis mattis. Donec ultricies tortor at mi lobortis cursus. Vestibulum felis tellus, ultrices nec odio vitae, facilisis gravida sapien. Etiam efficitur quam at nunc consequat, sed ullamcorper ante convallis. Etiam ultrices, eros a egestas faucibus, nisi lectus ultrices arcu, eu viverra risus justo a est. Fusce laoreet sapien non mattis auctor. Proin odio felis, convallis eu velit quis, condimentum lobortis nibh.</p>
 
                             <div class="home-news-item__btn">
                                 <a href="" class="btn btn-default">Learn More</a>
@@ -370,12 +372,12 @@
                         <!-- .home-news-item -->
                         <div class="home-news-item">
                             <div class="home-news-item__icon">
-                                <img src="/assets/themes/coinage/img/ico-secure.png" alt="" />
+                                <img class="home-img" src="/assets/themes/coinage/img/ico-secure.png" alt="" />
                             </div>
 
-                            <h2 class="home-news-item__title h3">Lorem ipsum dolor</h2>
+                            <h2 class="home-news-item__title h3">Pellentesque vestibulum lectus</h2>
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>Integer placerat urna lectus, in luctus odio vehicula vel. Praesent eu sagittis massa. Vivamus ut urna interdum, porttitor ex sed, congue risus. Vestibulum sit amet mattis leo. Curabitur tempor convallis ornare. In dignissim est at pellentesque consequat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In a dui quis metus eleifend maximus.</p>
 
                             <div class="home-news-item__btn">
                                 <a href="" class="btn btn-default">Learn More</a>
@@ -390,12 +392,12 @@
                         <!-- .home-news-item -->
                         <div class="home-news-item">
                             <div class="home-news-item__icon">
-                                <img src="/assets/themes/coinage/img/ico-liquidity.png" alt="" />
+                                <img class="home-img" src="/assets/themes/coinage/img/ico-liquidity.png" alt="" />
                             </div>
 
-                            <h2 class="home-news-item__title h3">Lorem ipsum dolor</h2>
+                            <h2 class="home-news-item__title h3">Maecenas vel magna</h2>
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>Donec ac tincidunt enim, quis porttitor massa. Sed vulputate ex at quam venenatis, non facilisis justo vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi diam nisl, congue vehicula maximus eget, tempor nec ipsum. Vestibulum feugiat consequat lacus et congue. Phasellus eu felis vel dui cursus pharetra quis non lectus. Curabitur porta ultrices magna sit amet ultrices. Nam cursus lorem mollis arcu dignissim congue. Praesent vitae venenatis lorem, sit amet efficitur ipsum.</p>
 
                             <div class="home-news-item__btn">
                                 <a href="" class="btn btn-default">Learn More</a>
@@ -479,10 +481,8 @@
         <!-- .home-contact -->
         <div class="home-contact">
             <div class="home-contact__icon">
-                <img src="/assets/themes/coinage/img/ico-requestbeta.png" alt="" />
+                <img class="home-img" src="/assets/themes/coinage/img/ico-requestbeta.png" alt="" />
             </div>
-
-            
 
             
             
@@ -492,7 +492,7 @@
             <p>Sign up and discover how easy it is to trade with us.</p>
 
             <div class="home-contact__btn">
-                <a href="#" data-switch-view="signup" class="btn btn-lg btn-success">
+                <a href="#" data-switch-view="signup" class="btn btn-lg btn-primary">
                     <i class="glyphicon glyphicon-log-in"></i> Sign up
                 </a>
             </div>
@@ -517,17 +517,17 @@
       <!-- .page__body -->
       <div class="page__body bitex-view-content">
           <!-- .panel-group -->
-          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel-group accordion" id="accordion">
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#What is Bitcoin? ">
                         What is Bitcoin?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="What is Bitcoin?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>Bitcoin is a open source P2P digital network created in 2009 by pseudonymous author Satoshi Nakamoto. The protocol allows the user to send, store and receive value at a significant low cost and in a short matter of time. Bitcoin avoids the need for central authorities and issuers.</p>
 
@@ -536,15 +536,15 @@
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#What is a Bitcoin Exchange? ">
                         What is a Bitcoin Exchange?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="What is a Bitcoin Exchange?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>It is just a marketplace, where people interested in buying bitcoins find sellers interested in selling their bitcoins and vice-versa.</p>
 
@@ -552,15 +552,15 @@
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#How does a bitcoin exchange work? ">
                         How does a bitcoin exchange work?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="How does a bitcoin exchange work?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>The exchange allow buyers deposit FIAT and sellers deposit Bitcoins. The exchange then allows buyers transact with sellers.</p>
 
@@ -568,15 +568,15 @@
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#Does the exchange buy/sell bitcoin directly? ">
                         Does the exchange buy/sell bitcoin directly?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="Does the exchange buy/sell bitcoin directly?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>No. We are providing a service. Think on the exchange like eBay, we are just providing a service where you can find buyers or sellers.</p>
 
@@ -588,15 +588,15 @@
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#What is the relationship between the exchange and Blinktrade?  ">
                         What is the relationship between the exchange and Blinktrade? 
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="What is the relationship between the exchange and Blinktrade? " class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>Blinktrade is the technology provider.</p>
 
@@ -610,15 +610,15 @@
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#How do I open my own Bitcoin Exchange? ">
                         How do I open my own Bitcoin Exchange?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="How do I open my own Bitcoin Exchange?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>You just need to go to <a href="http://blinktrade.com/#started">blinktrade</a> and click on  “Apply to be a partner” section and fill out the form.</p>
 
@@ -626,15 +626,15 @@
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#How do I deactivate my exchange trader account? ">
                         How do I deactivate my exchange trader account?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="How do I deactivate my exchange trader account?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>To deactivate your exchange trader account, go to “Account” and select “Settings” from the side menu. Click “Deactivate account” and proceed.</p>
 
@@ -642,15 +642,15 @@
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#How do I become a trader? ">
                         How do I become a trader?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="How do I become a trader?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>Opening a trading account at the exchange is easy, fast and free. Click “sign up” , fill out the form and log in.  After your login, the exchange operator will require your personal name, address and documentation. After your documentation is verified by the exchange operator your account will be credited with a bonus in your local currency. From that point you are all set to buy your first bitcoin!</p>
 
@@ -658,15 +658,15 @@
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#How do I deposit local currency into my account? ">
                         How do I deposit local currency into my account?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="How do I deposit local currency into my account?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>On the main menu, click on “Deposit local currency” and a new window will appear. You will have to specify the amount of FIAT you want to deposit in order to buy bitcoins. Have in mind that the exchange might charge you a fee every time you wish to make a deposit. </p>
 
@@ -674,15 +674,15 @@
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#How to deposit BTC? ">
                         How to deposit BTC?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="How to deposit BTC?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>On the main menu, click on “Deposit BTC” and a new window will appear. The platform generates a unique address that will only be valid for that specific transaction and with a time limit to perform the deposit. Scan the QR code and send the BTC. After blockchain confirmation you will see the amount of BTC you sent credited into your trader account. No fees are charged for depositing BTC except from the one required by the blockchain to confirm the transaction. IMPORTANT: Never save the deposit address, never reuse the same address or your deposits won’t be confirmed.</p>
 
@@ -690,15 +690,15 @@
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#How to withdraw FIAT? ">
                         How to withdraw FIAT?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="How to withdraw FIAT?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>As simple as the deposit process. Request a withdrawal in the main menu and a new window will appear showing the steps you have to follow. After specifying the amount and filling in the required information (account #, swift#…) the money will be sent to your account. Please be aware we apply applies a fee on every withdrawal.</p>
 
@@ -706,15 +706,15 @@
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#How to withdraw BTC? ">
                         How to withdraw BTC?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="How to withdraw BTC?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>When you want to receive bitcoins all you have to do is request a withdrawal on the main menu. You will have to specify the amount and provide the public key in which you want those btc to be sent. Please take your time to introduce the btc address correctly as bitcoin transactions are irreversible.</p>
 
@@ -722,15 +722,15 @@
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#Is your bitcoin safe? ">
                         Is your bitcoin safe?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="Is your bitcoin safe?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>Our main concern is to allow traders to interact within a safe environment. Bitcoins are stored in a multisignature cold storage wallet and away from the servers of the exchange. So even though if the server of the exchange has been hacked the bitcoins are out of the reach of the bad boys.</p>
 
@@ -754,15 +754,15 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#why don't I have a private key for my exchange wallet? ">
                         why don't I have a private key for my exchange wallet?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="why don't I have a private key for my exchange wallet?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>Our principle is that the bitcoins deposited in the exchange are there to be exchanged for your local currency. In consequence, to guarantee safety and speed in the trade, the exchange operator keeps possession of deposits either in FIAT and in BTC.</p>
 
@@ -770,15 +770,15 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#How to trade? ">
                         How to trade?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="How to trade?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>You need to choose the quantity of bitcoins you want to buy and specify the rate you are willing to pay for those bitcoins. The rate is always determined by the price of 1 bitcoin. Compare it to the price of a gallon of gas in USD.</p>
 
@@ -786,15 +786,15 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#Do I have to pay fees? ">
                         Do I have to pay fees?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="Do I have to pay fees?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>Yes, fees might apply on FIAT deposits, FIAT withdrawals, BTC withdrawals (0.0001 BTC) and trades. You don’t have to pay the exchange to deposit BTC.</p>
 
@@ -802,15 +802,15 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#How to cancel accidental orders? ">
                         How to cancel accidental orders?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="How to cancel accidental orders?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>To cancel an open order go to “Buy or Sell” on the main menu. Select the order to be canceled from the “My orders” list and click “Cancel” next to the chosen order. Another option is to click on the “Order Book” and search for the order marked with your username and a red “x” next to it. Click on the order to cancel it.</p>
 
@@ -818,15 +818,15 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#How long does a FIAT deposit confirmation take? ">
                         How long does a FIAT deposit confirmation take?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="How long does a FIAT deposit confirmation take?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>If you perform the deposit from an account of the same bank used by the exchange the confirmation will be made within few hours. If you do the deposit from a different bank in the country/region, the confirmation can take as long as 48 hours.</p>
 
@@ -834,15 +834,15 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#How long does a BTC deposit take? ">
                         How long does a BTC deposit take?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="How long does a BTC deposit take?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>As long as the blockchain network takes to confirm the transaction. Usually no longer than 10 minutes.  For deposits higher than 2 BTC, we require 3 confirmations that can take up to 30 minutes. And for amounts higher than 10 BTC, we require of 6 confirmations that can take up to 60 minutes.</p>
 
@@ -850,15 +850,15 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#What is the instant deposit mode? ">
                         What is the instant deposit mode?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="What is the instant deposit mode?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>It’s a feature of the exchange that enables trusted and verified users to start trading even though the FIAT deposit hasn’t still been verified by the broker. The account of the user gets credited without the need of waiting for deposit confirmations.</p>
 
@@ -866,15 +866,15 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#Can I deposit funds from a bank account other than my own? ">
                         Can I deposit funds from a bank account other than my own?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="Can I deposit funds from a bank account other than my own?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>Yes. Users are able to deposit money from third party bank accounts as long as they provide a valid form of id and authentication.</p>
 
@@ -882,15 +882,15 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#How long does a FIAT withdrawal take? ">
                         How long does a FIAT withdrawal take?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="How long does a FIAT withdrawal take?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>It should not take any longer than 24 hours. However, in periods of high activity the broker may take longer to transact the withdraw.</p>
 
@@ -898,15 +898,15 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#How long does a BTC withdrawal take? ">
                         How long does a BTC withdrawal take?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="How long does a BTC withdrawal take?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>As in the same case for depositing BTC, withdraw timing is subject to the speed of the blockchain network to confirm that specific transaction.</p>
 
@@ -914,15 +914,15 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#Who pays the withdrawal fee? ">
                         Who pays the withdrawal fee?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="Who pays the withdrawal fee?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>In both cases of withdrawing FIAT or BTC the fees are on the trader’s side.</p>
 
@@ -930,15 +930,15 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#Where is your bank account information? ">
                         Where is your bank account information?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="Where is your bank account information?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>In order to be able to deposit funds into the exchange, the operator team has to verify your bank account. Once that process has been made you can deposit your funds.</p>
 
@@ -948,15 +948,15 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#Why are the user names shown in the order book? ">
                         Why are the user names shown in the order book?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="Why are the user names shown in the order book?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>We assign a random name for every single account. The name looks like something like this:  Rhino_899009</p>
 
@@ -980,15 +980,15 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#Hours of operation ">
                         Hours of operation
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="Hours of operation" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>Trading: 24 hours / 7 days</p>
 
@@ -1029,7 +1029,53 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
   <!-- /#market -->
 
   <!-- /#themes -->
-  <div id="themes" class="bitex-view">
+  <div id="themes" class="page bitex-view">
+    <div class="row">
+        <!-- .col-md-6 -->
+        <div class="page__content page__padding col-md-10 col-md-offset-1">
+            <header class="page__head">
+                <h1 class="page__title bitex-view-title">Themes</h1>
+                <p>Choose a Theme</p>
+            </header>
+            <div class="bitex-view-content page__body">
+                <div class="row" style="text-align:center">
+                    <a href="https://testnet.blinktrade.com/themes/coinage/">
+                        <div class="col-md-5 thumb-theme" style="margin:auto;float:none">
+                            <img src="https://testnet.blinktrade.com/assets/exchange_logos/thumb-themes/demo-coinage-thumb.jpg" alt="Coinage Theme">
+                            <h3>Coinage Theme</h3>
+                        </div>
+                    </a>
+                </div>
+                <hr>
+                <div class="row" style="text-align:center">
+                    <div class="col-xs-4">
+                        <a href="https://testnet.blinktrade.com/themes/default/">
+                            <div class="thumb-theme">
+                                <img src="https://testnet.blinktrade.com/assets/exchange_logos/thumb-themes/demo-default-thumb.jpg" alt="Default Theme">
+                                <h3 class="ls-title-4">Default Theme</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="https://testnet.blinktrade.com/themes/ander/">
+                            <div class="thumb-theme">
+                                <img src="https://testnet.blinktrade.com/assets/exchange_logos/thumb-themes/demo-ander-thumb.jpg" alt="Ander Theme">
+                                <h3 class="ls-title-4">Ander</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="https://testnet.blinktrade.com/themes/whitedev/">
+                            <div class="thumb-theme">
+                                <img src="https://testnet.blinktrade.com/assets/exchange_logos/thumb-themes/demo-whitedev-thumb.jpg" alt="Whitedev Theme">
+                                <h3 class="ls-title-4">Whitedev</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
   </div>
   <!-- #themes -->
 
@@ -1193,7 +1239,9 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
           <!-- #id_sidebar -->
           <div id="id_sidebar" class="bitex-view
                                       bitex-view-profile
+                                      bitex-view-twofactor
                                       bitex-view-trading
+                                      bitex-view-history
                                       bitex-view-offerbook
                                       bitex-view-customers
                                       bitex-view-account_overview
@@ -1224,27 +1272,42 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
 
                 <div class="sidebar-box__body">
                     <ul class="sidebar-box-nav nav">
-                        <li role="presentation">
-                            <a href="#" data-switch-view="offerbook">
-                                <i class="glyphicon glyphicon-book"></i> Order book
-                            </a>
-                        </li>
-                        <li role="presentation">
+                        <li role="presentation" id="menu-trading">
                             <a href="#" data-switch-view="trading">
                                 <i class="glyphicon glyphicon-random"></i> Buy or Sell
                             </a>
                         </li>
-                        <li role="presentation">
+                        <li role="presentation" id="menu-offerbook">
+                            <a href="#" data-switch-view="offerbook">
+                                <i class="glyphicon glyphicon-book"></i> Order book
+                            </a>
+                        </li>
+                        <li role="presentation" id="menu-history">
+                            <a href="#" data-switch-view="history">
+                                <i class="fa fa-history"></i> Orders history
+                            </a>
+                        </li>
+                        <li role="presentation" id="menu-deposit">
+                            <a href="#" data-switch-view="deposit">
+                                <i class="fa fa-download"></i> My Deposits
+                            </a>
+                        </li>
+                        <li role="presentation" id="menu-withdraw">
+                            <a href="#" data-switch-view="withdraw">
+                                <i class="fa fa-upload"></i> My Withdrawals
+                            </a>
+                        </li>
+                        <li role="presentation" id="menu-algotrading">
                             <a href="#" data-switch-view="algotrading">
                                 <i class="glyphicon glyphicon-cog"></i> Algo Trading
                             </a>
                         </li>
-                        <li role="presentation">
+                        <li role="presentation" id="menu-ledger">
                             <a href="#" data-switch-view="ledger">
                                 <i class="glyphicon glyphicon-th-list"></i> Ledger
                             </a>
                         </li>
-                        <li role="presentation">
+                        <li role="presentation" id="menu-market">
                             <a href="#" data-switch-view="market">
                                 <i class="glyphicon glyphicon-stats"></i> Market
                             </a>
@@ -1407,6 +1470,9 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
                 <!-- /.page__body -->
               </div>
               <!-- /#my_broker -->
+              <div id="twofactor" class="bitex-view">
+                <div id="twofactor_content"></div>
+              </div>
 
               <!-- #trading -->
               <div id="trading" class="bitex-view">
@@ -1426,6 +1492,13 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
                 <!-- /.page__body -->
               </div>
               <!-- /#trading -->
+              <div id="history" class="bitex-view">
+                  <div class="section-title">
+                      <h3 class="bitex-view-title">Orders history</h3>
+                  </div>
+                  <div class="content bitex-view-content">
+                  </div>
+              </div>
 
               <!-- #algotrading -->
               <div id="algotrading" class="bitex-view">
@@ -1523,10 +1596,11 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
               <!-- #deposit -->
               <div id="deposit" class="bitex-view">
                 <!-- .page__head -->
-                <header class="page__head section-title">
-                    <h1 class="page__title h2 bitex-view-title">
+                <header class="page__head section-title page__head-float">
+                    <h1 class="page__title h2 bitex-view-title page__title-float">
                         <i class="glyphicon glyphicon-plus"></i> My Deposits
                     </h1>
+                    <div id="id_deposit_button_group" class="row-fluid text-right" style="" ></div>
                 </header>
                 <!-- /.page__head -->
 
@@ -1543,10 +1617,11 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
               <!-- #withdraw -->
               <div id="withdraw" class="bitex-view">
                 <!-- .page__head -->
-                <header class="page__head section-title">
-                    <h1 class="page__title h2 bitex-view-title">
+                <header class="page__head section-title page__head-float">
+                    <h1 class="page__title h2 bitex-view-title page__title-float">
                         <i class="glyphicon glyphicon-minus"></i> My Withdrawals
                     </h1>
+                    <div id="id_withdraw_button_group" class="row-fluid text-right" style="" ></div>
                 </header>
                 <!-- /.page__head -->
 
@@ -1705,6 +1780,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
         <!-- .col-md-2 -->
         <div class="col-md-2 bitex-view
                              bitex-view-profile
+                             bitex-view-twofactor
                              bitex-view-trading
                              bitex-view-offerbook
                              bitex-view-customers
@@ -1744,9 +1820,9 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
   <footer class="foot">
     <!-- .wrapper -->
     <div class="container">
-      <div class="col-xs-8 col-xs-offset-2">
+      <div class="col-md-8 col-md-offset-2">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-sm-4">
                 <h5>Company</h5>
                 <ul>
                     <li>
@@ -1755,8 +1831,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
                     
                     <li>
                         <a href="http://www.foxbit.com.br/blog/" target="_blank">Blog</a>
-                    </li>
-                    
+                    </li> 
                     
                     <li>
                         <a href="http://www.foxbit.com.br/grafico/" target="_blank">Chart</a>
@@ -1764,7 +1839,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
                     
                 </ul>
             </div>
-            <div class="col-md-4">
+            <div class="col-sm-4">
                 <h5>Platform</h5>
                 <ul>
                     
@@ -1772,11 +1847,14 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
                         <a href="" data-switch-view="admin">admin</a>
                     </li>
                     <li>
+                        <a href="" data-switch-view="themes">Themes</a>
+                    </li>
+                    <li>
                         Latency: <span class="bitex-model" data-model-key="latency">0</span> ms
                     </li>
                     
                     <li>
-                        Version: 5a4bea0
+                        Version: dc67993
                     </li>
                     <li>
                         <a href="https://github.com/blinktrade/" target="_blank">Proudly 100% open source <span class="bitex-model" data-model-key="JSVersion"></span></a>
@@ -1786,7 +1864,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
                     </li>
                 </ul>
             </div>
-            <div class="col-md-4">
+            <div class="col-sm-4">
                 <h5></h5>
                 <ul>
                     <li>
@@ -1804,7 +1882,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
         </div>
         <div class="row foot-social">
             
-            <div class="col-xs-2 col-xs-offset-2">
+            <div class="col-sm-2 col-sm-offset-2">
                 <div class="social-button">
                     <h3>
                         <a href="https://www.facebook.com/foxbitcoin" target="_blank">
@@ -1815,7 +1893,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
             </div>
             
             
-            <div class="col-xs-2">
+            <div class="col-sm-2">
                 <div class="social-button">
                     <h3>
                         <a href="https://twitter.com/foxbitcoin" target="_blank">
@@ -1826,7 +1904,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
             </div>
             
             
-            <div class="col-xs-2">
+            <div class="col-sm-2">
                 <div class="social-button">
                     <h3>
                         <a href="https://plus.google.com/+FoxbitBrasil/posts" target="_blank">
@@ -1837,7 +1915,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
             </div>
             
             
-            <div class="col-xs-2">
+            <div class="col-sm-2">
                 <div class="social-button">
                     <h3>
                         <a href="https://www.youtube.com/playlist?list=PL6c8tfdY-CX_VTwU1B9XbzWtIQjY__vrW" target="_blank">

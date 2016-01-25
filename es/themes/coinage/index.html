@@ -38,15 +38,17 @@
   <script type="text/javascript" src="//apis.google.com/js/plusone.js"></script>
 
   
-  <link href="https://testnet.blinktrade.com/es/assets/themes/default/css/style-new.css?v=5a4bea0" rel="stylesheet">
+  <link href="https://testnet.blinktrade.com/es/assets/themes/default/css/style-new.css?v=dc67993" rel="stylesheet">
   <link href="https://testnet.blinktrade.com/es/assets/css/flag-icon.css" rel="stylesheet">
 
   
-    <link href="https://testnet.blinktrade.com/es/assets/themes/coinage/sass/main.coinage.css?v=5a4bea0" rel="stylesheet">
+    <link href="https://testnet.blinktrade.com/es/assets/themes/coinage/sass/main.coinage.css?v=dc67993" rel="stylesheet">
   
 
   <link rel="stylesheet" href="https://testnet.blinktrade.com/es/assets/themes/coinage/css/font-awesome.min.css">
-  <script data-cfasync="false" src="https://testnet.blinktrade.com/es/assets/js/bitex_app_blink_trade.compiled.es.coinage.js?v=5a4bea0" type="text/javascript"></script>
+  <script data-cfasync="false" src="https://testnet.blinktrade.com/es/assets/js/bitex_app_blink_trade.compiled.es.coinage.js?v=dc67993" type="text/javascript"></script>
+  <script src="https://testnet.blinktrade.com/es/assets/themes/coinage/javascript/jquery-1.12.0.min.js"></script>
+  <script src="https://testnet.blinktrade.com/es/assets/themes/coinage/javascript/bootstrap.min.js"></script>
   
 </head>
 <body class=" ws-not-connected bitex-not-logged active-view-start ">
@@ -86,7 +88,7 @@
             </ul>
             <!-- /.head-ticker -->
 
-            <ul class="head-top-nav navbar-right">
+            <ul class="head-top-nav navbar-right pull-right">
               <!-- .head-market -->
               <li>
                 <a data-switch-view="market" href="#" class="head-top-button">
@@ -152,7 +154,7 @@
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -184,16 +186,16 @@
               </a>
               <div class="dropdown-arrow"></div>
               <ul class="dropdown-menu" role="menu" style="min-width: 220px;">
-                  <li class="dropdown-account" role="presentation" data-switch-view="profile">
-                      <a href="#" data-switch-view="profile">
-                        <div class="row">
+                  <li class="dropdown-account" role="presentation">
+                      <a href="#">
+                        <div class="row" data-switch-view="profile">
                           <div class="col-xs-4">
-                            <img class="thumb thumb-g" src="https://testnet.blinktrade.com/es/assets/themes/coinage/img/coinage-avatar.png" />
+                            <img class="thumb thumb-g" data-switch-view="profile" src="https://testnet.blinktrade.com/es/assets/themes/coinage/img/coinage-avatar.png" />
                           </div>
-                          <div class="col-xs-8">
+                          <div class="col-xs-8" data-switch-view="profile">
                             <strong class="bitex-model bitex-view-title" data-switch-view="profile" data-model-key="DisplayName"></strong>
                             <br>
-                            <small style="line-height: 1;">(<span class="bitex-model bitex-view-title" data-model-key="PseudoName"></span>)</small>
+                            <small style="line-height: 1;">(<span class="bitex-model bitex-view-title" data-model-key="PseudoName" data-switch-view="profile"></span>)</small>
                           </div>
                         </div>
                       </a>
@@ -232,12 +234,12 @@
               </ul>
             </li>
             <li class="bitex-hide-if-logged">
-              <button class="btn btn-outline btn-signup" href="#" data-switch-view="signup">
+              <button class="btn btn-outline btn-signup col-xs-12" style="float:none" href="#" data-switch-view="signup">
                   Registrarse
               </button>
             </li>
             <li class="bitex-hide-if-logged">
-              <button class="btn btn-primary btn-signin" href="#" data-switch-view="signin">
+              <button class="btn btn-primary btn-signin col-xs-12" href="#" data-switch-view="signin">
                   Ingresar
               </button>
             </li>
@@ -288,7 +290,7 @@
       <!-- .home -->
       <div class="home">
         <!-- .home-banner -->
-        <div class="home-banner" style="background-image: url(https://testnet.blinktrade.com/es/assets/themes/coinage/img/home-banner-demo.png)">
+        <div class="home-banner" style="background-image: url(https://testnet.blinktrade.com/es/assets/themes/coinage/img/home-banner-demo.jpg)">
             <!-- .home-banner__table -->
             <div class="home-banner__table">
                 
@@ -298,7 +300,7 @@
                     <h1 class="home-banner__title">Véase nuestra exchange open source en acción</h1>
 
                     <!-- .home-->
-                    <div class="col-xs-8 col-md-6 col-xs-offset-3">
+                    <div class="col-xs-12 col-sm-8 col-md-6 col-md-offset-3 col-sm-offset-2">
 
                         <div class="row">
                           <div class="col-xs-12 col-md-offset-3">
@@ -335,7 +337,7 @@
                         <!-- .home-news-item -->
                         <div class="home-news-item">
                             <div class="home-news-item__icon">
-                                <img src="/es/assets/themes/coinage/img/ico-tradewithus.png" alt="" />
+                                <img class="home-img" src="/es/assets/themes/coinage/img/ico-tradewithus.png" alt="" />
                             </div>
 
                             
@@ -353,9 +355,9 @@
 
                             
 
-                            <h2 class="home-news-item__title h3">Lorem ipsum dolor</h2>
+                            <h2 class="home-news-item__title h3">Proin quis egestas eros</h2>
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>Nunc non est ut neque lobortis mattis. Donec ultricies tortor at mi lobortis cursus. Vestibulum felis tellus, ultrices nec odio vitae, facilisis gravida sapien. Etiam efficitur quam at nunc consequat, sed ullamcorper ante convallis. Etiam ultrices, eros a egestas faucibus, nisi lectus ultrices arcu, eu viverra risus justo a est. Fusce laoreet sapien non mattis auctor. Proin odio felis, convallis eu velit quis, condimentum lobortis nibh.</p>
 
                             <div class="home-news-item__btn">
                                 <a href="" class="btn btn-default">Learn More</a>
@@ -370,12 +372,12 @@
                         <!-- .home-news-item -->
                         <div class="home-news-item">
                             <div class="home-news-item__icon">
-                                <img src="/es/assets/themes/coinage/img/ico-secure.png" alt="" />
+                                <img class="home-img" src="/es/assets/themes/coinage/img/ico-secure.png" alt="" />
                             </div>
 
-                            <h2 class="home-news-item__title h3">Lorem ipsum dolor</h2>
+                            <h2 class="home-news-item__title h3">Pellentesque vestibulum lectus</h2>
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>Integer placerat urna lectus, in luctus odio vehicula vel. Praesent eu sagittis massa. Vivamus ut urna interdum, porttitor ex sed, congue risus. Vestibulum sit amet mattis leo. Curabitur tempor convallis ornare. In dignissim est at pellentesque consequat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In a dui quis metus eleifend maximus.</p>
 
                             <div class="home-news-item__btn">
                                 <a href="" class="btn btn-default">Learn More</a>
@@ -390,12 +392,12 @@
                         <!-- .home-news-item -->
                         <div class="home-news-item">
                             <div class="home-news-item__icon">
-                                <img src="/es/assets/themes/coinage/img/ico-liquidity.png" alt="" />
+                                <img class="home-img" src="/es/assets/themes/coinage/img/ico-liquidity.png" alt="" />
                             </div>
 
-                            <h2 class="home-news-item__title h3">Lorem ipsum dolor</h2>
+                            <h2 class="home-news-item__title h3">Maecenas vel magna</h2>
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>Donec ac tincidunt enim, quis porttitor massa. Sed vulputate ex at quam venenatis, non facilisis justo vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi diam nisl, congue vehicula maximus eget, tempor nec ipsum. Vestibulum feugiat consequat lacus et congue. Phasellus eu felis vel dui cursus pharetra quis non lectus. Curabitur porta ultrices magna sit amet ultrices. Nam cursus lorem mollis arcu dignissim congue. Praesent vitae venenatis lorem, sit amet efficitur ipsum.</p>
 
                             <div class="home-news-item__btn">
                                 <a href="" class="btn btn-default">Learn More</a>
@@ -479,10 +481,8 @@
         <!-- .home-contact -->
         <div class="home-contact">
             <div class="home-contact__icon">
-                <img src="/es/assets/themes/coinage/img/ico-requestbeta.png" alt="" />
+                <img class="home-img" src="/es/assets/themes/coinage/img/ico-requestbeta.png" alt="" />
             </div>
-
-            
 
             
             
@@ -492,7 +492,7 @@
             <p>Sign up and discover how easy it is to trade with us.</p>
 
             <div class="home-contact__btn">
-                <a href="#" data-switch-view="signup" class="btn btn-lg btn-success">
+                <a href="#" data-switch-view="signup" class="btn btn-lg btn-primary">
                     <i class="glyphicon glyphicon-log-in"></i> Registrarse
                 </a>
             </div>
@@ -517,17 +517,17 @@
       <!-- .page__body -->
       <div class="page__body bitex-view-content">
           <!-- .panel-group -->
-          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel-group accordion" id="accordion">
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#Horarios ">
                         Horarios
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="Horarios" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>Trading: 24 horas/ 7 dias a la semana
 Helpdesk: Lunes a Viernes 9 AM - 6 PM (GMT -5)</p>
@@ -536,15 +536,15 @@ Helpdesk: Lunes a Viernes 9 AM - 6 PM (GMT -5)</p>
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#¿Que es Bitcoin? ">
                         ¿Que es Bitcoin?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="¿Que es Bitcoin?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>Bitcoin con “B” es un protocolo abierto basado en una red p2p que permite enviar valor de un usuario a otro con gran rapidez y a muy bajo coste.
 Bitcoin con “b” es el “valor” que circula sobre esa red p2p. Es un pedazo de informacion digital sobre el cual se aplica un valor monetario.</p>
@@ -553,15 +553,15 @@ Bitcoin con “b” es el “valor” que circula sobre esa red p2p. Es un pedaz
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#¿Que se entiende por FIAT? ">
                         ¿Que se entiende por FIAT?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="¿Que se entiende por FIAT?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>Es el dinero llamado fiduciario. Se basa en la fe o confianza de la comunidad, es decir, que no se respalda por metales preciosos ni nada que no sea una promesa de pago por parte de la entidad emisora. Es el modelo monetario que manejamos actualmente en el mundo. Como ejemplos podemos encontrar el dólar estadounidense, el euro y todas las otras monedas de reserva.</p>
 
@@ -569,15 +569,15 @@ Bitcoin con “b” es el “valor” que circula sobre esa red p2p. Es un pedaz
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#¿Que es una plataforma de intercambio de bitcoins? ">
                         ¿Que es una plataforma de intercambio de bitcoins?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="¿Que es una plataforma de intercambio de bitcoins?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>Se trata de un mercado de compra-venta de bitcoins. En un lado de la transaccion un usuario deposita bitcoins y en el otro moneda FIAT. Posteriormente, ambos usuarios utilizan la plataforma para efectuar el intercambio de bitcoin por FIAT. La plataforma proporciona un ambiente seguro para la ejecucion de la compra-venta.</p>
 
@@ -585,15 +585,15 @@ Bitcoin con “b” es el “valor” que circula sobre esa red p2p. Es un pedaz
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#¿Como funciona el exchange de bitcoins? ">
                         ¿Como funciona el exchange de bitcoins?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="¿Como funciona el exchange de bitcoins?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>La plataforma acepta tanto depósitos en FIAT como en BTC para que, posteriormente, puedan ser intercambiados en el mercado.</p>
 
@@ -601,15 +601,15 @@ Bitcoin con “b” es el “valor” que circula sobre esa red p2p. Es un pedaz
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#¿El exchange compra y vende bitcoins de forma directa? ">
                         ¿El exchange compra y vende bitcoins de forma directa?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="¿El exchange compra y vende bitcoins de forma directa?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>No. El usuario siempre compra bitcoin de otro usuario que los está vendiendo. Lo único que hacemos es proporcionar un ambiente simple y seguro para operar. Garantizamos que los compradores puedan obtener sus BTC y los vendedores sus COL$ a un precio acordado entre ellos.</p>
 
@@ -617,15 +617,15 @@ Bitcoin con “b” es el “valor” que circula sobre esa red p2p. Es un pedaz
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#¿Cual es la relacion entre el exchange y blinktrade? ">
                         ¿Cual es la relacion entre el exchange y blinktrade?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="¿Cual es la relacion entre el exchange y blinktrade?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>Blinktrade es un proveedor de servicios informáticos.
 El exchange es una casa de intercambio de bitcoin gestionado por (su nombre o nombre de la empresa).
@@ -637,15 +637,15 @@ Entendemos como operar lo siguiente: aceptar depósitos, procesar retiros, verif
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#¿Cuales son los pasos a seguir para registrarme en el exchange? ">
                         ¿Cuales son los pasos a seguir para registrarme en el exchange?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="¿Cuales son los pasos a seguir para registrarme en el exchange?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>El proceso de abrir una cuenta en el exchange es gratis sencillo y breve. Diríjase a “registrarse”, rellene el formulario y acceda a su cuenta. El siguiente paso será depositar fondos en su cuenta. En el menú principal vaya a depósitos y especifique que tipo de depósito quiere efectuar. Hay dos opciones. Depositar bitcoins para luego vender o depositar FIAT para luego comprar.</p>
 
@@ -653,15 +653,15 @@ Entendemos como operar lo siguiente: aceptar depósitos, procesar retiros, verif
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#¿Como depositar FIAT en mi cuenta? ">
                         ¿Como depositar FIAT en mi cuenta?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="¿Como depositar FIAT en mi cuenta?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>En el menú principal diríjase a la opción de depósitos en FIAT y le aparecerá en pantalla una ventana con las instrucciones a seguir para efectuar el depósito de dinero. Toda la información bancaria aparecerá en esa ventana.</p>
 
@@ -669,15 +669,15 @@ Entendemos como operar lo siguiente: aceptar depósitos, procesar retiros, verif
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#¿Como depositar BTC en mi cuenta? ">
                         ¿Como depositar BTC en mi cuenta?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="¿Como depositar BTC en mi cuenta?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>Siga los mismos pasos desglosados en la pregunta anterior. La única diferencia es que esta vez va a elegir BTC en lugar de Pesos. De nuevo, le aparecerá en pantalla una ventana que le proporcionará una dirección única y limitada por un tiempo (2 minutos) para depositar los BTC. Por su comodidad en el envío la ventana le proporcionará el código QR correspondiente a esa dirección.</p>
 
@@ -685,15 +685,15 @@ Entendemos como operar lo siguiente: aceptar depósitos, procesar retiros, verif
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#¿Como retirar FIAT de mi cuenta? ">
                         ¿Como retirar FIAT de mi cuenta?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="¿Como retirar FIAT de mi cuenta?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>Es tan simple como el proceso de depósito. Ejecuta una orden de retiro en el menú principal y una nueva ventana aparecerá en pantalla. La ventana indica los pasos a seguir. Después de especificar el monto y haber rellenado la información pertinente el dinero será enviado a su cuenta. Por favor tenga en cuenta que se le aplicará una tasa por cada orden de retiro que ejecute.</p>
 
@@ -701,15 +701,15 @@ Entendemos como operar lo siguiente: aceptar depósitos, procesar retiros, verif
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#¿Como retirar BTC de mi cuenta? ">
                         ¿Como retirar BTC de mi cuenta?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="¿Como retirar BTC de mi cuenta?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>Cuando quiera recibir BTC lo único que tendrá que hacer es ejecutar una orden de retiro en el menú principal. Tendrá que especificar el monto y proporcionar su llave pública. Por favor tenga precaución al introducir la llave pública ya que las transacciones con bitcoin son irreversibles y el exchange no puede responsabilizarse de los errores humanos que cometan sus usuarios.</p>
 
@@ -717,15 +717,15 @@ Entendemos como operar lo siguiente: aceptar depósitos, procesar retiros, verif
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#¿Estan seguros mis bitcoins? ">
                         ¿Estan seguros mis bitcoins?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="¿Estan seguros mis bitcoins?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>Nuestra prioridad es permitir que los compradores operen en un ambiente seguro. Los bitcoins se almacenan en una cartera multifirma fría sin estar en contacto con los servidores de el exchange. Así, aunque los servidores del exchange se vean comprometidos los bitcoins están bien lejos de los hackers.</p>
 
@@ -747,15 +747,15 @@ El procedimiento más seguro es siempre mantener sus bitcoin en su propia carter
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#¿Como efectuar el intercambio de BTC por FIAT? ">
                         ¿Como efectuar el intercambio de BTC por FIAT?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="¿Como efectuar el intercambio de BTC por FIAT?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>Necesitará elegir la cantidad de bitcoin que quiere comprar y especificar el precio que quiere pagar por ellos. El precio siempre viene determinado por la unidad de bitcoin (1 btc). Compárese con el precio de 1L de gasolina en EUR.</p>
 
@@ -764,15 +764,15 @@ El procedimiento más seguro es siempre mantener sus bitcoin en su propia carter
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#¿Que es el libro de ordenes? ">
                         ¿Que es el libro de ordenes?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="¿Que es el libro de ordenes?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>El libro de órdenes es el registro del exchange en el que los traders manifiestan su intención de comprar y vender bitcoins.</p>
 
@@ -780,15 +780,15 @@ El procedimiento más seguro es siempre mantener sus bitcoin en su propia carter
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#¿Debo pagar tasas o comisiones? ">
                         ¿Debo pagar tasas o comisiones?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="¿Debo pagar tasas o comisiones?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>El exchange cobra a sus usuarios un pequeño porcentaje por cada operación de depósito y retiro de FIAT y por cada operación de compraventa realizada (a las dos partes de la operacion). A modo de incentivo, y para premiar aquellos usuarios que proporcionan más actividad en el mercado, el broker podrá modificar los porcentajes.
 Recuerde que las tasas por mover bitcoins son aplicadas por la red de la cadena de bloques y no por el exchange.</p>
@@ -797,15 +797,15 @@ Recuerde que las tasas por mover bitcoins son aplicadas por la red de la cadena 
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#¿Como cancelar ordenes accidentales? ">
                         ¿Como cancelar ordenes accidentales?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="¿Como cancelar ordenes accidentales?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>Para cancelar una orden abierta diríjase a “comprar o vender” en el menú principal y elija la orden a cancelar en la lista “Mis Órdenes”.
 Otra opción es dirigirse al “Libro de Órdenes” y busque la orden que se asocia a su nombre de usuario junto a una “x” de color rojo. Haga click sobre la “x” para cancelar la orden.</p>
@@ -814,15 +814,15 @@ Otra opción es dirigirse al “Libro de Órdenes” y busque la orden que se as
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#¿Cuanto tarda en confirmar un deposito en FIAT? ">
                         ¿Cuanto tarda en confirmar un deposito en FIAT?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="¿Cuanto tarda en confirmar un deposito en FIAT?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>Si efectúa el depósito desde una cuenta de (Nombre del banco donde tiene alojada la cuenta del Exchange) la confirmación se efectuará dentro de las siguientes 24 horas. Si efectúa el depósito desde un banco distinto en su región, la confirmación puede tardar hasta 48 horas.</p>
 
@@ -830,15 +830,15 @@ Otra opción es dirigirse al “Libro de Órdenes” y busque la orden que se as
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#¿Cuanto tarda en confirmar un deposito en BTC? ">
                         ¿Cuanto tarda en confirmar un deposito en BTC?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="¿Cuanto tarda en confirmar un deposito en BTC?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>Tanto como lo tarde en confirmar la cadena de bloques. Habitualmente no tarda más de 10 minutos. Para depósitos más grandes a 2 BTC la red requiere de un mínimo de 3 confirmaciones que, a su vez, pueden tardar hasta 30 minutos. Y para cantidades superiores a 10BTC, la red requiere de 6 confirmaciones lo cual puede tardar hasta 60 minutos.</p>
 
@@ -846,15 +846,15 @@ Otra opción es dirigirse al “Libro de Órdenes” y busque la orden que se as
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#¿Que es el modo de depositos instantaneos? ">
                         ¿Que es el modo de depositos instantaneos?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="¿Que es el modo de depositos instantaneos?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>Se trata de un modo que permitirá a aquellos usuarios que hayan pasado un proceso de verificación a empezar a operar sin necesidad de confirmaciones de depósito bancario por parte del bróker. La cuenta del usuario se acreditará sin tener que esperar confirmaciones.</p>
 
@@ -862,15 +862,15 @@ Otra opción es dirigirse al “Libro de Órdenes” y busque la orden que se as
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#¿Puedo depositar fondos desde una cuanta bancaria que no sea la mia? ">
                         ¿Puedo depositar fondos desde una cuanta bancaria que no sea la mia?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="¿Puedo depositar fondos desde una cuanta bancaria que no sea la mia?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>Si. Los usuarios podrán depositar dinero de la cuenta de un tercero siempre y cuando proporcionen una forma válida de identificación.</p>
 
@@ -878,15 +878,15 @@ Otra opción es dirigirse al “Libro de Órdenes” y busque la orden que se as
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#¿Cuanto se tarda en retirar FIAT? ">
                         ¿Cuanto se tarda en retirar FIAT?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="¿Cuanto se tarda en retirar FIAT?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>No debería tardar más de 24 horas. Aun así, en periodos de mucha actividad el bróker puede tardar algo más en efectuar la transacción.</p>
 
@@ -894,15 +894,15 @@ Otra opción es dirigirse al “Libro de Órdenes” y busque la orden que se as
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#¿Cuanto se tarda en retirar FIAT? ">
                         ¿Cuanto se tarda en retirar FIAT?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="¿Cuanto se tarda en retirar FIAT?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>Al igual que en el caso de depositar BTC. El tiempo para retirarlos depende del tiempo que tarde la cadena de bloques en confirmar esa transacción.</p>
 
@@ -910,15 +910,15 @@ Otra opción es dirigirse al “Libro de Órdenes” y busque la orden que se as
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#¿Quien paga las tasas de retiro? ">
                         ¿Quien paga las tasas de retiro?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="¿Quien paga las tasas de retiro?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>En cualquiera de los casos las tasas corren a cargo del usuario. Las tasas sobre los retiros en FIAT las establece el bróker. Las tasas sobre los movimientos de BTC son establecidas por la cadena de bloques.</p>
 
@@ -926,15 +926,15 @@ Otra opción es dirigirse al “Libro de Órdenes” y busque la orden que se as
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#¿Donde se puede encontrar la informacion bancaria? ">
                         ¿Donde se puede encontrar la informacion bancaria?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="¿Donde se puede encontrar la informacion bancaria?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>Para poder depositar fondos en el exchange, el equipo de la plataforma tiene que verificar su cuenta bancaria. Una vez que este proceso se haya realizado usted podrá depositar sus fondos.
 La información relativa a nuestra cuenta bancaria que usted necesitará le aparecerá en pantalla cuando vaya a procesar una orden de depósito o de retiro.</p>
@@ -943,15 +943,15 @@ La información relativa a nuestra cuenta bancaria que usted necesitará le apar
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#¿Pueden auditarse las direciones de almacenamiento de BTC? ">
                         ¿Pueden auditarse las direciones de almacenamiento de BTC?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="¿Pueden auditarse las direciones de almacenamiento de BTC?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>Si. Tanto la clave pública de almacenamiento en frío como la del almacenamiento en caliente se pueden auditar. Lo único que tendrá que hacer será dirigirse al blockchain e introducir la dirección que usted desee verificar.</p>
 
@@ -959,15 +959,15 @@ La información relativa a nuestra cuenta bancaria que usted necesitará le apar
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#¿Puedo mantener un registro de toda mi actividad en la plataforma? ">
                         ¿Puedo mantener un registro de toda mi actividad en la plataforma?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="¿Puedo mantener un registro de toda mi actividad en la plataforma?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>Si. En el menú principal vaya a “libro registro” donde hay un registro de todas las transacciones llevadas a cabo por el usuario.
 También podrá revisar su historial de depósitos y retiros median</p>
@@ -976,15 +976,15 @@ También podrá revisar su historial de depósitos y retiros median</p>
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#¿Como desactivar mi cuenta en el exchange? ">
                         ¿Como desactivar mi cuenta en el exchange?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="¿Como desactivar mi cuenta en el exchange?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>Para desactivar su cuenta del exchange diríjase a “Mi cuenta” y seleccione “Preferencias” en el menú principal. Haga click a “desactivar mi cuenta” y proceda.</p>
 
@@ -992,15 +992,15 @@ También podrá revisar su historial de depósitos y retiros median</p>
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#¿Porque no poseo la llave privada de mi cartera en el exchange? ">
                         ¿Porque no poseo la llave privada de mi cartera en el exchange?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="¿Porque no poseo la llave privada de mi cartera en el exchange?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>Nuestro principio es que los bitcoins hay que depositarlos en el exchange con el fin de intercambiarlos por FIAT. En consecuencia, para garantizar la seguridad y la rapidez en la transacción, el exchange mantiene la posesión de los depósitos tanto en FIAT como en BTC.</p>
 
@@ -1008,15 +1008,15 @@ También podrá revisar su historial de depósitos y retiros median</p>
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#¿Que alternativa hay al uso del libro de ordenes? ">
                         ¿Que alternativa hay al uso del libro de ordenes?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="¿Que alternativa hay al uso del libro de ordenes?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>Para aquellos usuarios que no estén familiarizados con la operativa de un libro de órdenes la alternativa es utilizar la opción de comprar a precio de mercado. Esta opción la encontrarán dirigiéndose a “buy or sell”  en el menú principal y solo tendrán que especificar la cantidad de bitcoins que desean comprar o vender.</p>
 
@@ -1024,15 +1024,15 @@ También podrá revisar su historial de depósitos y retiros median</p>
                 </div>
               </div>
               
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="panel panel-default accordion-group">
+                <div class="panel-heading accordion-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#¿Porque se publica el nombre de usuario en el libro de ordenes? ">
                         ¿Porque se publica el nombre de usuario en el libro de ordenes?
                     </a>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="¿Porque se publica el nombre de usuario en el libro de ordenes?" class="panel-collapse accordion-body collapse">
                   <div class="panel-body">
                        <p>Asignamos un nombre aleatorio para cada cuenta individual. El nombre puede ser algo así como: Rhino_899009</p>
 
@@ -1089,7 +1089,53 @@ También podrá revisar su historial de depósitos y retiros median</p>
   <!-- /#market -->
 
   <!-- /#themes -->
-  <div id="themes" class="bitex-view">
+  <div id="themes" class="page bitex-view">
+    <div class="row">
+        <!-- .col-md-6 -->
+        <div class="page__content page__padding col-md-10 col-md-offset-1">
+            <header class="page__head">
+                <h1 class="page__title bitex-view-title">Temas</h1>
+                <p>Elegir un tema</p>
+            </header>
+            <div class="bitex-view-content page__body">
+                <div class="row" style="text-align:center">
+                    <a href="https://testnet.blinktrade.com/es/themes/coinage/">
+                        <div class="col-md-5 thumb-theme" style="margin:auto;float:none">
+                            <img src="https://testnet.blinktrade.com/es/assets/exchange_logos/thumb-themes/demo-coinage-thumb.jpg" alt="Coinage Theme">
+                            <h3>Coinage Theme</h3>
+                        </div>
+                    </a>
+                </div>
+                <hr>
+                <div class="row" style="text-align:center">
+                    <div class="col-xs-4">
+                        <a href="https://testnet.blinktrade.com/es/themes/default/">
+                            <div class="thumb-theme">
+                                <img src="https://testnet.blinktrade.com/es/assets/exchange_logos/thumb-themes/demo-default-thumb.jpg" alt="Default Theme">
+                                <h3 class="ls-title-4">Default Theme</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="https://testnet.blinktrade.com/es/themes/ander/">
+                            <div class="thumb-theme">
+                                <img src="https://testnet.blinktrade.com/es/assets/exchange_logos/thumb-themes/demo-ander-thumb.jpg" alt="Ander Theme">
+                                <h3 class="ls-title-4">Ander</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="https://testnet.blinktrade.com/es/themes/whitedev/">
+                            <div class="thumb-theme">
+                                <img src="https://testnet.blinktrade.com/es/assets/exchange_logos/thumb-themes/demo-whitedev-thumb.jpg" alt="Whitedev Theme">
+                                <h3 class="ls-title-4">Whitedev</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
   </div>
   <!-- #themes -->
 
@@ -1253,7 +1299,9 @@ También podrá revisar su historial de depósitos y retiros median</p>
           <!-- #id_sidebar -->
           <div id="id_sidebar" class="bitex-view
                                       bitex-view-profile
+                                      bitex-view-twofactor
                                       bitex-view-trading
+                                      bitex-view-history
                                       bitex-view-offerbook
                                       bitex-view-customers
                                       bitex-view-account_overview
@@ -1284,27 +1332,42 @@ También podrá revisar su historial de depósitos y retiros median</p>
 
                 <div class="sidebar-box__body">
                     <ul class="sidebar-box-nav nav">
-                        <li role="presentation">
-                            <a href="#" data-switch-view="offerbook">
-                                <i class="glyphicon glyphicon-book"></i> Libro de órdenes
-                            </a>
-                        </li>
-                        <li role="presentation">
+                        <li role="presentation" id="menu-trading">
                             <a href="#" data-switch-view="trading">
                                 <i class="glyphicon glyphicon-random"></i> Comprar o Vender
                             </a>
                         </li>
-                        <li role="presentation">
+                        <li role="presentation" id="menu-offerbook">
+                            <a href="#" data-switch-view="offerbook">
+                                <i class="glyphicon glyphicon-book"></i> Libro de órdenes
+                            </a>
+                        </li>
+                        <li role="presentation" id="menu-history">
+                            <a href="#" data-switch-view="history">
+                                <i class="fa fa-history"></i> Historial de órdenes
+                            </a>
+                        </li>
+                        <li role="presentation" id="menu-deposit">
+                            <a href="#" data-switch-view="deposit">
+                                <i class="fa fa-download"></i> Depósitos
+                            </a>
+                        </li>
+                        <li role="presentation" id="menu-withdraw">
+                            <a href="#" data-switch-view="withdraw">
+                                <i class="fa fa-upload"></i> Retiros
+                            </a>
+                        </li>
+                        <li role="presentation" id="menu-algotrading">
                             <a href="#" data-switch-view="algotrading">
                                 <i class="glyphicon glyphicon-cog"></i> Algo Trading
                             </a>
                         </li>
-                        <li role="presentation">
+                        <li role="presentation" id="menu-ledger">
                             <a href="#" data-switch-view="ledger">
                                 <i class="glyphicon glyphicon-th-list"></i> Libro de cuentas
                             </a>
                         </li>
-                        <li role="presentation">
+                        <li role="presentation" id="menu-market">
                             <a href="#" data-switch-view="market">
                                 <i class="glyphicon glyphicon-stats"></i> Mercado
                             </a>
@@ -1467,6 +1530,9 @@ También podrá revisar su historial de depósitos y retiros median</p>
                 <!-- /.page__body -->
               </div>
               <!-- /#my_broker -->
+              <div id="twofactor" class="bitex-view">
+                <div id="twofactor_content"></div>
+              </div>
 
               <!-- #trading -->
               <div id="trading" class="bitex-view">
@@ -1486,6 +1552,13 @@ También podrá revisar su historial de depósitos y retiros median</p>
                 <!-- /.page__body -->
               </div>
               <!-- /#trading -->
+              <div id="history" class="bitex-view">
+                  <div class="section-title">
+                      <h3 class="bitex-view-title">Historial de órdenes</h3>
+                  </div>
+                  <div class="content bitex-view-content">
+                  </div>
+              </div>
 
               <!-- #algotrading -->
               <div id="algotrading" class="bitex-view">
@@ -1583,10 +1656,11 @@ También podrá revisar su historial de depósitos y retiros median</p>
               <!-- #deposit -->
               <div id="deposit" class="bitex-view">
                 <!-- .page__head -->
-                <header class="page__head section-title">
-                    <h1 class="page__title h2 bitex-view-title">
+                <header class="page__head section-title page__head-float">
+                    <h1 class="page__title h2 bitex-view-title page__title-float">
                         <i class="glyphicon glyphicon-plus"></i> Depósitos
                     </h1>
+                    <div id="id_deposit_button_group" class="row-fluid text-right" style="" ></div>
                 </header>
                 <!-- /.page__head -->
 
@@ -1603,10 +1677,11 @@ También podrá revisar su historial de depósitos y retiros median</p>
               <!-- #withdraw -->
               <div id="withdraw" class="bitex-view">
                 <!-- .page__head -->
-                <header class="page__head section-title">
-                    <h1 class="page__title h2 bitex-view-title">
+                <header class="page__head section-title page__head-float">
+                    <h1 class="page__title h2 bitex-view-title page__title-float">
                         <i class="glyphicon glyphicon-minus"></i> Retiros
                     </h1>
+                    <div id="id_withdraw_button_group" class="row-fluid text-right" style="" ></div>
                 </header>
                 <!-- /.page__head -->
 
@@ -1765,6 +1840,7 @@ También podrá revisar su historial de depósitos y retiros median</p>
         <!-- .col-md-2 -->
         <div class="col-md-2 bitex-view
                              bitex-view-profile
+                             bitex-view-twofactor
                              bitex-view-trading
                              bitex-view-offerbook
                              bitex-view-customers
@@ -1804,9 +1880,9 @@ También podrá revisar su historial de depósitos y retiros median</p>
   <footer class="foot">
     <!-- .wrapper -->
     <div class="container">
-      <div class="col-xs-8 col-xs-offset-2">
+      <div class="col-md-8 col-md-offset-2">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-sm-4">
                 <h5>Company</h5>
                 <ul>
                     <li>
@@ -1815,8 +1891,7 @@ También podrá revisar su historial de depósitos y retiros median</p>
                     
                     <li>
                         <a href="http://www.foxbit.com.br/blog/" target="_blank">Blog</a>
-                    </li>
-                    
+                    </li> 
                     
                     <li>
                         <a href="http://www.foxbit.com.br/grafico/" target="_blank">Chart</a>
@@ -1824,7 +1899,7 @@ También podrá revisar su historial de depósitos y retiros median</p>
                     
                 </ul>
             </div>
-            <div class="col-md-4">
+            <div class="col-sm-4">
                 <h5>Platform</h5>
                 <ul>
                     
@@ -1832,11 +1907,14 @@ También podrá revisar su historial de depósitos y retiros median</p>
                         <a href="" data-switch-view="admin">admin</a>
                     </li>
                     <li>
+                        <a href="" data-switch-view="themes">Temas</a>
+                    </li>
+                    <li>
                         Latency: <span class="bitex-model" data-model-key="latency">0</span> ms
                     </li>
                     
                     <li>
-                        Version: 5a4bea0
+                        Version: dc67993
                     </li>
                     <li>
                         <a href="https://github.com/blinktrade/" target="_blank">Proudly 100% open source <span class="bitex-model" data-model-key="JSVersion"></span></a>
@@ -1846,7 +1924,7 @@ También podrá revisar su historial de depósitos y retiros median</p>
                     </li>
                 </ul>
             </div>
-            <div class="col-md-4">
+            <div class="col-sm-4">
                 <h5></h5>
                 <ul>
                     <li>
@@ -1864,7 +1942,7 @@ También podrá revisar su historial de depósitos y retiros median</p>
         </div>
         <div class="row foot-social">
             
-            <div class="col-xs-2 col-xs-offset-2">
+            <div class="col-sm-2 col-sm-offset-2">
                 <div class="social-button">
                     <h3>
                         <a href="https://www.facebook.com/foxbitcoin" target="_blank">
@@ -1875,7 +1953,7 @@ También podrá revisar su historial de depósitos y retiros median</p>
             </div>
             
             
-            <div class="col-xs-2">
+            <div class="col-sm-2">
                 <div class="social-button">
                     <h3>
                         <a href="https://twitter.com/foxbitcoin" target="_blank">
@@ -1886,7 +1964,7 @@ También podrá revisar su historial de depósitos y retiros median</p>
             </div>
             
             
-            <div class="col-xs-2">
+            <div class="col-sm-2">
                 <div class="social-button">
                     <h3>
                         <a href="https://plus.google.com/+FoxbitBrasil/posts" target="_blank">
@@ -1897,7 +1975,7 @@ También podrá revisar su historial de depósitos y retiros median</p>
             </div>
             
             
-            <div class="col-xs-2">
+            <div class="col-sm-2">
                 <div class="social-button">
                     <h3>
                         <a href="https://www.youtube.com/playlist?list=PL6c8tfdY-CX_VTwU1B9XbzWtIQjY__vrW" target="_blank">

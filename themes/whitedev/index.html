@@ -29,7 +29,6 @@
   <link rel="shortcut icon" href="https://testnet.blinktrade.com/assets/exchange_logos/demo_favicon.ico">
   <link rel="icon" href="https://testnet.blinktrade.com/assets/exchange_logos/demo_favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="favicon.png">
-  <meta name="apple-mobile-web-app-title" content="FoxBit Dashboard">
 
   <link rel="canonical" href="https://testnet.blinktrade.com/themes/whitedev/index.html"/>
   <script type="text/javascript" src="//apis.google.com/js/plusone.js"></script>
@@ -41,12 +40,13 @@
   <link href="https://testnet.blinktrade.com/assets/themes/whitedev/css/fuelux.css" rel="stylesheet">
   <link href="https://testnet.blinktrade.com/assets/themes/default/css/default.uni-form.css" rel="stylesheet">
   <link href="https://testnet.blinktrade.com/assets/themes/whitedev/css/main.css" rel="stylesheet">
+  <link href="https://testnet.blinktrade.com/assets/css/flag-icon.css" rel="stylesheet">
 
 
   <!--Custom CSS -->
   <link href="https://testnet.blinktrade.com/assets/themes/whitedev/css/main.demo.css" rel="stylesheet">
 
-  <script data-cfasync="false" src="https://testnet.blinktrade.com/assets/js/bitex_app_blink_trade.compiled.en_US.whitedev.js?v=5a4bea0" type="text/javascript"></script>
+  <script data-cfasync="false" src="https://testnet.blinktrade.com/assets/js/bitex_app_blink_trade.compiled.en_US.whitedev.js?v=dc67993" type="text/javascript"></script>
 </head>
 <body class=" ws-not-connected bitex-not-logged active-view-start ">
 
@@ -75,7 +75,10 @@
     <!-- Dropdown language -->
     <div class="ls-language ls-notification-topbar ls-notification-links">
       <div data-ls-module="dropdown" class="ls-dropdown">
-          <a href="#" class="ls-ico-earth" role="button" class="dropdown-toggle" data-toggle="dropdown">EN_US <b class="caret"></b></a>
+          <a href="#" class="" role="button" class="dropdown-toggle" data-toggle="dropdown">
+              <span class="flag-icon flag-icon-en_US"></span>
+              <b class="caret"></b>
+          </a>
           <nav class="ls-dropdown-nav ls-user-menu" aria-hidden="true">
             <ul>
             
@@ -83,31 +86,51 @@
             
               
                 
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="https://testnet.blinktrade.com/es">ES</a></li>
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="https://testnet.blinktrade.com/es">
+                        <span class="flag-icon flag-icon-es"></span>
+                    </a>
+                </li>
                 
               
             
               
                 
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="https://testnet.blinktrade.com/pt_BR">PT_BR</a></li>
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="https://testnet.blinktrade.com/pt_BR">
+                        <span class="flag-icon flag-icon-pt_BR"></span>
+                    </a>
+                </li>
                 
               
             
               
                 
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="https://testnet.blinktrade.com/ro">RO</a></li>
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="https://testnet.blinktrade.com/ro">
+                        <span class="flag-icon flag-icon-ro"></span>
+                    </a>
+                </li>
                 
               
             
               
                 
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="https://testnet.blinktrade.com/zn_CN">ZN_CN</a></li>
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="https://testnet.blinktrade.com/zn_CN">
+                        <span class="flag-icon flag-icon-zn_CN"></span>
+                    </a>
+                </li>
                 
               
             
               
                 
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="https://testnet.blinktrade.com/vi">VI</a></li>
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="https://testnet.blinktrade.com/vi">
+                        <span class="flag-icon flag-icon-vi"></span>
+                    </a>
+                </li>
                 
               
             
@@ -200,40 +223,92 @@
         </h1>
     </div>
 
-    <div id="account_balance" class="ls-box youraccount">
-    <h5 class="ls-title-4 ls-text-uppercase">Your Account</h5>
-    <form class="row">
-        <div class="col-md-6">
-            <label class="control-label" for="id_instrument_1">Market:</label>
-        </div>
-        <div class="col-md-6">
-            <select id="id_instrument_1" class="ls-dropdown-nav">
-            <option></option>
-            </select>
-        </div>
-    </form>
-    <div id="id_account_summary_content" ></div>
-    </div>
+    <div id="sidebar_wrap">
+      <div id="account_balance" class="ls-box youraccount">
+          <h5 class="ls-title-4 ls-text-uppercase">Account overview</h5>
+        <form class="row">
+            <div class="col-md-6">
+                <label class="control-label" for="id_instrument_1">Market:</label>
+            </div>
+            <div class="col-md-6">
+                <select id="id_instrument_1" class="ls-dropdown-nav">
+                <option></option>
+                </select>
+            </div>
+        </form>
+        <div id="id_account_summary_content"></div>
+      </div>
 
-    <div id="id_remittance_box" style="border-right:1px solid #eee" class="youraccount"></div>
+      <div id="id_remittance_box" style="border-right:1px solid #eee" class="youraccount"></div>
+    </div>
 
     <nav class="ls-menu" role="navigation">
         <ul role="menu">
-            <li><a href="" data-switch-view="profile" class="ls-ico-user" role="menuitem" style="outline: none;">My Profile</a></li>
-            <li class=""><a href="" data-switch-view="my_broker" class="ls-ico-info" role="menuitem" style="outline: none;"> About the exchange</a></li>
-            <li><a href="" data-switch-view="trading" class="ls-ico-docs" role="menuitem">Buy or Sell</a></li>
-            <li><a href="" data-switch-view="offerbook" class="ls-ico-book" role="menuitem">Order book</a></li>
-            <li><a href="" data-switch-view="algotrading" class="ls-ico-cog" role="menuitem">Algo Trading</a></li>
-            <li><a href="" data-switch-view="ledger" class="ls-ico-list" role="menuitem">Ledger</a></li>
-
-            <li class="bitex-display-if-broker"><a href="" data-switch-view="customers" class="ls-ico-user" role="menuitem">My customers</a></li>
-            <li class="bitex-display-if-broker"><a href="" data-switch-view="deposit_requests" class="ls-ico-download" role="menuitem">Deposit requests</a></li>
-            <li class="bitex-display-if-broker"><a href="" data-switch-view="withdraw_requests" class="ls-ico-upload" role="menuitem">Withdrawal requests</a></li>
-
-            <li><a href="" data-switch-view="deposit_requests" class="ls-ico-download" role="menuitem">My Deposits</a></li>
-            <li><a href="" data-switch-view="withdraw_requests" class="ls-ico-upload" role="menuitem">My Withdrawals</a></li>
-            <li id="verification_menu_id"><a href="" data-switch-view="verification"  role="menuitem">Verify your account</a></li>
-            <li><a href="" data-switch-view="api" class="ls-ico-upload" role="menuitem">API</a></li>
+            <li id="menu-profile">
+              <a href="" data-switch-view="profile" class="ls-ico-user" role="menuitem" style="outline: none;">
+                My Profile
+              </a>
+            </li>
+            <li id="menu-my_broker">
+              <a href="" data-switch-view="my_broker" class="ls-ico-info" role="menuitem" style="outline: none;">
+                About the exchange
+              </a>
+            </li>
+            <li id="menu-trading">
+              <a href="" data-switch-view="trading" class="ls-ico-docs" role="menuitem">
+                Buy or Sell
+              </a>
+            </li>
+            <li id="menu-offerbook">
+              <a href="" data-switch-view="offerbook" class="ls-ico-book" role="menuitem">
+                Order book
+              </a>
+            </li>
+            <li id="menu-algotrading">
+              <a href="" data-switch-view="algotrading" class="ls-ico-cog" role="menuitem">
+                Algo Trading
+              </a>
+            </li>
+            <li id="menu-ledger">
+              <a href="" data-switch-view="ledger" class="ls-ico-list" role="menuitem">
+                Ledger
+              </a>
+            </li>
+            <li id="menu-customers" class="bitex-display-if-broker">
+              <a href="" data-switch-view="customers" class="ls-ico-user" role="menuitem">
+                My customers
+              </a>
+            </li>
+            <li id="menu-deposit_requests" class="bitex-display-if-broker">
+              <a href="" data-switch-view="deposit_requests" class="ls-ico-download" role="menuitem">
+                Deposit requests
+              </a>
+            </li>
+            <li id="menu-withdraw_requests" class="bitex-display-if-broker">
+              <a href="" data-switch-view="withdraw_requests" class="ls-ico-upload" role="menuitem">
+                Withdrawal requests
+              </a>
+            </li>
+            <li id="menu-deposit">
+              <a href="" data-switch-view="deposit" class="ls-ico-download" role="menuitem">
+                My Deposits
+              </a>
+            </li>
+            <li id="menu-withdraw">
+              <a href="" data-switch-view="withdraw" class="ls-ico-upload" role="menuitem">
+                My Withdrawals
+              </a>
+            </li>
+            <li id="verification_menu_id">
+              <a href="" data-switch-view="verification" class="ls-ico-checkbox-checked"  role="menuitem">
+                Verify your account
+              </a>
+            </li>
+            <li id="menu-api">
+              <a href="" data-switch-view="api" class="ls-ico-upload" role="menuitem">
+                API
+              </a>
+            </li>
         </ul>
     </nav>
 
@@ -900,25 +975,37 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
     <hr>
     <div class="bitex-view-content">
         <div class="row" style="text-align:center">
+            <a href="https://testnet.blinktrade.com/themes/coinage/">
+                <div class="col-md-5 thumb-theme" style="margin:auto;float:none">
+                    <img src="https://testnet.blinktrade.com/assets/exchange_logos/thumb-themes/demo-coinage-thumb.jpg" alt="Coinage Theme">
+                    <h3>Coinage Theme</h3>
+                </div>
+            </a>
+        </div>
+        <hr>
+        <div class="row" style="text-align:center">
             <div class="col-md-4">
                 <a href="https://testnet.blinktrade.com/themes/default/">
-                    <img src="https://testnet.blinktrade.com/assets/exchange_logos/thumb-themes/default-theme.jpg" alt="Default Theme" class="thumb-theme">
-                    <hr>
-                    <h3 class="ls-title-4">Default Theme</h3>
+                    <div class="thumb-theme">
+                        <img src="https://testnet.blinktrade.com/assets/exchange_logos/thumb-themes/demo-default-thumb.jpg" alt="Default Theme">
+                        <h3 class="ls-title-4">Default Theme</h3>
+                    </div>
                 </a>
             </div>
             <div class="col-md-4">
                 <a href="https://testnet.blinktrade.com/themes/ander/">
-                    <img src="https://testnet.blinktrade.com/assets/exchange_logos/thumb-themes/ander-theme.jpg" alt="Ander Theme" class="thumb-theme">
-                    <hr>
-                    <h3 class="ls-title-4">Ander</h3>
+                    <div class="thumb-theme">
+                        <img src="https://testnet.blinktrade.com/assets/exchange_logos/thumb-themes/demo-ander-thumb.jpg" alt="Ander Theme">
+                        <h3 class="ls-title-4">Ander</h3>
+                    </div>
                 </a>
             </div>
             <div class="col-md-4">
                 <a href="https://testnet.blinktrade.com/themes/whitedev/">
-                    <img src="https://testnet.blinktrade.com/assets/exchange_logos/thumb-themes/whitedev-theme.jpg" alt="Whitedev Theme" class="thumb-theme">
-                    <hr>
-                    <h3 class="ls-title-4">Whitedev</h3>
+                    <div class="thumb-theme">
+                        <img src="https://testnet.blinktrade.com/assets/exchange_logos/thumb-themes/demo-whitedev-thumb.jpg" alt="Whitedev Theme">
+                        <h3 class="ls-title-4">Whitedev</h3>
+                    </div>
                 </a>
             </div>
         </div>
@@ -1038,6 +1125,10 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
                 </div>
             </div>
         </div>
+      </div>
+
+      <div id="twofactor" class="bitex-view">
+        <div id="twofactor_content"></div>
       </div>
 
       <div id="trading" class="bitex-view">
@@ -1233,7 +1324,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
                       <a href="#">Latency: <span class="bitex-model" data-model-key="latency">0</span> ms</a>
                     </div>
                     <div class="col-md-1 ls-footer-item">
-                      <a href="#">Version: 5a4bea0</a>
+                      <a href="#">Version: dc67993</a>
                     </div>
                     
                     <div class="col-md-2 ls-footer-item">
@@ -1268,7 +1359,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
                       <a href="#">Latency: <span class="bitex-model" data-model-key="latency">0</span> ms</a>
                     </div>
                     <div class="col-md-1 ls-footer-item">
-                      <a href="#">Version: 5a4bea0</a>
+                      <a href="#">Version: dc67993</a>
                     </div>
                     
                     <div class="col-md-2 ls-footer-item">
