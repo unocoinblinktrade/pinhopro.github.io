@@ -38,10 +38,11 @@
 
   
   <!--link href="/assets/themes/default/css/Dialog.css" rel="stylesheet"-->
+  <link rel="stylesheet" href="https://testnet.blinktrade.com/ro/assets/themes/ander/css/bootstrap.min.css">
   <link href="https://testnet.blinktrade.com/ro/assets/themes/default/css/fuelux.css" rel="stylesheet">
-  <link href="https://testnet.blinktrade.com/ro/assets/themes/default/css/style-new.css?v=7b544a6" rel="stylesheet">
-  <link href="https://testnet.blinktrade.com/ro/assets/themes/ander/css/blinktrade.css?v=7b544a6" rel="stylesheet">
-  <script data-cfasync="false" src="https://testnet.blinktrade.com/ro/assets/js/bitex_app_blink_trade.compiled.ro.ander.js?v=7b544a6" type="text/javascript"></script>
+  <link href="https://testnet.blinktrade.com/ro/assets/themes/default/css/style-new.css?v=bf623f7" rel="stylesheet">
+  <link href="https://testnet.blinktrade.com/ro/assets/themes/ander/css/blinktrade.css?v=bf623f7" rel="stylesheet">
+  <script data-cfasync="false" src="https://testnet.blinktrade.com/ro/assets/js/bitex_app_blink_trade.compiled.ro.ander.js?v=bf623f7" type="text/javascript"></script>
   
 </head>
 <body class=" ws-not-connected bitex-not-logged active-view-start ">
@@ -50,7 +51,7 @@
 <!-- .head -->
 <header id="id_toolbar" class="head">
   <!-- .wrapper -->
-  <div class="wrapper">
+  <div class="wrapper container">
     <!-- .layout -->
     <div class="layout layout--full">
       <div class="layout__item two-tenths portable--one-whole">
@@ -100,6 +101,11 @@
 
                   <!-- .head-dropdown -->
                   <ul class="head-dropdown">
+                    <li id="menu-admin_view" class="bitex-display-if-broker">
+                      <a href="#admin_view" title="Admin" data-switch-view="admin_view">
+                        Admin
+                      </a>
+                    </li>
                     <li id="menu-profile">
                       <a href="#profile" title="Profile" data-switch-view="profile">
                         Profilul meu
@@ -125,12 +131,12 @@
                         Cerere de retragere
                       </a>
                     </li>
-                    <li id="menu-deposit">
+                    <li id="menu-deposit" class="bitex-display-if-non-broker">
                       <a href="#deposit" title="Deposit" data-switch-view="deposit">
                         Depunerile mele
                       </a>
                     </li>
-                    <li id="menu-withdraw">
+                    <li id="menu-withdraw" class="bitex-display-if-non-broker">
                       <a href="#withdraw" title="Withdrawals" data-switch-view="withdraw">
                         Retragerile mele
                       </a>
@@ -674,6 +680,7 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
         <div class="layout__item one-whole desk--three-tenths">
           <!-- .sidebar -->
           <div id="id_sidebar" class="sidebar bitex-view
+                                              bitex-view-admin_view
                                               bitex-view-profile
                                               bitex-view-twofactor
                                               bitex-view-trading
@@ -936,6 +943,52 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
           </div>
           <!-- /#ledger -->
 
+          <!-- admin -->
+          <div id="admin_view" class="bitex-view">
+            <header class="page__head section-title">
+              <h3 class="page__title h2 bitex-view-title">Admin</h3>
+            </header>
+            <div class="page__body bitex-view-content">
+              <div id="admin-tabs">
+                <ul class="nav nav-tabs">
+                  <li class="active">
+                    <a href="#TabCustomers" data-toggle="tab">Clienții mei</a>
+                  </li>
+                  <li>
+                    <a href="#TabDepositRequests" data-toggle="tab">Solicitări de depunere</a>
+                  </li>
+                  <li>
+                    <a href="#TabWithdrawRequests" data-toggle="tab">Solicitări de retragere</a>
+                  </li>
+                  <li>
+                    <a href="#TabWithdrawMethods" data-toggle="tab">Withdraw methods</a>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane fade" id="TabCustomers">
+                    <h2 class="bitex-view-title">Clienții mei</h2>
+                    <div id="admin_customers"></div>
+                  </div>
+                  <div class="tab-pane fade" id="TabDepositRequests">
+                    <h2 class="bitex-view-title">Solicitări de depunere</h2>
+
+                    <div id="admin_deposit_requests"></div>
+                  </div>
+                  <div class="tab-pane fade" id="TabWithdrawRequests">
+                    <h2 class="bitex-view-title">Solicitări de retragere</h2>
+
+                    <div id="admin_withdraw_requests"></div>
+                  </div>
+                  <div class="tab-pane fade" id="TabWithdrawMethods">
+                    <h2 class="bitex-view-title">Withdraw methods</h2>
+
+                    <div id="admin_withdraw_methods"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /admin -->
 
           <!-- #customers -->
           <div id="customers" class="bitex-view">
@@ -1178,7 +1231,7 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
         
         <a href="" data-switch-view="admin">admin</a> |
         Latency: <span class="bitex-model" data-model-key="latency">0</span> ms |
-        Version: 7b544a6 |
+        Version: bf623f7 |
         
         <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
         | <a href="#themes">Themes</a>
